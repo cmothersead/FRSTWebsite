@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="./" target="_blank">
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .calendar-button{
+            border: 5px solid cornflowerblue;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px black;
+            background-color: cornflowerblue;
+            width: 320px;
+            transition-duration: 0.4s;
+        }
+        .calendar-button:hover{
+            background-color: gray;
+            cursor: pointer;
+        }
+        img{
+            vertical-align: middle;
+            margin: 10px;
+        }
+        span.group-name{
+            font-family: Impact;
+            font-size: 40px;
+            vertical-align: middle;
+            text-shadow: 0px 0px 1px black;
+        }
+        .column-right
+        {
+            float: right;
+            width: 50%;
+        }
+        .column-left
+        {
+            float: left;
+            width: 50%;
+        }
+        .float-right{
+            float: right;
+        }
+        .float-left{
+            float: left;
+        }
+        @media (max-width: 400px) {
+            .column-right {
+                width: 100%;
+            }
+            .column-left{
+                width: 100%
+            }
+            .float-right{
+                float: none;
+            }
+            .float-left{
+                float: none;
+            }
+            .calendar-button{
+                width: 280px
+            }
+            span.group-name{
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align: center;">Age Group Calendars</h1>
+        <p style="text-align: center;">(Coming Soon)</p>
+        <hr/>
+    </div>
+    <div class="row">
+        <div class="column-left">
+            <div class="float-right">
+                <h2 style="text-align: center;">11-14 Groups</h2>
+                <a href="Eclipse.pdf">
+                    <div class="calendar-button">
+                        <img src="/infrst/UserFiles/Image/Icons/eclipse.png" style="height: 80px; width: 80px;"/>
+                        <span class="group-name">ECLIPSE</span>
+                    </div>
+                </a>
+                <div class="calendar-button">
+                    <img src="/infrst/UserFiles/Image/Icons/challenger.png" style="height: 80px; width: 80px;"/>
+                    <span class="group-name">CHALLENGER</span>
+                </div>
+                <div class="calendar-button">
+                    <img src="/infrst/UserFiles/Image/Icons/discovery.png" style="height: 80px; width: 80px;"/>
+                    <span class="group-name">DISCOVERY</span>
+                </div>
+            </div>
+        </div>
+        <div class="column-right">
+            <div class="float-left">
+                <h2 style="text-align: center;">10 & Under Groups</h2>
+                <div class="calendar-button">
+                    <img src="/infrst/UserFiles/Image/Icons/exploration.png" style="height: 80px; width: 80px;"/>
+                    <span class="group-name">EXPLORATION</span>
+                </div>
+                <div class="calendar-button">
+                    <img src="/infrst/UserFiles/Image/Icons/launch.png" style="height: 80px; width: 80px;"/>
+                    <span class="group-name">LAUNCH</span>
+                </div>
+                <div class="calendar-button">
+                    <img src="/infrst/UserFiles/Image/Icons/spark.png" style="height: 80px; width: 80px;"/>
+                    <span class="group-name">SPARK</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
