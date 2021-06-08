@@ -12,8 +12,11 @@
    width="680.78876"
    height="472.69"
    viewBox="0 0 680.78876 472.69"
-   sodipodi:docname="ISI.svg"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+   sodipodi:docname="source.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
+   inkscape:export-filename="C:\Users\cmoth\source\repos\cmothersead\FRSTWebsite\images\logos\orgs\ISI\512x512.png"
+   inkscape:export-xdpi="72.097992"
+   inkscape:export-ydpi="72.097992">
   <metadata
      id="metadata16">
     <rdf:RDF>
@@ -22,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -51,7 +54,8 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g18" />
+     inkscape:current-layer="g18"
+     inkscape:document-rotation="0" />
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"

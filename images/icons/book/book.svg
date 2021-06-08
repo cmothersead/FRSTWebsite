@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fas"
+   data-icon="book-open"
+   class="svg-inline--fa fa-book-open fa-w-18"
+   role="img"
+   viewBox="0 0 511.98809 510.22185"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="book.svg"
+   width="511.9881"
+   height="510.2218"
+   inkscape:export-filename="C:\Users\cmoth\source\repos\cmothersead\FRSTWebsite\images\icons\book\16.png"
+   inkscape:export-xdpi="3.0000699"
+   inkscape:export-ydpi="3.0000699"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     id="namedview6"
+     showgrid="false"
+     units="px"
+     width="512mm"
+     fit-margin-top="56"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="56"
+     inkscape:zoom="0.90451389"
+     inkscape:cx="202.78971"
+     inkscape:cy="129.27369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     fill="currentColor"
+     d="m 481.97048,56.048272 c -48.71083,2.76443 -145.52803,12.82659 -205.29658,49.413038 -4.12441,2.52444 -6.46216,7.0133 -6.46216,11.7066 v 323.43808 c 0,10.26661 11.22659,16.75546 20.69321,11.99105 61.49297,-30.95093 150.42577,-39.39533 194.39885,-41.70642 15.01323,-0.79111 26.68428,-12.82659 26.68428,-27.25317 V 83.337002 c 0.009,-15.74213 -13.64436,-28.21317 -30.0176,-27.28873 z M 235.31416,105.46131 C 175.5545,68.874862 78.737312,58.821592 30.026488,56.048272 13.653253,55.123832 0,67.594872 0,83.337002 V 383.64633 c 0,14.43547 11.671042,26.47096 26.684286,27.25318 43.990851,2.31109 132.968094,10.76438 194.461064,41.73308 9.43994,4.75553 20.63098,-1.72443 20.63098,-11.96437 v -323.6603 c 0,-4.7022 -2.32887,-9.01329 -6.46217,-11.54661 z"
+     id="path2"
+     style="stroke-width:0.888884" />
+</svg>
