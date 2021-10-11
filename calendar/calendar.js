@@ -28,6 +28,15 @@ var month = new Date().getMonth();
 var year = new Date().getFullYear();
 var validCells;
 var events;
+var normalSchedule = [
+    [],
+    ["6:00PM-8:00PM"],
+    ["5:45AM-7:00AM", "6:00PM-8:00PM"],
+    ["6:00PM-8:00PM"],
+    ["5:45AM-7:00AM", "6:00PM-8:00PM"],
+    ["5:30PM-7:00PM"],
+    ["10:00AM-12:00PM"]
+]
 
 function changeMonth(forward) {
     if (forward) {
@@ -103,26 +112,92 @@ function fillCalendar(year, month) {
     if (events.length > 0) {
         events = Array.from(events);
         var practices = events.filter(event => event.summary.includes("Practice") && !event.summary.includes("No Practice"))
-            .map(event => event = {
-                start: new Date(event.start.dateTime ? event.start.dateTime : event.start.date),
-                end: new Date(event.end.dateTime ? event.end.dateTime : event.end.date),
+            .map(event => event = new Practice(event, normalSchedule))
+            .filter(practice => practice.start.getFullYear() == year && practice.start.getMonth() == month);
+        practices.forEach(practice => practice.addTo(validCells[practice.start.getDate() - 1].contentsCell));
+        var meets = events.filter(event => event.organizer.displayName == "Meets")
+            .map(event => event = new Meet(event))
+            .filter(meet => meet.getDates().some(date => date.getFullYear() == year && date.getMonth() == month))
+            .filter(meet => !meet.name.includes("MS"));
+        meets.forEach(meet => {
+            var dates = meet.getDates();
+            dates.forEach(date => {
+                meet.addTo(validCells[date.getDate()].contentsCell)
             })
-            .filter(event => event.start.getFullYear() == year && event.start.getMonth() == month);
-        practices.forEach(practice =>
-            validCells[practice.start.getDate() - 1].contentsCell.innerHTML +=
-            "<div" + (practice.start.getHours() < 12 ? " class=\"time-am\">" : ">") +
-            practiceToString(practice) + "</div>");
+        });
     }
 }
 
-function practiceToString(practice) {
-    return practice.start.toLocaleTimeString([], {
-        hour: 'numeric',
-        minute: 'numeric'
-    }).split(" ").join("") + '-' + practice.end.toLocaleTimeString([], {
-        hour: 'numeric',
-        minute: 'numeric'
-    }).split(" ").join("");
+class Practice {
+    constructor(event, normalSchedule) {
+        this.start = new Date(event.start.dateTime ? event.start.dateTime : event.start.date);
+        this.end = new Date(event.end.dateTime ? event.end.dateTime : event.end.date);
+        this.location = event.location;
+        this.isNormalTime = function() {
+            return normalSchedule[this.start.getDay()].includes(this.toString())
+        };
+        this.toString = function() {
+            return this.start.toLocaleTimeString([], {
+                hour: 'numeric',
+                minute: 'numeric'
+            }).split(" ").join("") + '-' + this.end.toLocaleTimeString([], {
+                hour: 'numeric',
+                minute: 'numeric'
+            }).split(" ").join("");
+        }
+        this.addTo = function(container) {
+            var div = document.createElement("div");
+            div.innerHTML = this.toString();
+            if (!this.isNormalTime()) {
+                div.className = "time-changed";
+            } else if (this.start.getHours() < 12) {
+                div.className = "time-am";
+            } else if (this.start.getDay() == 5 && this.toString() == "5:30PM-7:00PM") {
+                div.className = "time-friday";
+            }
+            container.appendChild(div);
+            if (this.location.includes("Franklin Community Middle School")) {
+                var loc = document.createElement("div");
+                loc.className = "location-fcms";
+                container.appendChild(loc);
+            } else if (this.location.includes("Franklin Family Aquatic Center")) {
+                var loc = document.createElement("div");
+                loc.className = "location-ffac";
+                container.appendChild(loc);
+            }
+        }
+    }
+}
+
+class Meet {
+    constructor(event) {
+        this.name = event.summary;
+        this.start = new Date(event.start.dateTime ? event.start.dateTime : event.start.date);
+        this.end = new Date(event.end.dateTime ? event.end.dateTime : event.end.date);
+        this.getDates = function() {
+            var array = [];
+            var current = new Date(this.start);
+            while (current < this.end) {
+                array.push(new Date(current));
+                current.setDate(current.getDate() + 1);
+            }
+            return array;
+        }
+        this.addTo = function(container) {
+            var img = document.createElement("img");
+            img.src = "/images/logos/teams/FRST/black_cropped.png"
+            img.className = "meet-badge";
+            var div = document.createElement("div");
+            div.innerHTML = this.name;
+            div.className = "meet-name";
+            container.appendChild(img);
+            container.appendChild(div);
+        }
+    }
+}
+
+function addPractice(container, practice) {
+
 }
 
 function numWeeks(numDays, startDay) {

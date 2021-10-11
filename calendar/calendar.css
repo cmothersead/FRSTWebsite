@@ -215,8 +215,21 @@ tbody {
     color: #434343;
 }
 
+.time-friday {
+    color: #46bdc6;
+}
+
 .time-changed {
     color: #ea4335;
+}
+
+.meet-name {
+    color: #434343;
+}
+
+.meet-badge {
+    width: 80%;
+    padding: 10px;
 }
 
 .location-fcms {
