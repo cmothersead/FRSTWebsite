@@ -1,0 +1,239 @@
+table {
+    border: 1px solid black;
+    background-color: lightgray;
+    border-collapse: collapse;
+    user-select: none;
+    empty-cells: hide;
+}
+
+tbody {
+    border: 1px solid black;
+    background-color: white;
+}
+
+
+/* #region Banner */
+
+.banner {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    background: black;
+}
+
+.banner div {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.banner div div {
+    flex-grow: unset;
+}
+
+.group-name {
+    font-family: 'Impact';
+    font-size: 48pt;
+    color: white;
+    text-shadow: black -1px 1px 3px;
+    background: linear-gradient(to bottom right, #585858, gray);
+}
+
+.date-selector {
+    background: linear-gradient(to bottom right, #4285f4, #004aad);
+    justify-content: end;
+}
+
+.icon {
+    height: 33px;
+    width: 33px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid gray;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    background: white;
+}
+
+.icon svg {
+    color: white;
+    transition: 0.2s;
+}
+
+.icon:hover svg {
+    color: black;
+}
+
+#month {
+    font-family: 'docs-Roboto', Arial;
+    font-size: 26pt;
+    width: 160px;
+    color: white;
+    justify-content: center;
+}
+
+#year {
+    font-family: 'docs-Roboto', Arial;
+    font-size: 40pt;
+    font-weight: bold;
+    color: black;
+    border-left: 3px solid black;
+    padding: 10px;
+}
+
+
+/* #endregion */
+
+
+/* #region Calendar */
+
+.empty {
+    background: lightgray;
+}
+
+.days-row {
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'docs-Lora', Arial;
+    font-size: 10pt;
+}
+
+.days-row th {
+    width: 160px;
+    border: 1px solid #000000;
+}
+
+.weekday {
+    background-color: #4285f4;
+}
+
+.weekend {
+    background-color: #999999;
+}
+
+#calendar .date-row {
+    height: 20px;
+}
+
+#calendar .date-row td {
+    border: 1px dotted black;
+    text-align: right;
+    font-family: 'Arial';
+    font-size: 10pt;
+    vertical-align: middle;
+    padding-right: 3px;
+}
+
+#calendar .content-row {
+    height: 100px;
+}
+
+#calendar .content-row td {
+    border: 1px dotted black;
+    color: #1155cc;
+    font-family: 'docs-Roboto', Arial;
+    font-size: 11pt;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* #endregion */
+
+
+/* #region Events */
+
+.events td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.events .date-row {
+    height: 20px;
+    border-bottom: 1px dotted black;
+}
+
+.events .date-row td {
+    font-family: 'Arial';
+    font-size: 10pt;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+.events .title-row {
+    height: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.events .title-row td {
+    color: #ff0000;
+    font-family: 'Georgia';
+    font-size: 10pt;
+    font-weight: bold;
+    vertical-align: bottom;
+    padding: 3px;
+}
+
+.events .description-row {
+    height: 60px;
+}
+
+.events .description-row td {
+    font-family: 'Georgia';
+    font-size: 8pt;
+    vertical-align: top;
+    padding: 3px;
+}
+
+.events .label {
+    border: 1px solid black;
+    color: #434343;
+}
+
+
+/* #endregion */
+
+
+/* #region Modifiers */
+
+.time-am {
+    color: #434343;
+}
+
+.time-changed {
+    color: #ea4335;
+}
+
+.location-fcms {
+    color: #4285f4;
+}
+
+.location-fcms::after {
+    content: "@FCMS";
+}
+
+.location-ffac {
+    color: #6aa84f;
+}
+
+.location-ffac::after {
+    content: "@FFAC";
+}
+
+
+/* #endregion */
