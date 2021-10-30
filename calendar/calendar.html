@@ -1,0 +1,75 @@
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="calendar.js"></script>
+<link rel="stylesheet" href="calendar.css">
+
+<body onload="createCalendar(year, month)">
+    <div style="margin: 20px; display: inline-block;">
+        <div class="banner">
+            <div class="group-name">
+                <img src="/images/logos/teams/FRST/white&black512x512.png" alt="FRST" style="height: 170px; margin: 10px; object-fit: cover;" />
+                <span style="padding-right: 20px;">Eclipse</span>
+            </div>
+            <img src="/images/calendar/banner.png" style="width: 330px; margin-right: -10px; margin-left: -10px; z-index: 1; object-fit: cover; object-position: 50% 65%;" />
+            <div class="date-selector">
+                <button class="icon" onclick="changeMonth(false)">
+                    <svg aria-hidden=" true " focusable="false " role="img " viewBox="0 0 207 320 " style="height: 50%; padding-right:5px;">
+                    <path fill="currentColor"
+                          d="M 7.0375496,143.05 143.03755,7.05 c 9.4,-9.4 24.6,-9.4 33.9,0 l 22.6,22.6 c 9.4,9.4 9.4,24.6 0,33.9 l -96.3,96.5 96.4,96.4 c 9.4,9.4 9.4,24.6 0,33.9 l -22.6,22.7 c -9.4,9.4 -24.6,9.4 -33.9,0 L 7.1375496,177.05 c -9.5,-9.4 -9.5,-24.6 -0.1,-34 z "/>
+                </svg>
+                </button>
+                <div id="month"></div>
+                <button class="icon" onclick="changeMonth(true)">
+                    <svg aria-hidden=" true " focusable="false " role="img " viewBox="0 0 207 320 " style="height: 50%; padding-left:3px">
+                    <path fill="currentColor"
+                          d="m 199.65,143.05 -136,-136 c -9.4,-9.4 -24.6,-9.4 -33.9,0 l -22.6,22.6 c -9.4,9.4 -9.4,24.6 0,33.9 l 96.3,96.5 -96.4,96.4 c -9.4,9.4 -9.4,24.6 0,33.9 l 22.6,22.7 c 9.4,9.4 24.6,9.4 33.9,0 l 136,-136 c 9.5,-9.4 9.5,-24.6 0.1,-34 z"/>
+                </svg>
+                </button>
+                <div id="year"></div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr class="days-row">
+                    <th class="weekend">Sunday</th>
+                    <th class="weekday">Monday</th>
+                    <th class="weekday">Tuesday</th>
+                    <th class="weekday">Wednesday</th>
+                    <th class="weekday">Thursday</th>
+                    <th class="weekday">Friday</th>
+                    <th class="weekend">Saturday</th>
+                </tr>
+            </thead>
+            <tbody id="calendar">
+                <tr>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr style="height: 19px">
+                    <td colspan="7"></td>
+                </tr>
+            </tbody>
+            <tbody class="events">
+                <tr class="date-row">
+                    <td rowspan="3">
+                        <div style="width:160px;height:99px;">
+                            <img src="https://lh3.googleusercontent.com/W0izecp5q_UmJpZO1uWrMHGewGEEV4kk_DqrlsI17zFUNeaMp-SmvuPOXGMSi05tUfuzUwVexIh_9tZPTH5uhVSYARDVJRw1vkgEvYiEq_T1OqdM48OpG9rQEu9S3wWtve9CwbuF3w=w160-h99" style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;"
+                            />
+                        </div>
+                    </td>
+                    <td class="label" style="font-family: 'docs-Roboto', Arial; font-size: 36pt; padding-left: 10px;" colspan="2" rowspan="3">Events</td>
+                    <td colspan="2">8/16</td>
+                    <td colspan="2">8/17-18</td>
+                </tr>
+                <tr class="title-row">
+                    <td colspan="2">First Day of Practice</td>
+                    <td colspan="2">New Athlete Registration</td>
+                </tr>
+                <tr class="description-row">
+                    <td colspan="2">We will begin the Short Course Season after a 2 week break to give the kids some time away from the water to get adjusted to the return to school &amp; life after summer.
+                    </td>
+                    <td colspan="2">Although not particularly important for this group, FRST will hold its registration/evaluation nights on the Tuesday/Wednesday of the first week of practice</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
