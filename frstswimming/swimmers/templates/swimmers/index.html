@@ -1,0 +1,8 @@
+<h1>Swimmers</h1>
+<ul>
+{% for swimmer in swimmers %}
+    <li>{{swimmer}}</li>
+{% empty %}
+    <li>No swimmers yet.</li>
+{% endfor %}
+</ul>
