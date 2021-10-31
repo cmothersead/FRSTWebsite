@@ -10,7 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+<<<<<<< HEAD
 import os
+=======
+>>>>>>> dad2a26e552b5e0c9e31582fd3aead2735d9c4ed
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
