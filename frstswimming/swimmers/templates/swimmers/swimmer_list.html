@@ -1,8 +1,21 @@
 <h1>Swimmers</h1>
-<ul>
-{% for swimmer in swimmers %}
-    <li>{{swimmer}}</li>
-{% empty %}
-    <li>No swimmers yet.</li>
-{% endfor %}
-</ul>
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Birthday</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    {% for swimmer in object_list %}
+        <tr>
+            <td>{{swimmer.first_name}}</td>
+            <td>{{swimmer.last_name}}</td>
+            <td>{{swimmer.birthday|date:"m/d/y"}}</td>
+            <td>{{swimmer.age}}</td>
+            <td>{{swimmer.gender}}</td>
+        </tr>
+    {% empty %}
+        <li>No swimmers yet.</li>
+    {% endfor %}
+</table>
