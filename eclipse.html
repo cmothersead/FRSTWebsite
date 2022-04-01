@@ -1,82 +1,240 @@
 <html>
 
+<style>
+    .group-container{
+        text-align: center;
+    }
+    .header-image{
+        width: 80%;
+        position: static;
+        display: inline-block;
+    }
+    .coach-image{
+        height: 120px;
+        width: 120px;
+        object-fit: cover;
+        object-position: 0 0;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    h1{
+        font-family: Montserrat, sans-serif;
+        font-weight: 900;
+        text-align: left;
+        text-shadow: 1px 1px 2px grey;
+    }
+    h2{
+        margin-bottom: 0px;
+        text-align: right;
+    }
+    h3{
+        font-family: 'Kaushan Script', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .columns{
+        width: 80%;
+        display: inline-flex;
+    }
+    .column{
+        min-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-6{
+        width: 50%;
+    }
+    .col-4{
+        width: 33.333%;
+    }
+    p{
+        text-align: left;
+    }
+    .style{
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px black;
+        text-align: center;
+    }
+    .style-blue{
+        background-color: 383838;
+        color: white;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: 200;
+    }
+    .style-gray{
+        background-color: gray;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    ul{
+        text-align: left;
+    }
+    .emphasize{
+        font-family: Compacta, sans-serif;
+        font-size: 20px;
+        font-weight: 550;
+    }
+    .button-header{
+        height: 60px;
+        margin-bottom: -15px;
+    }
+</style>
+
 <head>
     <title>Eclipse Group</title>
 </head>
 
 <body>
-    <h1>Eclipse</h1>
-    <h2>Lead Coach:</h2>
-    <a href="https://www.teamunify.com/team/infrst/page/about-us/coaching-staff#colin">Colin Mothersead</a>
-    <h3>Group Overview</h3>
-    <p>Eclipse is FRST's highest performing 14&Under group. Eclipse athletes represent FRST at Indiana's Age Group State
-        and beyond. Eclipse members are leaders within the team and are expected to be engaged not only in their own
-        success, but also in the success of the rest of their teammates. In order to qualify for Eclipse, swimmers must
-        meet
-        the minimum qualifications for all previous groups, as well as the requirements listed below:</p>
-    <h3>Group Requirements</h3>
-    <ul>
-        <li>
-            Attendance
-            <ul>
-                <li>
-                    90% Practice Attendance
-                </li>
-                <li>
-                    100% Meet Attendance
-                </li>
-            </ul>
-        </li>
-        <li>
-            Performance
-            <ul>
-                <i>Athletes must be</i>
-                <li>
-                    Age Group State qualified
-                </li>
-                <li>
-                    IMX qualified
-                </li>
-                <i>And are expected to be faster than</i>
-                <li>
-                    100 Free 1:00Y/1:10L
-                </li>
-            </ul>
-        </li>
-        <li>
-            Training
-            <ul>
-                <i>Athletes must be able to hold</i>
-                <li>
-                    1:20Y/1:30L Freestyle
-                </li>
-                <li>
-                    1:50Y/2:00L Kick
-                </li>
-                <i>without difficulty</i>
-            </ul>
-        </li>
-        <li>
-            Attitude
-            <ul>
-                <i>Athletes must</i>
-                <li>
-                    Bring a positive, growth-minded attitude to practice every day
-                </li>
-                <li>
-                    Be willing to take on leadership responsibilites within the 11-14 age group
-                </li>
-                <li>
-                    Be capable of holding themselves and teammates accountable in a critical, but positive way
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <h3>Group Expectations</h3>
-    <h4>Typical Schedule</h4>
-    <p>6 2hr practices/wk, 2 1.25hr practices/wk</p>
-    <a href="https://www.teamunify.com/infrst/UserFiles/File/calendars/eclipse.pdf">Calendar</a>
-    <h4></h4>
+    <div class="group-container">
+        <img src="images/banners/groups/Eclipse.png" class="header-image">
+        <div class="columns">
+            <div class="column col-6">
+                <h1>Eclipse</h1>
+                <p>Eclipse is FRST's highest performing 14&Under group. Eclipse athletes represent FRST at Indiana's Age Group State
+                    and beyond. Eclipse members are leaders within the team and are expected to be engaged not only in their own
+                    success, but also in the success of the rest of their teammates. In order to qualify for Eclipse, swimmers must
+                    meet
+                    the minimum qualifications for all previous groups, as well as the requirements listed below:</p>
+            </div>
+            <div class="column col-6" style="text-align: right;">
+                <h2>Lead Coach</h2>
+                <img src="images/coaches/colin-bio.jpg" class="coach-image">
+                <br/>
+                <a href="https://www.teamunify.com/team/infrst/page/about-us/coaching-staff#colin">Colin Mothersead</a>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column col-4 style style-blue">
+                <img src="images/requirements-eclipse.png" class="button-header"/>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <span class="emphasize">Attendance</span>
+                            <ul>
+                                <li>
+                                    90% Practice Attendance
+                                </li>
+                                <li>
+                                    100% Meet Attendance
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="emphasize">Performance</span>
+                            <ul>
+                                <i>Athletes must be</i>
+                                <li>
+                                    Age Group State qualified
+                                </li>
+                                <li>
+                                    IMX qualified
+                                </li>
+                                <i>And are expected to be faster than</i>
+                                <li>
+                                    100 Free 1:00SCY/1:10LCM
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="emphasize">Training</span>
+                            <ul>
+                                <i>Athletes must be able to hold</i>
+                                <li>
+                                    1:20SCY/1:30LCM Freestyle
+                                </li>
+                                <li>
+                                    1:50SCY/2:00LCM Kick
+                                </li>
+                                <i>without difficulty</i>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="emphasize">Attitude</span>
+                            <ul>
+                                <i>Athletes must</i>
+                                <li>
+                                    Bring a positive, growth-minded attitude to practice every day
+                                </li>
+                                <li>
+                                    Be willing to take on leadership responsibilites within the 11-14 age group
+                                </li>
+                                <li>
+                                    Be capable of holding themselves and teammates accountable in a critical, but positive way
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column col-4 style style-gray">
+                <img src="images/equipment-eclipse.png" class="button-header"/>
+                <p style="text-align: center; font-size: 16px; font-weight: bold;">Required for EVERY practice!</p>
+                <div class="content">
+                    <ul>
+                        <li><strong>Water Bottle</strong></li>
+                        <li><strong>Dryland Apparel</strong></li>
+                        <ul>
+                            <li>Shirt</li>
+                            <li>Athletic Shorts</li>
+                            <li>Athletic Shoes</li>
+                        </ul>
+                        <li><strong>Equipment Bag</strong></li>
+                        <ul>
+                            <li>Kickboard</li>
+                            <li>Snorkel</li>
+                            <li>Fins</li>
+                            <li>Pull Buoy</li>
+                            <li>Paddles</li>
+                            <li>Tempo Trainer</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="column col-4 style style-blue">
+                <img src="images/schedule-eclipse.png" class="button-header">
+                <div class="content">
+                    <ul style="list-style: none; margin-left: -15px;">
+                        <li>Monday</li>
+                        <ul>
+                            <li>6-8PM</li>
+                        </ul>
+                        <li>Tuesday</li>
+                        <ul>
+                            <li>5:45-7AM</li>
+                            <li>6-8PM</li>
+                        </ul>
+                        <li>Wednesday</li>
+                        <ul>
+                            <li>6-8PM</li>
+                        </ul>
+                        <li>Thursday</li>
+                        <ul>
+                            <li>5:45-7AM</li>
+                            <li>6-8PM</li>
+                        </ul>
+                        <li>Friday</li>
+                        <ul>
+                            <li>5:30-7PM</li>
+                        </ul>
+                        <li>Saturday</li>
+                        <ul>
+                            <li>10AM-12PM</li>
+                        </ul>
+                    </ul>
+                    <a href="https://www.teamunify.com/infrst/UserFiles/File/calendars/eclipse.pdf">Calendar</a>
+                </div>
+            </div>
+        </div>
+        
+
+        <h3>Group Expectations</h3>
+        
+        <h4></h4>
+    </div>
+    
+
 </body>
 
 </html>
