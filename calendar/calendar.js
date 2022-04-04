@@ -111,20 +111,22 @@ function createCalendar(year, month) {
 function fillCalendar(year, month) {
     if (events.length > 0) {
         events = Array.from(events);
-        var practices = events.filter(event => event.summary.includes("Practice") && !event.summary.includes("No Practice"))
+
+        // Practices
+        events.filter(event => event.hasOwnProperty('summary') && event.summary.includes("Practice") && !event.summary.includes("No Practice"))
             .map(event => event = new Practice(event, normalSchedule))
-            .filter(practice => practice.start.getFullYear() == year && practice.start.getMonth() == month);
-        practices.forEach(practice => practice.addTo(validCells[practice.start.getDate() - 1].contentsCell));
-        var meets = events.filter(event => event.organizer.displayName == "Meets")
+            .filter(practice => practice.start.getFullYear() == year && practice.start.getMonth() == month)
+            .forEach(practice => practice.addTo(validCells[practice.start.getDate() - 1].contentsCell));
+
+        // Club Meets
+        events.filter(event => event.organizer.displayName == "Meets")
             .map(event => event = new Meet(event))
             .filter(meet => meet.getDates().some(date => date.getFullYear() == year && date.getMonth() == month))
-            .filter(meet => !meet.name.includes("MS"));
-        meets.forEach(meet => {
-            var dates = meet.getDates();
-            dates.forEach(date => {
-                meet.addTo(validCells[date.getDate()].contentsCell)
-            })
-        });
+            .filter(meet => !meet.name.includes("MS"))
+            .forEach(meet => {
+                meet.getDates()
+                    .forEach(date => meet.addTo(validCells[date.getDate()].contentsCell))
+            });
     }
 }
 
@@ -185,13 +187,16 @@ class Meet {
         }
         this.addTo = function(container) {
             var img = document.createElement("img");
-            img.src = "/images/logos/teams/FRST/black_cropped.png"
+            var clubName = /^[A-Z]{2,5}/.exec(this.name)[0];
+            var eventName = /(?<=^[A-Z]{2,5}\s).*/.exec(this.name)[0];
+            img.src = `/images/calendar/${clubName}.png`
             img.className = "meet-badge";
             var div = document.createElement("div");
-            div.innerHTML = this.name;
+            div.innerHTML = eventName;
             div.className = "meet-name";
             container.appendChild(img);
             container.appendChild(div);
+            container.classList.add("clickable");
         }
     }
 }

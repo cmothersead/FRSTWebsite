@@ -229,7 +229,17 @@ tbody {
 
 .meet-badge {
     width: 80%;
+    max-height: 60px;
     padding: 10px;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: 0.05s;
+}
+
+.clickable:hover {
+    transform: scale(1.05);
 }
 
 .location-fcms {
