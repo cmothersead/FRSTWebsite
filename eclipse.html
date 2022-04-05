@@ -77,19 +77,17 @@
         width: 270px;
         min-width: 270px;
         position: relative;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: 400;
     }
     
     .card-dark {
         background-color: #383838;
         color: white;
-        font-family: 'Segoe UI', sans-serif;
-        font-weight: 400;
     }
     
     .card-light {
         background-color: gray;
-        font-family: 'Segoe UI', sans-serif;
-        font-weight: 400;
     }
     
     ul {
@@ -218,21 +216,45 @@
         transform: scale(1.05);
     }
 
+    .calendars{
+        border-radius: 2px;
+        padding: 3px;
+    }
+
     @media screen and (max-width: 500px) {
         .group-container{
             width: 100%;
         }
-        .background{
-            display: flex;
-            flex-direction: column;
-            margin: 0px;
-            margin-top: 10px;
-            justify-content: center;
-            align-items: center;
-        }
         .coach-badge{
-            float: none;
-            margin-bottom: -20px;
+            width: 120px;
+            min-width: 120px;
+            height: 120px;
+            padding: 10px;
+        }
+        .coach-image{
+            height: 80px;
+            width: 100px;
+        }
+        h1{
+            font-size: 14px;
+        }
+        .name{
+            font-size: 10px;
+        }
+        .group-description{
+            text-align: left;
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 800px) and (min-width: 500px) {
+        .alt-card-dark {
+            background-color: #383838;
+            color: white;
+        }
+
+        .alt-card-light {
+            background-color: gray;
         }
     }
 </style>
@@ -244,13 +266,13 @@
 <body>
     <div class="container">
         <div class="group-container">
-            <img src="images/banners/groups/eclipse.png" class="header-image">
+            <img src="/infrst/UserFiles/Image/banners/groups/eclipse.png" class="header-image">
             <div class="background">
                 <div class="coach-badge">
                         <div class="coach-bio-link-content">
                             <h1>Lead Coach</h1>
                             <div class="img-gradient-container">
-                                <img src="images/coaches/colin-bio.jpg" class="coach-image">
+                                <img src="/infrst/UserFiles/Image/coaches/colin-bio.jpg" class="coach-image">
                                 <div class="img-gradient"></div>
                                 <div class="img-text">
                                     See Bio
@@ -356,13 +378,13 @@
                         <a class="store-button" href="https://elsmoreswim.com/teams/indiana/clubs/franklin-regional-swim-team.html?_ga=2.148521719.172554797.1648851364-494990458.1622311853">
                             <span style="color: white; font-size: 18px; margin: 10px;">Need Equipment? Check out our Team Store!</span>
                             <span style="display: flex; flex-direction: column;">
-                                <img src="images/logos/teams/FRST/white-black512x512.png" style="width: 100px; margin-bottom: -20px;" />
-                                <img src="images/logos/vendors/Elsmore/512x512.png" style="width: 100px; margin-top: -20px" />
+                                <img src="/infrst/UserFiles/Image/logos/teams/FRST/white-black512x512.png" style="width: 100px; margin-bottom: -20px;" />
+                                <img src="/infrst/UserFiles/Image/logos/vendors/Elsmore/512x512.png" style="width: 100px; margin-top: -20px" />
                             </span>
                         </a>
                     </div>
                 </div>
-                <div class="card card-dark">
+                <div class="card card-dark alt-card-light">
                     <h3>Schedule</h3>
                     <div class="content" style="display: flex; justify-content: space-around;">
                             <div>
@@ -396,14 +418,14 @@
                                 </ul>
                             </div>
                             <div style="display: flex; align-items: center;">
-                                <div style="background-color:gray; border-radius: 2px; padding: 3px;">
+                                <div class="calendars card-light alt-card-dark">
                                     <h4>Calendars</h4>
                                     <div style="display: flex; align-items: center; flex-direction: column;">
                                         <a href="https://www.teamunify.com/infrst/UserFiles/File/calendars/eclipse.pdf">
-                                            <img src="images/icons/pdf.png" class="calendar-icon" />
+                                            <img src="/infrst/UserFiles/Image/icons/pdf.png" class="calendar-icon" />
                                         </a>
                                         <a>
-                                            <img src="images/icons/google-calendar.png" class="calendar-icon"/>
+                                            <img src="/infrst/UserFiles/Image/icons/google-calendar.png" class="calendar-icon"/>
                                         </a>
                                     </div>
                                 </div>
@@ -413,11 +435,12 @@
                             This schedule represents what is typical for this group. Always check the calendars and ask a coach!
                         </div>
                 </div>
-                <div class="card card-light">
+                <div class="card card-light alt-card-dark">
                     <h3>Expectations</h3>
                 </div>
                 <div class="card card-dark">
                     <h3>Resources</h3>
+                        Google Classroom
                 </div>
             </div>
         </div>
