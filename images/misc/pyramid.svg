@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="285.8996mm"
+   height="170.79924mm"
+   viewBox="0 0 285.8996 170.79924"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="pyramid.svg"
+   inkscape:export-filename="C:\Users\admin\OneDrive - Industrial Controls &amp; Automation\Documents\pyramid.png"
+   inkscape:export-xdpi="90.974594"
+   inkscape:export-ydpi="90.974594"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.51906082"
+     inkscape:cx="642.5066"
+     inkscape:cy="708.00952"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient22402">
+      <stop
+         style="stop-color:#afafaf;stop-opacity:1"
+         offset="0"
+         id="stop22398" />
+      <stop
+         style="stop-color:#787878;stop-opacity:0;"
+         offset="1"
+         id="stop22400" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22402"
+       id="linearGradient22404"
+       x1="281.19254"
+       y1="134.25273"
+       x2="239.09099"
+       y2="164.36877"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-66.084464,-58.811996)">
+    <path
+       id="path1111-9-0"
+       style="fill:url(#linearGradient22404);fill-opacity:1;stroke:none;stroke-width:0.457441px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 173.00969,59.87033 v 17.67024 h 77.36558 l 7.45844,-17.67024 z m 0,21.739759 v 17.3731 h 90.78905 l 7.645,-17.3731 z m 0,21.442621 v 17.3731 h 104.212 l 7.645,-17.3731 z m 0,21.4421 v 17.3731 h 117.63598 l 7.64397,-17.3731 z m 0,21.44262 v 17.3731 h 131.05946 l 7.645,-17.3731 z m 0,21.44211 v 17.37309 h 144.48293 l 7.64447,-17.37309 z m 0,21.44261 v 17.37362 h 157.90638 l 7.6445,-17.37362 z m 0,21.44262 v 18.28829 h 171.90295 l 7.07141,-18.28829 z"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccc"
+       inkscape:export-filename="C:\Users\admin\OneDrive - Industrial Controls &amp; Automation\Documents\pyramid.png"
+       inkscape:export-xdpi="90.974594"
+       inkscape:export-ydpi="90.974594" />
+    <path
+       style="fill:#5dc1ff;fill-opacity:1;stroke:none;stroke-width:0.457442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 78.858824,209.20617 -12.77436,20.40507 H 279.93436 l -12.77435,-20.40507 z"
+       id="path17164" />
+    <path
+       style="fill:#3ab3ff;fill-opacity:1;stroke:none;stroke-width:0.457442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 92.282513,187.7634 -12.20149,19.49037 H 265.93781 L 253.73632,187.7634 Z"
+       id="path17162" />
+    <path
+       style="fill:#0090ec;fill-opacity:1;stroke:none;stroke-width:0.457442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 105.70565,166.32118 93.504712,185.81099 H 252.51413 l -12.20095,-19.48981 z"
+       id="path17160" />
+    <path
+       style="fill:#0081d2;fill-opacity:1;stroke:none;stroke-width:0.457442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 119.12933,144.87896 106.9284,164.36877 H 239.09099 L 226.89005,144.87896 Z"
+       id="path17158" />
+    <path
+       style="fill:#006fb5;fill-opacity:1;stroke:none;stroke-width:0.457442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 132.55302,123.43618 -12.20093,19.48981 H 225.6673 l -12.20149,-19.48981 z"
+       id="path17156" />
+    <path
+       style="fill:#005e98;fill-opacity:1;stroke:none;stroke-width:0.457442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 145.97672,101.99396 -12.20149,19.4898 h 78.46837 l -12.20093,-19.4898 z"
+       id="path17154" />
+    <path
+       style="fill:#004875;fill-opacity:1;stroke:none;stroke-width:0.457442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 159.39984,80.551735 -12.20093,19.489805 h 51.62156 L 186.61953,80.551735 Z"
+       id="path17152" />
+    <path
+       style="fill:#003658;fill-opacity:1;stroke:none;stroke-width:0.457442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 173.00969,58.811996 160.6226,78.598763 h 24.77418 z"
+       id="path1111" />
+  </g>
+</svg>
