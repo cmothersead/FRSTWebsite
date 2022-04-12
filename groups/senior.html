@@ -3,55 +3,56 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0px;
     }
-    
+
+    .header-img {
+        width: 100%;
+    }
+
     .section {
         margin: 0px;
         padding: 10px;
         padding-top: 30px;
         padding-bottom: 80px;
+        background-image: linear-gradient(-90deg, #ffffff, #eeeeee 20% 80%, #ffffff);
     }
-    
-    .section:nth-child(odd) {
-        background-color: lightgray;
-    }
-    
+
     .section:nth-child(even) {
-        background-color: #eee;
+        background-image: linear-gradient(-90deg, #ffffff, #e3e3e3 20% 80%, #ffffff);
     }
-    
+
     h4 {
         font-size: 18px;
         margin: 15px;
     }
-    
+
     table {
         width: 100%;
         border-collapse: collapse;
         user-select: none;
     }
-    
+
     thead {
-        background-color: rgb(0, 0, 204);
+        background-color: #000d99;
         text-align: center;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: white;
     }
-    
+
     tbody {
         background-color: gray;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
         font-weight: 500;
     }
-    
+
     tr {
         height: 40px;
     }
-    
+
     tbody>tr:nth-child(odd) {
         background-color: rgb(153, 153, 153);
     }
-    
+
     td:first-child {
         width: 40px;
         padding-right: 8px;
@@ -59,14 +60,15 @@
         background-color: tran;
         border: none;
     }
-    
+
     .cards-container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
+
     /* Add shadows to create the "card" effect */
-    
+
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
         transition: 0.2s;
@@ -76,31 +78,34 @@
         border-radius: 3px;
         background-color: white;
     }
+
     /* On mouse-over, add a deeper shadow */
-    
+
     .card:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
     }
+
     /* Add some padding inside the card container */
-    
+
     .container {
         padding: 10px;
         text-align: center;
     }
+
     /* The Magic */
-    
+
     .accordion:hover .accordion-item:hover .accordion-item-content,
     .accordion .accordion-item--default .accordion-item-content {
         height: 6em;
     }
-    
+
     .accordion-item-content,
     .accordion:hover .accordion-item-content {
         height: 0;
         overflow: hidden;
         transition: height .25s;
     }
-    
+
     .accordion {
         padding: 0;
         margin: 0 auto;
@@ -111,223 +116,239 @@
         overflow: hidden;
         text-align: left;
     }
-    
+
     .accordion .accordion-item {
         background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
         padding: 1em;
         color: #eee;
         font-size: 11px;
     }
-    
+
     .accordion-item-content {
         overflow-y: hidden;
         overscroll-behavior: contain;
         padding-right: 1px;
     }
-    
+
     .accordion h1 {
         margin: 0;
         font-size: 14px;
     }
-    
+
     .accordion .accordion-item:nth-child(odd) {
-        background-color: hsl(230, 90%, 60%);
-        background-image: linear-gradient(-90deg, hsl(230, 90%, 60%), hsl(230, 90%, 45%) 2em, hsl(230, 90%, 60%));
+        background-color: #000d99;
+        background-image: linear-gradient(-90deg, #000d99, #0010bb 2em, #000eac);
     }
-    
+
     .accordion .accordion-item:nth-child(even) {
         background-color: hsl(0, 0%, 45%);
         background-image: linear-gradient(-90deg, hsl(0, 0%, 45%), hsl(0, 0%, 45%) 2em, hsl(0, 0%, 45%));
     }
-    
+
     .accordion-item-content::-webkit-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
         background-color: #818181;
     }
-    
+
     .accordion-item-content::-webkit-scrollbar {
         width: 12px;
         background-color: transparent;
     }
-    
+
     .accordion-item-content::-webkit-scrollbar-thumb {
         border-radius: 10px;
         box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
         background-color: #555;
     }
-</style>
-<h2>FRST Senior Group Mission Statement & Group Descriptions</h2>
 
-<p><em>&quot;Franklin Regional Swim Team&rsquo;s goal is to become the most innovative, athlete-centered, program in our
-            state.&nbsp; With an &ldquo;athlete-centered&rdquo; goal in place, our coaches have designed a system to make
-            our athletes successful at all levels within our sport. Athletes will receive instruction, as well as
-            training, based specifically on their needs as an athlete. Outstanding achievement and vast improvement is our
-            goal for <u>all of our FRST athletes</u>.&quot;</em></p>
+    .schedule-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .schedule {
+        width: 90%;
+    }
+</style>
+
+<div>
+    <img src="../images/banners/mission-statement.png" class="header-img" />
+</div>
 
 <div class="section">
     <h2>High Performance Senior (HPSR)</h2>
 
     <h3>Lead Coach: Zach DeWitt</h3>
 
-    <p>This is the highest-level competitive group that FRST offers. This group has been assembled to provide our athletes with every possible advantage in succeeding at the highest level. The group is recommended for swimmers 14 and over who wish to participate
-        in Sectional, National and potentially International competitions with a strong emphasis on USA Junior Nationals, NCSA, and Nationals. This high intensity/ high reward group trains <u>8-9 pool practices a week, with 3 dryland practices per week</u>        and offers a structured comprehensive strength program. Swimming in college is another main objective of swimmers in the FRST High Performance Group and assistance with the recruiting process is offered to all group members. There is also a strong
+    <p>This is the highest-level competitive group that FRST offers. This group has been assembled to provide our
+        athletes with every possible advantage in succeeding at the highest level. The group is recommended for swimmers
+        14 and over who wish to participate
+        in Sectional, National and potentially International competitions with a strong emphasis on USA Junior
+        Nationals, NCSA, and Nationals. This high intensity/ high reward group trains <u>8-9 pool practices a week, with
+            3 dryland practices per week</u> and offers a structured comprehensive strength program. Swimming in college
+        is another main objective of swimmers in the FRST High Performance Group and assistance with the recruiting
+        process is offered to all group members. There is also a strong
         emphasis on community service as well as giving back to and being leaders of FRST.</p>
 
     <h3>Typical HPSR Schedule</h3>
-
-    <h5>School</h5>
-    <table>
-        <thead>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    Monday
-                </td>
-                <td>
-                    Tuesday
-                </td>
-                <td>
-                    Wednesday
-                </td>
-                <td>
-                    Thursday
-                </td>
-                <td>
-                    Friday
-                </td>
-                <td>
-                    Saturday
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    AM
-                </td>
-                <td>
-                </td>
-                <td>
-                    5:45-7:05AM
-                    <div style="font-size: 10px;">(Weights Only)</div>
-                </td>
-                <td>
-                </td>
-                <td>
-                    5:45-7:05AM
-                    <div style="font-size: 10px;">(Weights Only)</div>
-                </td>
-                <td>
-                    5:45-7:05AM*
-                </td>
-                <td>
-                    7:00-10:00AM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:00PM*
-                </td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h5>Summer</h5>
-    <table>
-        <thead>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    Monday
-                </td>
-                <td>
-                    Tuesday
-                </td>
-                <td>
-                    Wednesday
-                </td>
-                <td>
-                    Thursday
-                </td>
-                <td>
-                    Friday
-                </td>
-                <td>
-                    Saturday
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    AM
-                </td>
-                <td>
-                    7:00-10:00AM
-                </td>
-                <td>
-                    7:00-9:00AM
-                </td>
-                <td>
-                    7:00-10:00AM
-                </td>
-                <td>
-                    7:00-9:00AM
-                </td>
-                <td>
-                    7:00-10:00AM
-                </td>
-                <td>
-                    7-10:00AM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    PM
-                </td>
-                <td>
-                </td>
-                <td>
-                    3:00-5:00PM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-                <td>
-                </td>
-                <td>
-                    3:00-5:00PM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-                <td>
-                </td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    <p><em>*depending on cycle within season</em></p>
-
+    <hr>
+    <div class="schedule-container">
+        <div class="schedule">
+            <h5>School</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            Monday
+                        </td>
+                        <td>
+                            Tuesday
+                        </td>
+                        <td>
+                            Wednesday
+                        </td>
+                        <td>
+                            Thursday
+                        </td>
+                        <td>
+                            Friday
+                        </td>
+                        <td>
+                            Saturday
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            AM
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            5:45-7:05AM
+                            <div style="font-size: 10px;">(Weights Only)</div>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            5:45-7:05AM
+                            <div style="font-size: 10px;">(Weights Only)</div>
+                        </td>
+                        <td>
+                            5:45-7:05AM*
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:00PM*
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><em>*depending on cycle within season</em></p>
+    
+            <h5>Summer</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            Monday
+                        </td>
+                        <td>
+                            Tuesday
+                        </td>
+                        <td>
+                            Wednesday
+                        </td>
+                        <td>
+                            Thursday
+                        </td>
+                        <td>
+                            Friday
+                        </td>
+                        <td>
+                            Saturday
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            AM
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                        </td>
+                        <td>
+                            7:00-9:00AM
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                        </td>
+                        <td>
+                            7:00-9:00AM
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                        </td>
+                        <td>
+                            7-10:00AM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PM
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            3:00-5:00PM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            3:00-5:00PM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                        <td>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <h3>Criteria</h3>
+    <hr>
     <div class="cards-container">
         <div class="card">
             <div class="container">
@@ -336,7 +357,8 @@
                     <div class="accordion-item">
                         <h1>Training Ability</h1>
                         <div class="accordion-item-content">
-                            <p>Train at specified standards and be familiar with the requirements of each training category</p>
+                            <p>Train at specified standards and be familiar with the requirements of each training
+                                category</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -360,7 +382,8 @@
                     <div class="accordion-item">
                         <h1>Commitment</h1>
                         <div class="accordion-item-content">
-                            <p>Practice attendance must be nothing short of excellent (5 excused absences, 0 unexcused).</p>
+                            <p>Practice attendance must be nothing short of excellent (5 excused absences, 0 unexcused).
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -373,13 +396,16 @@
                     <div class="accordion-item">
                         <h1>Performance</h1>
                         <div class="accordion-item-content">
-                            <p>Obtain additional Speedo Sectional cuts, Junior National cuts, National/Olympic Trial cuts. FRST must have intentional efforts to not just qualify, but compete on these stages.</p>
+                            <p>Obtain additional Speedo Sectional cuts, Junior National cuts, National/Olympic Trial
+                                cuts. FRST must have intentional efforts to not just qualify, but compete on these
+                                stages.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Travel</h1>
                         <div class="accordion-item-content">
-                            <p>Meet travel farther in hopes of encouraging the broadening horizons of competition (Mid-West, etc.)
+                            <p>Meet travel farther in hopes of encouraging the broadening horizons of competition
+                                (Mid-West, etc.)
                             </p>
                         </div>
                     </div>
@@ -392,13 +418,15 @@
                     <div class="accordion-item">
                         <h1>Culture</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes will be the &quot;tip of the spear&quot; in developing positive culture changes</p>
+                            <p>Athletes will be the &quot;tip of the spear&quot; in developing positive culture changes
+                            </p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Service</h1>
                         <div class="accordion-item-content">
-                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics, Community Service Days, and assist with awards at INAGS, etc.</p>
+                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics,
+                                Community Service Days, and assist with awards at INAGS, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -411,14 +439,17 @@
                     <div class="accordion-item">
                         <h1>AM/PM Practices</h1>
                         <div class="accordion-item-content" style="overflow-y: auto;">
-                            <p>All practices are reguired for this group. Athletes will be allowed 5 excused absences over the course of the season. Motivation from coaches will not be used to encourage practice attendance.
+                            <p>All practices are reguired for this group. Athletes will be allowed 5 excused absences
+                                over the course of the season. Motivation from coaches will not be used to encourage
+                                practice attendance.
                             </p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Student of the Sport</h1>
                         <div class="accordion-item-content">
-                            <p>Stroke counts, use a tempo trainer, snorkel, all drills for all strokes, stats of a resistance training, standards for high-level meets, etc.</p>
+                            <p>Stroke counts, use a tempo trainer, snorkel, all drills for all strokes, stats of a
+                                resistance training, standards for high-level meets, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -431,19 +462,22 @@
                     <div class="accordion-item">
                         <h1>Goal Sheets</h1>
                         <div class="accordion-item-content">
-                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with lead coach</p>
+                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with
+                                lead coach</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Leadership</h1>
                         <div class="accordion-item-content">
-                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social media, real-life situations, etc.</p>
+                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social
+                                media, real-life situations, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Championship</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for unless discussed beforehand.
+                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for
+                                unless discussed beforehand.
                             </p>
                         </div>
                     </div>
@@ -474,163 +508,172 @@
 
     <h3>Lead Coach: Colin Mothersead</h3>
 
-    <p>Senior 1 (SR1) is for ages 14-18 who are already at or very close to the State level, and whose goal is ultimately to obtain Speedo Sectionals/ Futures qualifying times and/or move on to our High-Performance Senior Group. This is another high intensity/high
-        reward group trains <u>7-8 pool practices a week, with 3 dryland practices per week</u> and offers a comprehensive strength program. Our SR1 group is highly technical, and focused on the three main areas of improvement in swimming: Technique,
-        Strength, and Endurance. During summer, there are 8 pool practices per week, with 3 dryland practices per week, similar to HPSR.</p>
+    <p>Senior 1 (SR1) is for ages 14-18 who are already at or very close to the State level, and whose goal is
+        ultimately to obtain Speedo Sectionals/ Futures qualifying times and/or move on to our High-Performance Senior
+        Group. This is another high intensity/high
+        reward group trains <u>7-8 pool practices a week, with 3 dryland practices per week</u> and offers a
+        comprehensive strength program. Our SR1 group is highly technical, and focused on the three main areas of
+        improvement in swimming: Technique,
+        Strength, and Endurance. During summer, there are 8 pool practices per week, with 3 dryland practices per week,
+        similar to HPSR.</p>
 
-    <h4>Typical SR1 Schedule</h4>
+    <h3>Typical SR1 Schedule</h3>
+    <hr>
+    <div class="schedule-container">
+        <div class="schedule">
+            <h5>School</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            Monday
+                        </td>
+                        <td>
+                            Tuesday
+                        </td>
+                        <td>
+                            Wednesday
+                        </td>
+                        <td>
+                            Thursday
+                        </td>
+                        <td>
+                            Friday
+                        </td>
+                        <td>
+                            Saturday
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            AM
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            5:45-7:05AM
+                            <div style="font-size: 10px;">(Weights Only)</div>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            5:45-7:05AM
+                            <div style="font-size: 10px;">(Weights Only)</div>
+                        </td>
+                        <td>
+                            5:45-7:05AM*
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:00PM*
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h5>Summer</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            Monday
+                        </td>
+                        <td>
+                            Tuesday
+                        </td>
+                        <td>
+                            Wednesday
+                        </td>
+                        <td>
+                            Thursday
+                        </td>
+                        <td>
+                            Friday
+                        </td>
+                        <td>
+                            Saturday
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            AM
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                        </td>
+                        <td>
+                            7:00-9:00AM
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                        </td>
+                        <td>
+                            7:00-9:00AM
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                        </td>
+                        <td>
+                            7-10:00AM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PM
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            3:00-5:00PM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            3:00-5:00PM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                        <td>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-    <h5>School</h5>
-    <table>
-        <thead>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    Monday
-                </td>
-                <td>
-                    Tuesday
-                </td>
-                <td>
-                    Wednesday
-                </td>
-                <td>
-                    Thursday
-                </td>
-                <td>
-                    Friday
-                </td>
-                <td>
-                    Saturday
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    AM
-                </td>
-                <td>
-                </td>
-                <td>
-                    5:45-7:05AM
-                    <div style="font-size: 10px;">(Weights Only)</div>
-                </td>
-                <td>
-                </td>
-                <td>
-                    5:45-7:05AM
-                    <div style="font-size: 10px;">(Weights Only)</div>
-                </td>
-                <td>
-                    5:45-7:05AM*
-                </td>
-                <td>
-                    7:00-10:00AM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:00PM*
-                </td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h5>Summer</h5>
-    <table>
-        <thead>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    Monday
-                </td>
-                <td>
-                    Tuesday
-                </td>
-                <td>
-                    Wednesday
-                </td>
-                <td>
-                    Thursday
-                </td>
-                <td>
-                    Friday
-                </td>
-                <td>
-                    Saturday
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    AM
-                </td>
-                <td>
-                    7:00-10:00AM
-                </td>
-                <td>
-                    7:00-9:00AM
-                </td>
-                <td>
-                    7:00-10:00AM
-                </td>
-                <td>
-                    7:00-9:00AM
-                </td>
-                <td>
-                    7:00-10:00AM
-                </td>
-                <td>
-                    7-10:00AM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    PM
-                </td>
-                <td>
-                </td>
-                <td>
-                    3:00-5:00PM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-                <td>
-                </td>
-                <td>
-                    3:00-5:00PM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-                <td>
-                </td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h4>Criteria</h4>
-
+    <h3>Criteria</h3>
+    <hr>
     <div class="cards-container">
         <div class="card">
             <div class="container">
@@ -639,7 +682,8 @@
                     <div class="accordion-item">
                         <h1>Training Ability</h1>
                         <div class="accordion-item-content">
-                            <p>Train at specified standards and be familiar with the requirements of each training category</p>
+                            <p>Train at specified standards and be familiar with the requirements of each training
+                                category</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -676,19 +720,22 @@
                     <div class="accordion-item">
                         <h1>Performance</h1>
                         <div class="accordion-item-content">
-                            <p>Obtain Speedo Sectional cuts, Futures cuts. FRST must have intentional efforts to not just qualify, but compete on these stages.</p>
+                            <p>Obtain Speedo Sectional cuts, Futures cuts. FRST must have intentional efforts to not
+                                just qualify, but compete on these stages.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Progression</h1>
                         <div class="accordion-item-content">
-                            <p>Learn skills and strategies necessary to meet all criteria to advance to HP Senior Group.</p>
+                            <p>Learn skills and strategies necessary to meet all criteria to advance to HP Senior Group.
+                            </p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Travel</h1>
                         <div class="accordion-item-content">
-                            <p>Meet travel farther in hopes of encouraging the broadening horizons of competition (Mid-West, etc.)
+                            <p>Meet travel farther in hopes of encouraging the broadening horizons of competition
+                                (Mid-West, etc.)
                             </p>
                         </div>
                     </div>
@@ -701,7 +748,8 @@
                     <div class="accordion-item">
                         <h1>Service</h1>
                         <div class="accordion-item-content">
-                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics, Community Service Days, and assist with awards at INAGS, etc.</p>
+                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics,
+                                Community Service Days, and assist with awards at INAGS, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -714,14 +762,17 @@
                     <div class="accordion-item">
                         <h1>AM/PM Practices</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes will be allowed 3 unexcused absences for the season and excuse absences prior to the practice missed. Motivation from coaches will not be used to encourage practice attendance.
+                            <p>Athletes will be allowed 3 unexcused absences for the season and excuse absences prior to
+                                the practice missed. Motivation from coaches will not be used to encourage practice
+                                attendance.
                             </p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Student of the Sport</h1>
                         <div class="accordion-item-content">
-                            <p>Stroke counts, use a tempo trainer, snorkel, all drills for all strokes, stats of a resistance training, standards for high-level meets, etc.</p>
+                            <p>Stroke counts, use a tempo trainer, snorkel, all drills for all strokes, stats of a
+                                resistance training, standards for high-level meets, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -734,19 +785,22 @@
                     <div class="accordion-item">
                         <h1>Goal Sheets</h1>
                         <div class="accordion-item-content">
-                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with lead coach</p>
+                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with
+                                lead coach</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Leadership</h1>
                         <div class="accordion-item-content">
-                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social media, real-life situations, etc.</p>
+                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social
+                                media, real-life situations, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Championship</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for unless discussed beforehand.
+                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for
+                                unless discussed beforehand.
                             </p>
                         </div>
                     </div>
@@ -779,161 +833,167 @@
 
     <h3>Assistant Coach: Madi Purcell</h3>
 
-    <p>Senior 2 (SR2) is for high school aged athletes whose goal is to obtain both Divisional and State cuts within the club scene as well as to train in the off-season for their respective HS team. Our SR2 group is designed to further all of the stroke
+    <p>Senior 2 (SR2) is for high school aged athletes whose goal is to obtain both Divisional and State cuts within the
+        club scene as well as to train in the off-season for their respective HS team. Our SR2 group is designed to
+        further all of the stroke
         techniques in addition to offering intensity and endurance. <u>6 pool practices a week are
             offered, and 2 dryland workouts</u>.</p>
 
     <h3>Typical SR2 Schedule</h3>
     <hr>
+    <div class="schedule-container">
+        <div class="schedule">
+            <h5>School</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            Monday
+                        </td>
+                        <td>
+                            Tuesday
+                        </td>
+                        <td>
+                            Wednesday
+                        </td>
+                        <td>
+                            Thursday
+                        </td>
+                        <td>
+                            Friday
+                        </td>
+                        <td>
+                            Saturday
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            AM
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            5:45-7:05AM
+                            <div style="font-size: 10px;">(Weights Only)</div>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            5:45-7:05AM
+                            <div style="font-size: 10px;">(Weights Only)</div>
+                        </td>
+                        <td>
+                            5:45-7:05AM*
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:30PM
+                        </td>
+                        <td>
+                            3:00-5:00PM*
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h5>Summer</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            Monday
+                        </td>
+                        <td>
+                            Tuesday
+                        </td>
+                        <td>
+                            Wednesday
+                        </td>
+                        <td>
+                            Thursday
+                        </td>
+                        <td>
+                            Friday
+                        </td>
+                        <td>
+                            Saturday
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            AM
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                        </td>
+                        <td>
+                            7:00-9:00AM
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                        </td>
+                        <td>
+                            7:00-9:00AM
+                        </td>
+                        <td>
+                            7:00-10:00AM
+                        </td>
+                        <td>
+                            7-10:00AM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PM
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            3:00-5:00PM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            3:00-5:00PM
+                            <div style="font-size: 10px;">(Weights & Swim)</div>
+                        </td>
+                        <td>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-    <h5>School</h5>
-    <table>
-        <thead>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    Monday
-                </td>
-                <td>
-                    Tuesday
-                </td>
-                <td>
-                    Wednesday
-                </td>
-                <td>
-                    Thursday
-                </td>
-                <td>
-                    Friday
-                </td>
-                <td>
-                    Saturday
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    AM
-                </td>
-                <td>
-                </td>
-                <td>
-                    5:45-7:05AM
-                    <div style="font-size: 10px;">(Weights Only)</div>
-                </td>
-                <td>
-                </td>
-                <td>
-                    5:45-7:05AM
-                    <div style="font-size: 10px;">(Weights Only)</div>
-                </td>
-                <td>
-                    5:45-7:05AM*
-                </td>
-                <td>
-                    7:00-10:00AM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:30PM
-                </td>
-                <td>
-                    3:00-5:00PM*
-                </td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h5>Summer</h5>
-    <table>
-        <thead>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    Monday
-                </td>
-                <td>
-                    Tuesday
-                </td>
-                <td>
-                    Wednesday
-                </td>
-                <td>
-                    Thursday
-                </td>
-                <td>
-                    Friday
-                </td>
-                <td>
-                    Saturday
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    AM
-                </td>
-                <td>
-                    7:00-10:00AM
-                </td>
-                <td>
-                    7:00-9:00AM
-                </td>
-                <td>
-                    7:00-10:00AM
-                </td>
-                <td>
-                    7:00-9:00AM
-                </td>
-                <td>
-                    7:00-10:00AM
-                </td>
-                <td>
-                    7-10:00AM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    PM
-                </td>
-                <td>
-                </td>
-                <td>
-                    3:00-5:00PM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-                <td>
-                </td>
-                <td>
-                    3:00-5:00PM
-                    <div style="font-size: 10px;">(Weights & Swim)</div>
-                </td>
-                <td>
-                </td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
 
     <h3>Criteria</h3>
     <hr>
@@ -957,7 +1017,8 @@
                     <div class="accordion-item">
                         <h1>Commitment</h1>
                         <div class="accordion-item-content">
-                            <p>Commitment should be exhibited at a minimum of 4 practices/wk throughout the season, unless prior approval is granted.</p>
+                            <p>Commitment should be exhibited at a minimum of 4 practices/wk throughout the season,
+                                unless prior approval is granted.</p>
                         </div>
                     </div>
                 </div>
@@ -970,7 +1031,8 @@
                     <div class="accordion-item">
                         <h1>Performance</h1>
                         <div class="accordion-item-content">
-                            <p>Obtain IN Divisional/State cuts. FRST must have intentional efforts to not just qualify, but also compete on these stages.</p>
+                            <p>Obtain IN Divisional/State cuts. FRST must have intentional efforts to not just qualify,
+                                but also compete on these stages.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -982,7 +1044,8 @@
                     <div class="accordion-item">
                         <h1>Service</h1>
                         <div class="accordion-item-content">
-                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics, Community Service Days, and assist with awards at INAGS, etc.</p>
+                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics,
+                                Community Service Days, and assist with awards at INAGS, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -995,13 +1058,15 @@
                     <div class="accordion-item">
                         <h1>AM/PM Practices</h1>
                         <div class="accordion-item-content">
-                            <p>Expected to attend a minimum of 4 practices per week. At FRST, Commmitted athletes = Successful Athletes.</p>
+                            <p>Expected to attend a minimum of 4 practices per week. At FRST, Commmitted athletes =
+                                Successful Athletes.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Student of the Sport</h1>
                         <div class="accordion-item-content">
-                            <p>Stroke counts, use a tempo trainer, snorkel, all drills for all strokes, stats of a resistance training, standards for high-level meets, etc.</p>
+                            <p>Stroke counts, use a tempo trainer, snorkel, all drills for all strokes, stats of a
+                                resistance training, standards for high-level meets, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -1014,19 +1079,22 @@
                     <div class="accordion-item">
                         <h1>Goal Sheets</h1>
                         <div class="accordion-item-content">
-                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with lead coach</p>
+                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with
+                                lead coach</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Leadership</h1>
                         <div class="accordion-item-content">
-                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social media, real-life situations, etc.</p>
+                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social
+                                media, real-life situations, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Championship</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for unless discussed beforehand.
+                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for
+                                unless discussed beforehand.
                             </p>
                         </div>
                     </div>
