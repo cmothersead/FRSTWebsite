@@ -3,11 +3,11 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0px;
     }
-
+    
     .header-img {
         width: 100%;
     }
-
+    
     .section {
         margin: 0px;
         padding: 10px;
@@ -15,44 +15,48 @@
         padding-bottom: 80px;
         background-image: linear-gradient(-90deg, #ffffff, #eeeeee 20% 80%, #ffffff);
     }
-
+    
     .section:nth-child(even) {
         background-image: linear-gradient(-90deg, #ffffff, #e3e3e3 20% 80%, #ffffff);
     }
-
+    
+    .section:last-child {
+        background: linear-gradient(to bottom, transparent, #ffffff), linear-gradient(-90deg, #ffffff, #e3e3e3 20% 80%, #ffffff);
+    }
+    
     h4 {
         font-size: 18px;
         margin: 15px;
     }
-
+    
     table {
         width: 100%;
         border-collapse: collapse;
         user-select: none;
     }
-
+    
     thead {
         background-color: #1f3f8a;
         text-align: center;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: white;
     }
-
+    
     tbody {
         background-color: gray;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
         font-weight: 500;
     }
-
+    
     tr {
         height: 40px;
     }
-
+    
     tbody>tr:nth-child(odd) {
         background-color: rgb(153, 153, 153);
     }
-
+    
     td:first-child {
         width: 40px;
         padding-right: 8px;
@@ -60,15 +64,14 @@
         background-color: tran;
         border: none;
     }
-
+    
     .cards-container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
-
     /* Add shadows to create the "card" effect */
-
+    
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
         transition: 0.2s;
@@ -78,34 +81,31 @@
         border-radius: 3px;
         background-color: white;
     }
-
     /* On mouse-over, add a deeper shadow */
-
+    
     .card:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
     }
-
     /* Add some padding inside the card container */
-
+    
     .container {
         padding: 10px;
         text-align: center;
     }
-
     /* The Magic */
-
+    
     .accordion:hover .accordion-item:hover .accordion-item-content,
     .accordion .accordion-item--default .accordion-item-content {
         height: 6em;
     }
-
+    
     .accordion-item-content,
     .accordion:hover .accordion-item-content {
         height: 0;
         overflow: hidden;
         transition: height .25s;
     }
-
+    
     .accordion {
         padding: 0;
         margin: 0 auto;
@@ -116,57 +116,57 @@
         overflow: hidden;
         text-align: left;
     }
-
+    
     .accordion .accordion-item {
         background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
         padding: 1em;
         color: #eee;
         font-size: 11px;
     }
-
+    
     .accordion-item-content {
         overflow-y: hidden;
         overscroll-behavior: contain;
         padding-right: 1px;
     }
-
+    
     .accordion h1 {
         margin: 0;
         font-size: 14px;
     }
-
+    
     .accordion .accordion-item:nth-child(odd) {
         background-color: #1f3f8a;
         background-image: linear-gradient(-90deg, #1f3f8a, #1f459e 20%, #1f3f8a);
     }
-
+    
     .accordion .accordion-item:nth-child(even) {
         background-color: hsl(0, 0%, 45%);
         background-image: linear-gradient(-90deg, hsl(0, 0%, 40%), hsl(0, 0%, 45%) 20%, hsl(0, 0%, 40%));
     }
-
+    
     .accordion-item-content::-webkit-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
         background-color: #818181;
     }
-
+    
     .accordion-item-content::-webkit-scrollbar {
         width: 12px;
         background-color: transparent;
     }
-
+    
     .accordion-item-content::-webkit-scrollbar-thumb {
         border-radius: 10px;
         box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
         background-color: #555;
     }
-
-    .schedule-container{
+    
+    .schedule-container {
         display: flex;
         justify-content: center;
     }
-
+    
     .schedule {
         width: 90%;
     }
@@ -181,15 +181,10 @@
 
     <h3>Lead Coach: Zach DeWitt</h3>
 
-    <p>This is the highest-level competitive group that FRST offers. This group has been assembled to provide our
-        athletes with every possible advantage to succeed at the highest level. The group is recommended for swimmers
-        14 and over who wish to participate
-        in Sectional, National and potentially International competitions with a strong emphasis on USA Junior
-        Nationals, NCSA Junior Nationals, and USA Senior Nationals. This high intensity/high reward group trains <u>8-9 pool practices a week, with
-        3 dryland practices per week</u> and offers a structured comprehensive strength program. College swimming
-        is another main objective of swimmers in the FRST High Performance Group and assistance with the recruiting
-        process is offered to all group members. HPSR also places a strong
-        emphasis on community service, giving back to and being leaders of FRST.</p>
+    <p>This is the highest-level competitive group that FRST offers. This group has been assembled to provide our athletes with every possible advantage to succeed at the highest level. The group is recommended for swimmers 14 and over who wish to participate
+        in Sectional, National and potentially International competitions with a strong emphasis on USA Junior Nationals, NCSA Junior Nationals, and USA Senior Nationals. This high intensity/high reward group trains <u>8-9 pool practices a week, with
+        3 dryland practices per week</u> and offers a structured comprehensive strength program. College swimming is another main objective of swimmers in the FRST High Performance Group and assistance with the recruiting process is offered to all group
+        members. HPSR also places a strong emphasis on community service, giving back to and being leaders of FRST.</p>
 
     <h3>Typical HPSR Schedule</h3>
     <hr>
@@ -270,7 +265,7 @@
                 </tbody>
             </table>
             <p><em>*depending on cycle within season</em></p>
-    
+
             <h5>Summer</h5>
             <table>
                 <thead>
@@ -346,7 +341,7 @@
             </table>
         </div>
     </div>
-    
+
     <h3>Criteria</h3>
     <hr>
     <div class="cards-container">
@@ -357,8 +352,7 @@
                     <div class="accordion-item">
                         <h1>Training Ability</h1>
                         <div class="accordion-item-content" style="overflow-y: scroll;">
-                            <p>Athletes must understand and execute the various training speeds demanded by the program. Aerobic capactiy, Anaerobic
-                                capacity, Aerobic power, and Anaerobic power are the four primary training zones that will be utilized.</p>
+                            <p>Athletes must understand and execute the various training speeds demanded by the program. Aerobic capactiy, Anaerobic capacity, Aerobic power, and Anaerobic power are the four primary training zones that will be utilized.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -396,9 +390,8 @@
                     <div class="accordion-item">
                         <h1>Performance</h1>
                         <div class="accordion-item-content">
-                            <p>Obtain Junior National/National/Olympic Trial
-                                cuts. FRST must have intentional efforts to not just qualify, but compete on these
-                                stages.</p>
+                            <p>Obtain Junior National/National/Olympic Trial cuts. FRST must have intentional efforts to not just qualify, but compete on these stages.
+                            </p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -424,8 +417,7 @@
                     <div class="accordion-item">
                         <h1>Service</h1>
                         <div class="accordion-item-content">
-                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics,
-                                Community Service Days, and assist with awards at INAGS, etc.</p>
+                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics, Community Service Days, and assist with awards at INAGS, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -438,18 +430,15 @@
                     <div class="accordion-item">
                         <h1>AM/PM Practices</h1>
                         <div class="accordion-item-content" style="overflow-y: scroll;">
-                            <p>All practices are reguired for this group. Athletes will be allowed 5 excused absences
-                                over the course of the season. Motivation from coaches will not be used to encourage
-                                practice attendance.
+                            <p>All practices are reguired for this group. Athletes will be allowed 5 excused absences over the course of the season. Motivation from coaches will not be used to encourage practice attendance.
                             </p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Student of the Sport</h1>
                         <div class="accordion-item-content" style="overflow-y: scroll">
-                            <p>Athletes must be familiar with stroke counts, stats of a
-                                resistance training, standards for high-level meets, etc. Athletes will consistently use a tempo trainer, snorkel, and
-                                other tools which help maintin focus, and promote intentional execution.</p>
+                            <p>Athletes must be familiar with stroke counts, stats of a resistance training, standards for high-level meets, etc. Athletes will consistently use a tempo trainer, snorkel, and other tools which help maintin focus, and promote
+                                intentional execution.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -462,22 +451,19 @@
                     <div class="accordion-item">
                         <h1>Goal Sheets</h1>
                         <div class="accordion-item-content">
-                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with
-                                lead coach</p>
+                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with lead coach</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Leadership</h1>
                         <div class="accordion-item-content">
-                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social
-                                media, real-life situations, etc.</p>
+                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social media, real-life situations, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Championship</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for
-                                unless discussed beforehand.
+                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for unless discussed beforehand.
                             </p>
                         </div>
                     </div>
@@ -508,15 +494,9 @@
 
     <h3>Lead Coach: Colin Mothersead</h3>
 
-    <p>Senior 1 (SR1) is for ages 14-18 who are already at or very close to the State level, and whose goal is
-        ultimately to obtain Speedo Sectionals/Futures qualifying times and move to our High-Performance Senior
-        Group. This is another high intensity/high
-        reward group that trains <u>7-8 pool practices a week, with 3 dryland practices per week.</u> This group offers a
-        comprehensive strength program geared toward critical movements and mobility for the sport. Our SR1 group is highly
-        technical, and focused on the three main areas of
-        improvement in swimming: Technique,
-        Strength, and Endurance. During summer, there are 8 pool practices per week, with 3 dryland practices per week,
-        similar to HPSR.</p>
+    <p>Senior 1 (SR1) is for ages 14-18 who are already at or very close to the State level, and whose goal is ultimately to obtain Speedo Sectionals/Futures qualifying times and move to our High-Performance Senior Group. This is another high intensity/high
+        reward group that trains <u>7-8 pool practices a week, with 3 dryland practices per week.</u> This group offers a comprehensive strength program geared toward critical movements and mobility for the sport. Our SR1 group is highly technical, and
+        focused on the three main areas of improvement in swimming: Technique, Strength, and Endurance. During summer, there are 8 pool practices per week, with 3 dryland practices per week, similar to HPSR.</p>
 
     <h3>Typical SR1 Schedule</h3>
     <hr>
@@ -596,7 +576,7 @@
                     </tr>
                 </tbody>
             </table>
-    
+
             <h5>Summer</h5>
             <table>
                 <thead>
@@ -683,8 +663,7 @@
                     <div class="accordion-item">
                         <h1>Training Ability</h1>
                         <div class="accordion-item-content" style="overflow-y: scroll;">
-                            <p>Athletes must understand and execute the various training speeds demanded by our program. Aerobic capactiy, Anaerobic
-                                capacity, Aerobic power, and Anaerobic power are the four primary training zones that will be utilized.</p>
+                            <p>Athletes must understand and execute the various training speeds demanded by our program. Aerobic capactiy, Anaerobic capacity, Aerobic power, and Anaerobic power are the four primary training zones that will be utilized.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -721,8 +700,7 @@
                     <div class="accordion-item">
                         <h1>Performance</h1>
                         <div class="accordion-item-content">
-                            <p>Obtain Speedo Sectional & Futures cuts. FRST must have intentional efforts to not
-                                just qualify, but compete on these stages.</p>
+                            <p>Obtain Speedo Sectional & Futures cuts. FRST must have intentional efforts to not just qualify, but compete on these stages.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -735,8 +713,7 @@
                     <div class="accordion-item">
                         <h1>Travel</h1>
                         <div class="accordion-item-content">
-                            <p>This groups aims to travel for both training trip opportunities, as well as competitions around the state and the
-                                Mid-West.
+                            <p>This groups aims to travel for both training trip opportunities, as well as competitions around the state and the Mid-West.
                             </p>
                         </div>
                     </div>
@@ -749,8 +726,7 @@
                     <div class="accordion-item">
                         <h1>Service</h1>
                         <div class="accordion-item-content">
-                            <p>Service to give back to the club, community, and LSC. Time at meets, help with clinics,
-                                Community Service Days, and assist with awards at INAGS, etc.</p>
+                            <p>Service to give back to the club, community, and LSC. Time at meets, help with clinics, Community Service Days, and assist with awards at INAGS, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -763,18 +739,15 @@
                     <div class="accordion-item">
                         <h1>AM/PM Practices</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes will be allowed 3 unexcused absences for the season and excuse absences prior to
-                                the practice missed. Motivation from coaches will not be used to encourage practice
-                                attendance.
+                            <p>Athletes will be allowed 3 unexcused absences for the season and excuse absences prior to the practice missed. Motivation from coaches will not be used to encourage practice attendance.
                             </p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Student of the Sport</h1>
                         <div class="accordion-item-content" style="overflow-y: scroll;">
-                            <p>Athletes must be familiar with stroke counts, stats of a
-                                resistance training, standards for high-level meets, etc. Athletes will consistently use a tempo trainer, snorkel, and
-                                other tools which help maintin focus, and promote intentional execution.</p>
+                            <p>Athletes must be familiar with stroke counts, stats of a resistance training, standards for high-level meets, etc. Athletes will consistently use a tempo trainer, snorkel, and other tools which help maintin focus, and promote
+                                intentional execution.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -787,22 +760,19 @@
                     <div class="accordion-item">
                         <h1>Goal Sheets</h1>
                         <div class="accordion-item-content">
-                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with
-                                lead coach</p>
+                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with lead coach</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Leadership</h1>
                         <div class="accordion-item-content">
-                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social
-                                media, real-life situations, etc.</p>
+                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social media, real-life situations, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Championship</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for
-                                unless discussed beforehand.
+                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for unless discussed beforehand.
                             </p>
                         </div>
                     </div>
@@ -835,9 +805,8 @@
 
     <h3>Assistant Coach: Madi Purcell</h3>
 
-    <p>Senior 2 (SR2) is for high school aged athletes whose goal is to obtain both Divisional and State cuts within the
-        club scene as well as to train in the off-season for their respective HS team. Our SR2 group is designed to
-        further further develop technique in all strokes as well as provide intensity and endurance training. <u>8 pool practices a week are
+    <p>Senior 2 (SR2) is for high school aged athletes whose goal is to obtain both Divisional and State cuts within the club scene as well as to train in the off-season for their respective HS team. Our SR2 group is designed to further further develop technique
+        in all strokes as well as provide intensity and endurance training. <u>8 pool practices a week are
             offered, and 3 dryland workouts</u>.</p>
 
     <h3>Typical SR2 Schedule</h3>
@@ -918,7 +887,7 @@
                     </tr>
                 </tbody>
             </table>
-    
+
             <h5>Summer</h5>
             <table>
                 <thead>
@@ -1018,8 +987,7 @@
                     <div class="accordion-item">
                         <h1>Commitment</h1>
                         <div class="accordion-item-content">
-                            <p>Commitment should be exhibited at a minimum of 4 practices/wk throughout the season,
-                                unless prior approval is granted.</p>
+                            <p>Commitment should be exhibited at a minimum of 4 practices/wk throughout the season, unless prior approval is granted.</p>
                         </div>
                     </div>
                 </div>
@@ -1032,8 +1000,7 @@
                     <div class="accordion-item">
                         <h1>Performance</h1>
                         <div class="accordion-item-content">
-                            <p>Obtain IN Divisional/State cuts. FRST must have intentional efforts to not just qualify,
-                                but also compete on these stages.</p>
+                            <p>Obtain IN Divisional/State cuts. FRST must have intentional efforts to not just qualify, but also compete on these stages.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -1045,8 +1012,7 @@
                     <div class="accordion-item">
                         <h1>Service</h1>
                         <div class="accordion-item-content">
-                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics,
-                                Community Service Days, and assist with awards at INAGS, etc.</p>
+                            <p>Service to give back to both club, community, and LSC. Time at meets, help with clinics, Community Service Days, and assist with awards at INAGS, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -1059,15 +1025,13 @@
                     <div class="accordion-item">
                         <h1>AM/PM Practices</h1>
                         <div class="accordion-item-content">
-                            <p>Expected to attend a minimum of 4 practices per week. At FRST, Commmitted athletes =
-                                Successful athletes.</p>
+                            <p>Expected to attend a minimum of 4 practices per week. At FRST, Commmitted athletes = Successful athletes.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Student of the Sport</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes must be familiar with stroke counts, stats of a
-                                resistance training, standards for high-level meets, etc.</p>
+                            <p>Athletes must be familiar with stroke counts, stats of a resistance training, standards for high-level meets, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -1080,22 +1044,19 @@
                     <div class="accordion-item">
                         <h1>Goal Sheets</h1>
                         <div class="accordion-item-content">
-                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with
-                                lead coach</p>
+                            <p>In month, season, and yearly sections. Must be kept up to date by athlete, shared with lead coach</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Leadership</h1>
                         <div class="accordion-item-content">
-                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social
-                                media, real-life situations, etc.</p>
+                            <p>Help others at meets, practices, etc. Particularly upcoming age groupers, through social media, real-life situations, etc.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h1>Championship</h1>
                         <div class="accordion-item-content">
-                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for
-                                unless discussed beforehand.
+                            <p>Athletes are expected to compete in biggest championship meet that they are qualified for unless discussed beforehand.
                             </p>
                         </div>
                     </div>
