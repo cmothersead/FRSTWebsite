@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+}
+.header-img {
+  width: 100%;
+}
+.section {
+  margin: 0px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background: linear-gradient(-90deg, #ffffff, #eeeeee 20% 80%, #ffffff);
+}
+.section:nth-child(even) {
+  background: linear-gradient(-90deg, #ffffff, #e3e3e3 20% 80%, #ffffff);
+}
+.section:last-child:not(:nth-child(even)) {
+  background: linear-gradient(to bottom, transparent, #ffffff), linear-gradient(-90deg, #ffffff, #eeeeee 20% 80%, #ffffff);
+}
+.section:last-child:not(:nth-child(odd)) {
+  background: linear-gradient(to bottom, transparent, #ffffff), linear-gradient(-90deg, #ffffff, #e3e3e3 20% 80%, #ffffff);
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h2 {
+  color: #001c50;
+  font-family: Georgia, serif;
+}
+h3 {
+  color: #001c50;
+  font-family: Georgia, serif;
+}
+.register-button {
+  background-color: #004aad;
+  border: 2px solid #004aad;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: georgia, serif;
+  font-weight: bold;
+  padding: 6px;
+  font-size: 16px;
+  margin: 5px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  width: 250px;
+  cursor: default;
+}
+.register-button.enabled:hover {
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+}
+.contact-button {
+  background-color: #8b8b8b;
+  border: 2px solid #8b8b8b;
+  border-radius: 6px;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 6px;
+  font-size: 16px;
+  margin: 5px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  width: 300px;
+}
+.contact-button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+hr {
+  clear: both;
+}
