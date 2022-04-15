@@ -1,177 +1,3 @@
-<style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0px;
-    }
-    
-    .header-img {
-        width: 100%;
-    }
-    
-    .section {
-        margin: 0px;
-        padding: 10px;
-        padding-top: 30px;
-        padding-bottom: 80px;
-        background-image: linear-gradient(-90deg, #ffffff, #eeeeee 20% 80%, #ffffff);
-    }
-    
-    .section:nth-child(even) {
-        background-image: linear-gradient(-90deg, #ffffff, #e3e3e3 20% 80%, #ffffff);
-    }
-    
-    .section:last-child {
-        background: linear-gradient(to bottom, transparent, #ffffff), linear-gradient(-90deg, #ffffff, #e3e3e3 20% 80%, #ffffff);
-    }
-    
-    h4 {
-        font-size: 18px;
-        margin: 15px;
-    }
-    
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        user-select: none;
-    }
-    
-    thead {
-        background-color: #1f3f8a;
-        text-align: center;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: white;
-    }
-    
-    tbody {
-        background-color: gray;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: center;
-        font-weight: 500;
-    }
-    
-    tr {
-        height: 40px;
-    }
-    
-    tbody>tr:nth-child(odd) {
-        background-color: rgb(153, 153, 153);
-    }
-    
-    td:first-child {
-        width: 40px;
-        padding-right: 8px;
-        text-align: right;
-        background-color: tran;
-        border: none;
-    }
-    
-    .cards-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    /* Add shadows to create the "card" effect */
-    
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-        transition: 0.2s;
-        width: 280px;
-        height: 380px;
-        margin: 10px;
-        border-radius: 3px;
-        background-color: white;
-    }
-    /* On mouse-over, add a deeper shadow */
-    
-    .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-    }
-    /* Add some padding inside the card container */
-    
-    .container {
-        padding: 10px;
-        text-align: center;
-    }
-    /* The Magic */
-    
-    .accordion:hover .accordion-item:hover .accordion-item-content,
-    .accordion .accordion-item--default .accordion-item-content {
-        height: 6em;
-    }
-    
-    .accordion-item-content,
-    .accordion:hover .accordion-item-content {
-        height: 0;
-        overflow: hidden;
-        transition: height .25s;
-    }
-    
-    .accordion {
-        padding: 0;
-        margin: 0 auto;
-        width: 100%;
-        font-family: "PT Sans", sans-serif;
-        cursor: pointer;
-        border-radius: 10px;
-        overflow: hidden;
-        text-align: left;
-    }
-    
-    .accordion .accordion-item {
-        background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
-        padding: 1em;
-        color: #eee;
-        font-size: 11px;
-    }
-    
-    .accordion-item-content {
-        overflow-y: hidden;
-        overscroll-behavior: contain;
-        padding-right: 1px;
-    }
-    
-    .accordion h1 {
-        margin: 0;
-        font-size: 14px;
-    }
-    
-    .accordion .accordion-item:nth-child(odd) {
-        background-color: #1f3f8a;
-        background-image: linear-gradient(-90deg, #1f3f8a, #1f459e 20%, #1f3f8a);
-    }
-    
-    .accordion .accordion-item:nth-child(even) {
-        background-color: hsl(0, 0%, 45%);
-        background-image: linear-gradient(-90deg, hsl(0, 0%, 40%), hsl(0, 0%, 45%) 20%, hsl(0, 0%, 40%));
-    }
-    
-    .accordion-item-content::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-        background-color: #818181;
-    }
-    
-    .accordion-item-content::-webkit-scrollbar {
-        width: 12px;
-        background-color: transparent;
-    }
-    
-    .accordion-item-content::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-        background-color: #555;
-    }
-    
-    .schedule-container {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .schedule {
-        width: 90%;
-    }
-</style>
-
 <div>
     <img src="/infrst/UserFiles/Image/banners/mission-statement.png" class="header-img" />
 </div>
@@ -344,7 +170,7 @@
 
     <h3>Criteria</h3>
     <hr>
-    <div class="cards-container">
+    <div class="flex-container">
         <div class="card">
             <div class="container">
                 <h4>Requirements</h4>
@@ -655,7 +481,7 @@
 
     <h3>Criteria</h3>
     <hr>
-    <div class="cards-container">
+    <div class="flex-container">
         <div class="card">
             <div class="container">
                 <h4>Requirements</h4>
@@ -967,7 +793,7 @@
 
     <h3>Criteria</h3>
     <hr>
-    <div class="cards-container">
+    <div class="flex-container">
         <div class="card">
             <div class="container">
                 <h4>Requirements</h4>
