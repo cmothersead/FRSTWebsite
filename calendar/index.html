@@ -3,12 +3,17 @@
 
 <head>
     <style>
-        a{
+        body {
+            background: linear-gradient(to right, #ffffff, #e3e3e3, #ffffff);
+        }
+        
+        a {
             text-decoration: none;
         }
-        .calendar-button{
+        
+        .calendar-button {
             margin: 10px;
-            padding: 5px;
+            padding: 10px;
             border-radius: 8px;
             box-shadow: 2px 2px 5px black;
             background: linear-gradient(-90deg, #1f3f8a, #1f459e 80%, #1f3f8a);
@@ -22,18 +27,23 @@
             font-size: 40px;
             text-shadow: 0px 0px 1px white;
         }
-        .calendar-button:hover{
+        
+        .calendar-button:hover {
             background-color: darkgray;
             cursor: default;
         }
-        .senior{
-            width: 940px;
+        
+        .senior {
+            width: 980px;
             justify-content: center;
+            display: flex;
         }
-        .senior:hover{
+        
+        .senior .calendar-button {
             cursor: pointer;
         }
-        .calendar-sub-button{
+        
+        .calendar-sub-button {
             border-radius: 8px;
             background-color: gray;
             display: inline-block;
@@ -41,53 +51,54 @@
             width: 60px;
             height: 60px;
         }
-
-        .calendar-sub-button > img{
+        
+        .calendar-sub-button>img {
             height: 40px;
             width: 40px;
         }
-
-        .calendar-sub-button:hover{
+        
+        .calendar-sub-button:hover {
             background-color: white;
             transition-duration: 0.2s;
             cursor: pointer;
         }
         
-        img{
+        img {
             vertical-align: middle;
             margin: 10px;
         }
-        .columns-container{
+        
+        .columns-container {
             display: flex;
             justify-content: center;
-            background-color: aqua;
         }
-        .column{
-            width: 50%;
-            background-color: bisque;
-            border:solid 1px black;
+        
+        .column {
+            width: 500px;
         }
-        .group-icon{
+        
+        .group-icon {
             height: 80px;
             width: 80px;
             border-radius: 40px;
             box-shadow: 0px 0px 12px white;
         }
+        
         @media (max-width: 800px) {
-            .calendar-button{
+            .calendar-button {
                 display: grid;
                 padding: 2px;
                 width: 90%;
                 user-select: none;
             }
-            .calendar-button:hover{
+            .calendar-button:hover {
                 background-color: cornflowerblue;
                 cursor: default;
             }
-            .senior{
+            .senior {
                 width: 90%;
             }
-            .justify-right{
+            .justify-right {
                 margin: auto;
                 width: 95%;
                 border-radius: 8px;
@@ -95,10 +106,10 @@
                 padding: 2px;
                 text-align: center;
             }
-            .column{
+            .column {
                 width: 100%;
             }
-            span.group-name{
+            span.group-name {
                 font-family: Tahoma;
                 font-weight: bold;
                 font-size: 28px;
@@ -114,13 +125,15 @@
         <hr/>
 
         <!-- Senior -->
-        <div style="display: flex; justify-content: center;">
-            <a href="/infrst/UserFiles/File/calendars/senior.pdf">
-                <span class="calendar-button senior">
-                    <img src="/infrst/UserFiles/Image/logos/teams/FRST/frst-logo-black-blue-512x512.jpg" class="group-icon" style="box-shadow: none;";/>
-                    <span class="group-name">SENIOR</span>
-                </span>
-            </a>
+        <div class="columns-container">
+            <div class="senior">
+                <a href="/infrst/UserFiles/File/calendars/senior.pdf">
+                    <span class="calendar-button" style="width: 980px; display: flex; justify-content: center;">
+                        <img src="/infrst/UserFiles/Image/logos/teams/FRST/frst-logo-black-blue-512x512.jpg" class="group-icon" style="box-shadow: none;";/>
+                        SENIOR
+                    </span>
+                </a>
+            </div>
         </div>
 
     </div>
@@ -137,9 +150,8 @@
 
             <!-- Eclipse -->
             <div class="calendar-button">
-                <div style="background-color: purple; ">
-                    <img src="/infrst/UserFiles/Image/icons/eclipse.png" class="group-icon"/>
-                    ECLIPSE
+                <div>
+                    <img src="/infrst/UserFiles/Image/icons/eclipse.png" class="group-icon" /> ECLIPSE
                 </div>
                 <div>
                     <a href="/infrst/UserFiles/File/calendars/eclipse.pdf">
@@ -157,11 +169,10 @@
 
             <!-- Challenger -->
             <div class="calendar-button">
-                <div class="justify-left">
-                    <img src="/infrst/UserFiles/Image/icons/challenger.png" class="group-icon"/>
-                    CHALLENGER
+                <div>
+                    <img src="/infrst/UserFiles/Image/icons/challenger.png" class="group-icon" /> CHALLENGER
                 </div>
-                <div class="justify-right">
+                <div>
                     <a href="/infrst/UserFiles/File/calendars/challenger.pdf">
                         <span class="calendar-sub-button">
                             <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
@@ -178,11 +189,10 @@
 
             <!-- Endeavour -->
             <div class="calendar-button">
-                <div class="justify-left">
-                    <img src="/infrst/UserFiles/Image/icons/endeavour.png" class="group-icon"/>
-                    ENDEAVOUR
+                <div>
+                    <img src="/infrst/UserFiles/Image/icons/endeavour.png" class="group-icon" /> ENDEAVOUR
                 </div>
-                <div class="justify-right">
+                <div>
                     <a href="/infrst/UserFiles/File/calendars/endeavour.pdf">
                         <span class="calendar-sub-button">
                             <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
@@ -198,11 +208,10 @@
 
             <!-- Discovery -->
             <div class="calendar-button">
-                <div class="justify-left">
-                    <img src="/infrst/UserFiles/Image/icons/discovery.png" class="group-icon"/>
-                    DISCOVERY
+                <div>
+                    <img src="/infrst/UserFiles/Image/icons/discovery.png" class="group-icon" /> DISCOVERY
                 </div>
-                <div class="justify-right">
+                <div>
                     <a href="/infrst/UserFiles/File/calendars/discovery.pdf">
                         <span class="calendar-sub-button">
                             <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
@@ -223,11 +232,10 @@
 
             <!-- Exploration -->
             <div class="calendar-button">
-                <div class="justify-left">
-                    <img src="/infrst/UserFiles/Image/icons/exploration.png" class="group-icon"/>
-                    EXPLORATION
+                <div>
+                    <img src="/infrst/UserFiles/Image/icons/exploration.png" class="group-icon" /> EXPLORATION
                 </div>
-                <div class="justify-right">
+                <div>
                     <a href="/infrst/UserFiles/File/calendars/exploration.pdf">
                         <span class="calendar-sub-button">
                             <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
@@ -243,11 +251,10 @@
 
             <!-- Launch -->
             <div class="calendar-button">
-                <div class="justify-left">
-                    <img src="/infrst/UserFiles/Image/icons/launch.png" class="group-icon"/>
-                    LAUNCH
+                <div>
+                    <img src="/infrst/UserFiles/Image/icons/launch.png" class="group-icon" /> LAUNCH
                 </div>
-                <div class="justify-right">
+                <div>
                     <a href="/infrst/UserFiles/File/calendars/launch.pdf">
                         <span class="calendar-sub-button">
                             <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
@@ -263,11 +270,10 @@
 
             <!-- Ignition -->
             <div class="calendar-button">
-                <div class="justify-left">
-                    <img src="/infrst/UserFiles/Image/icons/ignition.png" class="group-icon"/>
-                    IGNITION
+                <div>
+                    <img src="/infrst/UserFiles/Image/icons/ignition.png" class="group-icon" /> IGNITION
                 </div>
-                <div class="justify-right">
+                <div>
                     <a href="/infrst/UserFiles/File/calendars/ignition.pdf">
                         <span class="calendar-sub-button">
                             <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
@@ -283,11 +289,10 @@
 
             <!-- Spark -->
             <div class="calendar-button">
-                <div class="justify-left">
-                    <img src="/infrst/UserFiles/Image/icons/spark.png" class="group-icon" />
-                    SPARK
+                <div>
+                    <img src="/infrst/UserFiles/Image/icons/spark.png" class="group-icon" /> SPARK
                 </div>
-                <div class="justify-right">
+                <div>
                     <a href="/infrst/UserFiles/File/calendars/spark.pdf">
                         <span class="calendar-sub-button">
                             <img src="/infrst/UserFiles/Image/icons/pdf64.png" />
