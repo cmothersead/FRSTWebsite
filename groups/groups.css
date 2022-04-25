@@ -12,6 +12,7 @@ body {
 }
 h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100;
 }
 .section {
   margin: 0px;
@@ -103,7 +104,7 @@ h1 {
   box-shadow: 4px 4px 16px black;
   transform: scale(1.005);
 }
-.picture-button:hover > .gradient-overlay {
+.picture-button:hover .gradient-overlay {
   opacity: 20%;
 }
 .picture-button:active {
