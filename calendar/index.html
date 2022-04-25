@@ -1,314 +1,197 @@
-<!DOCTYPE html>
-<html>
+<link rel="stylesheet" href="calendar-index.css">
 
-<head>
-    <style>
-        body {
-            background: linear-gradient(to right, #ffffff, #e3e3e3, #ffffff);
-        }
-        
-        a {
-            text-decoration: none;
-        }
-        
-        .calendar-button {
-            margin: 10px;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 5px black;
-            background-image: linear-gradient(-90deg, var(--main-blue), var(--light-blue) 80%, var(--main-blue));
-            transition-duration: 0.4s;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            user-select: none;
-            color: var(--white);
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size: 40px;
-            transition: background-image 2s;
-        }
-        
-        .calendar-button:hover {
-            background-color: var(--main-gray);
-            cursor: default;
-        }
-        
-        .senior {
-            width: 980px;
-            justify-content: center;
-            display: flex;
-        }
-        
-        .senior .calendar-button {
-            cursor: pointer;
-            background-image: linear-gradient(-90deg, var(--dark-blue), var(--main-blue) 80%, var(--dark-blue));
-        }
-        
-        .calendar-sub-button {
-            border-radius: 8px;
-            background-color: var(--main-gray);
-            display: inline-block;
-            margin: 2px;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .calendar-sub-button>img {
-            height: 40px;
-            width: 40px;
-        }
-        
-        .calendar-sub-button:hover {
-            background-color: var(--white);
-            transition-duration: 0.2s;
-            cursor: pointer;
-        }
-        
-        img {
-            vertical-align: middle;
-            margin: 10px;
-        }
-        
-        .columns-container {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .column {
-            width: 50%;
-        }
-        
-        .group-icon {
-            height: 80px;
-            width: 80px;
-            border-radius: 40px;
-            box-shadow: 0px 0px 12px var(--white);
-        }
-        
-        @media (max-width: 800px) {
-            .calendar-button {
-                display: grid;
-                padding: 2px;
-                width: 90%;
-                user-select: none;
-            }
-            .calendar-button:hover {
-                background-color: cornflowerblue;
-                cursor: default;
-            }
-            .senior {
-                width: 90%;
-            }
-            .justify-right {
-                margin: auto;
-                width: 95%;
-                border-radius: 8px;
-                background-color: darkgrey;
-                padding: 2px;
-                text-align: center;
-            }
-            .column {
-                width: 100%;
-            }
-            span.group-name {
-                font-family: Tahoma;
-                font-weight: bold;
-                font-size: 28px;
-            }
-        }
-    </style>
-</head>
+<div>
+    <img src="/infrst/UserFiles/Image/banners/calendar.jpg" class="header-img"/>
+</div>
 
-<body>
+<!-- Senior -->
+<div>
+    <h1 style="text-align: center;">Senior</h1>
+    <hr/>
+
     <!-- Senior -->
-    <div>
-        <h1 style="text-align: center;">Senior Calendar</h1>
-        <hr/>
-
-        <!-- Senior -->
-        <div class="columns-container">
-            <div class="senior">
-                <a href="/infrst/UserFiles/File/calendars/senior.pdf">
-                    <span class="calendar-button" style="width: 980px; display: flex; justify-content: center;">
-                        <img src="/infrst/UserFiles/Image/logos/teams/FRST/frst-logo-black-blue-512x512.jpg" class="group-icon" style="box-shadow: none;";/>
+    <div class="columns-container">
+        <div class="senior">
+            <a href="/infrst/UserFiles/File/calendars/senior.pdf">
+                <span class="calendar-button">
+                    <span class="group-logo-name">
+                        <img src="/infrst/UserFiles/Image/logos/teams/FRST/frst-logo-black-blue-512x512.jpg" class="group-icon" style="box-shadow: none;"/>
                         SENIOR
+                    </span>
+                </span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Age Groups -->
+<h1 style="text-align: center;">Age Group</h1>
+<hr/>
+
+<div class="columns-container">
+
+    <!-- 11-14 Groups -->
+    <div class="column">
+        <h2 style="text-align: center;">11-14 Groups</h2>
+
+        <!-- Eclipse -->
+        <div class="calendar-button">
+            <div class="group-logo-name">
+                <img src="/infrst/UserFiles/Image/icons/eclipse.png" class="group-icon" /> ECLIPSE
+            </div>
+            <div>
+                <a href="/infrst/UserFiles/File/calendars/eclipse.pdf">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
+                    </span>
+                </a>
+                <a href="https://calendar.google.com/calendar/u/0?cid=Y19jbGFzc3Jvb200NDNlZGJkY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
                     </span>
                 </a>
             </div>
         </div>
 
-    </div>
-
-    <!-- Age Groups -->
-    <h1 style="text-align: center;">Age Group Calendars</h1>
-    <hr/>
-
-    <div class="columns-container">
-
-        <!-- 11-14 Groups -->
-        <div class="column">
-            <h2 style="text-align: center;">11-14 Groups</h2>
-
-            <!-- Eclipse -->
-            <div class="calendar-button">
-                <div>
-                    <img src="/infrst/UserFiles/Image/icons/eclipse.png" class="group-icon" /> ECLIPSE
-                </div>
-                <div>
-                    <a href="/infrst/UserFiles/File/calendars/eclipse.pdf">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
-                        </span>
-                    </a>
-                    <a href="https://calendar.google.com/calendar/u/0?cid=Y19jbGFzc3Jvb200NDNlZGJkY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
-                        </span>
-                    </a>
-                </div>
+        <!-- Challenger -->
+        <div class="calendar-button">
+            <div class="group-logo-name">
+                <img src="/infrst/UserFiles/Image/icons/challenger.png" class="group-icon" /> CHALLENGER
             </div>
-
-            <!-- Challenger -->
-            <div class="calendar-button">
-                <div>
-                    <img src="/infrst/UserFiles/Image/icons/challenger.png" class="group-icon" /> CHALLENGER
-                </div>
-                <div>
-                    <a href="/infrst/UserFiles/File/calendars/challenger.pdf">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
-                        </span>
-                    </a>
-                    <a href="https://calendar.google.com/calendar/u/0?cid=Y19jbGFzc3Jvb21iNTZkYWNkOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- Endeavour -->
-            <div class="calendar-button">
-                <div>
-                    <img src="/infrst/UserFiles/Image/icons/endeavour.png" class="group-icon" /> ENDEAVOUR
-                </div>
-                <div>
-                    <a href="/infrst/UserFiles/File/calendars/endeavour.pdf">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
-                        </span>
-                    </a>
-                    <a href="https://calendar.google.com/calendar/u/0?cid=Y19jbGFzc3Jvb21mZDQ3NjcxYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Discovery -->
-            <div class="calendar-button">
-                <div>
-                    <img src="/infrst/UserFiles/Image/icons/discovery.png" class="group-icon" /> DISCOVERY
-                </div>
-                <div>
-                    <a href="/infrst/UserFiles/File/calendars/discovery.pdf">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
-                        </span>
-                    </a>
-                    <a href="https://calendar.google.com/calendar/u/0?cid=Y19jbGFzc3Jvb203MWEzOWIzNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
-                        </span>
-                    </a>
-                </div>
+            <div>
+                <a href="/infrst/UserFiles/File/calendars/challenger.pdf">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
+                    </span>
+                </a>
+                <a href="https://calendar.google.com/calendar/u/0?cid=Y19jbGFzc3Jvb21iNTZkYWNkOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
+                    </span>
+                </a>
             </div>
         </div>
 
-        <!-- 10 & Under Groups -->
-        <div class="column">
-            <h2 style="text-align: center;">10 & Under Groups</h2>
 
-            <!-- Exploration -->
-            <div class="calendar-button">
-                <div>
-                    <img src="/infrst/UserFiles/Image/icons/exploration.png" class="group-icon" /> EXPLORATION
-                </div>
-                <div>
-                    <a href="/infrst/UserFiles/File/calendars/exploration.pdf">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
-                        </span>
-                    </a>
-                    <a href="https://calendar.google.com/calendar/u/0?cid=Y19vdjEzajNkMHFiODZyZXNibG9iZGp0MXYxOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
-                        </span>
-                    </a>
-                </div>
+        <!-- Endeavour -->
+        <div class="calendar-button">
+            <div class="group-logo-name">
+                <img src="/infrst/UserFiles/Image/icons/endeavour.png" class="group-icon" /> ENDEAVOUR
             </div>
-
-            <!-- Launch -->
-            <div class="calendar-button">
-                <div>
-                    <img src="/infrst/UserFiles/Image/icons/launch.png" class="group-icon" /> LAUNCH
-                </div>
-                <div>
-                    <a href="/infrst/UserFiles/File/calendars/launch.pdf">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
-                        </span>
-                    </a>
-                    <a href="https://calendar.google.com/calendar/u/0?cid=Y18zNzZjdm82aGdkcmY3cG1xNmdnNmZydTRkNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Ignition -->
-            <div class="calendar-button">
-                <div>
-                    <img src="/infrst/UserFiles/Image/icons/ignition.png" class="group-icon" /> IGNITION
-                </div>
-                <div>
-                    <a href="/infrst/UserFiles/File/calendars/ignition.pdf">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
-                        </span>
-                    </a>
-                    <a href="https://calendar.google.com/calendar/u/0?cid=Y185ZnJpbm01MW5rNjJtc2F0bnBmdGF1bDZiMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Spark -->
-            <div class="calendar-button">
-                <div>
-                    <img src="/infrst/UserFiles/Image/icons/spark.png" class="group-icon" /> SPARK
-                </div>
-                <div>
-                    <a href="/infrst/UserFiles/File/calendars/spark.pdf">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/pdf64.png" />
-                        </span>
-                    </a>
-                    <a href="https://calendar.google.com/calendar/u/0?cid=Y19ycTIycDhwNTQ1ZG9ndXVxMHJiM24ydjA2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-                        <span class="calendar-sub-button">
-                            <img src="/infrst/UserFiles/Image/icons/google-calendar64.png" />
-                        </span>
-                    </a>
-                </div>
+            <div>
+                <a href="/infrst/UserFiles/File/calendars/endeavour.pdf">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
+                    </span>
+                </a>
+                <a href="https://calendar.google.com/calendar/u/0?cid=Y19jbGFzc3Jvb21mZDQ3NjcxYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
+                    </span>
+                </a>
             </div>
         </div>
 
+        <!-- Discovery -->
+        <div class="calendar-button">
+            <div class="group-logo-name">
+                <img src="/infrst/UserFiles/Image/icons/discovery.png" class="group-icon" /> DISCOVERY
+            </div>
+            <div>
+                <a href="/infrst/UserFiles/File/calendars/discovery.pdf">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
+                    </span>
+                </a>
+                <a href="https://calendar.google.com/calendar/u/0?cid=Y19jbGFzc3Jvb203MWEzOWIzNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
+                    </span>
+                </a>
+            </div>
+        </div>
     </div>
-</body>
 
-</html>
+    <!-- 10 & Under Groups -->
+    <div class="column">
+        <h2 style="text-align: center;">10 & Under Groups</h2>
+
+        <!-- Exploration -->
+        <div class="calendar-button">
+            <div class="group-logo-name">
+                <img src="/infrst/UserFiles/Image/icons/exploration.png" class="group-icon" /> EXPLORATION
+            </div>
+            <div>
+                <a href="/infrst/UserFiles/File/calendars/exploration.pdf">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
+                    </span>
+                </a>
+                <a href="https://calendar.google.com/calendar/u/0?cid=Y19vdjEzajNkMHFiODZyZXNibG9iZGp0MXYxOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Launch -->
+        <div class="calendar-button">
+            <div class="group-logo-name">
+                <img src="/infrst/UserFiles/Image/icons/launch.png" class="group-icon" /> LAUNCH
+            </div>
+            <div>
+                <a href="/infrst/UserFiles/File/calendars/launch.pdf">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
+                    </span>
+                </a>
+                <a href="https://calendar.google.com/calendar/u/0?cid=Y18zNzZjdm82aGdkcmY3cG1xNmdnNmZydTRkNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Ignition -->
+        <div class="calendar-button">
+            <div class="group-logo-name">
+                <img src="/infrst/UserFiles/Image/icons/ignition.png" class="group-icon" /> IGNITION
+            </div>
+            <div>
+                <a href="/infrst/UserFiles/File/calendars/ignition.pdf">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/pdf64.png"/>
+                    </span>
+                </a>
+                <a href="https://calendar.google.com/calendar/u/0?cid=Y185ZnJpbm01MW5rNjJtc2F0bnBmdGF1bDZiMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/google-calendar64.png"/>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Spark -->
+        <div class="calendar-button">
+            <div class="group-logo-name">
+                <img src="/infrst/UserFiles/Image/icons/spark.png" class="group-icon" /> SPARK
+            </div>
+            <div>
+                <a href="/infrst/UserFiles/File/calendars/spark.pdf">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/pdf64.png" />
+                    </span>
+                </a>
+                <a href="https://calendar.google.com/calendar/u/0?cid=Y19ycTIycDhwNTQ1ZG9ndXVxMHJiM24ydjA2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+                    <span class="calendar-sub-button">
+                        <img src="/infrst/UserFiles/Image/icons/google-calendar64.png" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
