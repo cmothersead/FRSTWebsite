@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'frstswimming.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'frst',
+        'NAME': 'swims',
         'HOST': 'data.frstswimming.com',
         'USER': 'root',
         'PASSWORD': os.environ['DB_PASSWORD']
