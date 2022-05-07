@@ -5,3 +5,6 @@ from swimmers.models import Swimmer
 
 class IndexView(generic.ListView):
     model = Swimmer
+
+class DetailView(generic.DetailView):
+    model = Swimmer

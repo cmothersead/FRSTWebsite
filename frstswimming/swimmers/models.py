@@ -14,11 +14,17 @@ class Season(models.Model):
     start_date = models.DateField(blank=True, null=True)
     end_date = models.DateField(blank=True, null=True)
 
+    def __str__(self) -> str:
+        return self.name
+
 
 class Group(models.Model):
     name = models.CharField(max_length=45)
     season = models.ForeignKey(Season, models.RESTRICT)
     abbreviation = models.CharField(max_length=10, null=True)
+
+    def __str__(self) -> str:
+        return self.name
 
 
 class Swimmer(models.Model):
@@ -35,7 +41,7 @@ class Swimmer(models.Model):
 
     def age_on(self, date):
         return date.year - self.birthday.year - ((date.month, date.day) < (self.birthday.month, self.birthday.day))
-    
+
     @property
     def age(self):
         return self.age_on(date.today())
