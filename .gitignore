@@ -1,2 +1,3 @@
 deleted-files/
 .venv/
+__pycache__/
