@@ -1,4 +1,4 @@
-@import "../default";
+@import "../../default";
 
 .background {
     background-image: linear-gradient(gray, transparent);
@@ -16,6 +16,7 @@ h1 {
 }
 
 h3 {
+    color: $group-color;
     font-size: 42px;
     font-weight: 400;
     margin-bottom: 10px;

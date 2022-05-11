@@ -141,6 +141,7 @@ h1 {
 }
 
 h3 {
+  color: #7ed957;
   font-size: 42px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -441,9 +442,5 @@ ul {
   .quote-section {
     display: none;
   }
-}
-
-h3 {
-  color: #7ed957;
 }
 /*# sourceMappingURL=style.css.map */
