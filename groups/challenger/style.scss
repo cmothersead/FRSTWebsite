@@ -1,5 +1,5 @@
-@import "../../color-palette";
+@use '../../color-palette';
 
-$group-color: $challenger;
+// $group-color: $challenger;
 
-@import "../css/template-style";
+@use "../template-style";

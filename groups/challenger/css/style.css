@@ -1,1 +1,2 @@
-@import url(c:\Users\ColinMothersead\source\repos\cmothersead\FRSTWebsite\groups\css\template-style.css);
+@use '../../color-palette';
+@use "../template-style";

@@ -1,5 +1,5 @@
-@import "../../color-palette";
+@forward "../../color-palette";
 
-$group-color: $spark;
+@debug color-palette.$spark;
 
-@import "../css/template-style";
+@use "../css/template-style";
