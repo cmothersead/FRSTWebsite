@@ -123,4 +123,76 @@ h1 {
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #484848;
 }
-/*# sourceMappingURL=default.css.map */
+
+h2 {
+  color: #001c50;
+  font-family: Georgia, serif;
+}
+
+h3 {
+  color: #001c50;
+  font-family: Georgia, serif;
+}
+
+.register-button {
+  background-color: #004aad;
+  border: 2px solid #004aad;
+  border-radius: 6px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: georgia, serif;
+  font-weight: bold;
+  padding: 6px;
+  font-size: 16px;
+  margin: 5px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  text-decoration: none;
+  width: 250px;
+  cursor: default;
+}
+
+.register-button.enabled:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+.contact-button {
+  background-color: #8b8b8b;
+  border: 2px solid #8b8b8b;
+  border-radius: 6px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 6px;
+  font-size: 16px;
+  margin: 5px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  text-decoration: none;
+  width: 300px;
+}
+
+.contact-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+hr {
+  clear: both;
+}

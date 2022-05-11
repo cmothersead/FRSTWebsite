@@ -1,17 +1,16 @@
-@import "color-palette";
 @import "default";
 
 h2{
-    color: @dark-blue;
+    color: $dark-blue;
     font-family: Georgia, serif;
 }
 h3{
-    color: @dark-blue;
+    color: $dark-blue;
     font-family: Georgia, serif;
 }
 .register-button{
-    background-color: @light-blue;
-    border: 2px solid @light-blue;
+    background-color: $light-blue;
+    border: 2px solid $light-blue;
     border-radius: 6px;
     color: white;
     display: flex;
@@ -28,15 +27,15 @@ h3{
     cursor: default;
 }
 .register-button.enabled:hover {
-    background-color: @white;
-    color: black;
+    background-color: $white;
+    color: $black;
     cursor: pointer;
 }
 .contact-button{
-    background-color: @main-gray;
-    border: 2px solid @main-gray;
+    background-color: $main-gray;
+    border: 2px solid $main-gray;
     border-radius: 6px;
-    color: black;
+    color: $black;
     display: flex;
     align-items: center;
     font-family: Tahoma, sans-serif;
@@ -50,8 +49,8 @@ h3{
     width: 300px;
 }
 .contact-button:hover {
-    background-color: white;
-    color: black;
+    background-color: $white;
+    color: $black;
     cursor: pointer;
 }
 hr{

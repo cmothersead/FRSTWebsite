@@ -2,7 +2,7 @@
 @import "../color-palette";
 
 body {
-    background: linear-gradient(to right, white, @background-light, white);
+    background: linear-gradient(to right, white, $background-light, white);
 }
 
 a {
@@ -14,7 +14,7 @@ a {
     padding: 10px;
     border-radius: 8px;
     box-shadow: 2px 2px 5px black;
-    background-image: linear-gradient(-90deg, @main-blue, @light-blue 80%, @main-blue);
+    background-image: linear-gradient(-90deg, $main-blue, $light-blue 80%, $main-blue);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,17 +37,17 @@ a {
         display: flex;
         justify-content: center;
         cursor: pointer;
-        background-image: linear-gradient(-90deg, @dark-blue, @main-blue 80%, @dark-blue);
+        background-image: linear-gradient(-90deg, $dark-blue, $main-blue 80%, $dark-blue);
 
         &:hover{
-            background-image: linear-gradient(-90deg, @main-blue, @light-blue 80%, @main-blue);
+            background-image: linear-gradient(-90deg, $main-blue, $light-blue 80%, $main-blue);
         }
     }
 }
 
 .calendar-sub-button {
     border-radius: 8px;
-    background-color: @main-gray;
+    background-color: $main-gray;
     display: inline-block;
     margin: 2px;
     width: 60px;

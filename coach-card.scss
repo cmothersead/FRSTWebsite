@@ -1,8 +1,7 @@
-@import "color-palette";
 @import "default";
 
 .coach-card {
-    background-color: @dark-gray;
+    background-color: $dark-gray;
     box-shadow: 0px 4px 8px black;
     float: left;
     margin: 10px;

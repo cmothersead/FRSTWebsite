@@ -1,3 +1,5 @@
-$group-color: #5ce1e6;
+@import "../../color-palette";
+
+$group-color: $challenger;
 
 @import "../css/template-style";
