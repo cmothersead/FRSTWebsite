@@ -2,45 +2,63 @@
 @forward "accordion";
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
 }
 
 .header-img {
-    width: 100%;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: -4px;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
+h1 {
+  font-family: Montserrat, sans-serif;
 }
 
 .section {
-    margin: 0px;
-    padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 80px;
-    background: linear-gradient(-90deg, $white, $background-light 20% 80%, $white);
+  margin: 0px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background: linear-gradient(
+    -90deg,
+    $white,
+    $background-light 20% 80%,
+    $white
+  );
 
-    &:nth-child(odd) {
-        background: linear-gradient(-90deg, $white, $background-light 20% 80%, $white);
+  &:nth-child(odd) {
+    background: linear-gradient(
+      -90deg,
+      $white,
+      $background-light 20% 80%,
+      $white
+    );
 
-        &:last-child {
-            background: linear-gradient(to bottom, transparent, $white), linear-gradient(-90deg, $white, $background-light 20% 80%, $white);
-        }
+    &:last-child {
+      background: linear-gradient(to bottom, transparent, $white),
+        linear-gradient(-90deg, $white, $background-light 20% 80%, $white);
     }
+  }
 
-    &:nth-child(even) {
-        background: linear-gradient(-90deg, $white, $background-dark 20% 80%, $white);
+  &:nth-child(even) {
+    background: linear-gradient(
+      -90deg,
+      $white,
+      $background-dark 20% 80%,
+      $white
+    );
 
-        &:last-child {
-            background: linear-gradient(to bottom, transparent, $white), linear-gradient(-90deg, $white, $background-dark 20% 80%, $white);
-        }
+    &:last-child {
+      background: linear-gradient(to bottom, transparent, $white),
+        linear-gradient(-90deg, $white, $background-dark 20% 80%, $white);
     }
+  }
 }

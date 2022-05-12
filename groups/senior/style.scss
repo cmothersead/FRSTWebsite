@@ -1,0 +1,72 @@
+@use "../../default";
+@use "../../color-palette" as *;
+
+h4 {
+  font-size: 18px;
+  margin: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  user-select: none;
+}
+
+thead {
+  background-color: $main-blue;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: $white;
+}
+
+tbody {
+  background-color: $main-gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+tr {
+  height: 40px;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: $light-gray;
+}
+
+td:first-child {
+  width: 40px;
+  padding-right: 8px;
+  text-align: right;
+  border: none;
+}
+
+/* Add shadows to create the "card" effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  width: 280px;
+  height: 380px;
+  margin: 10px;
+  border-radius: 3px;
+  background-color: white;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule-container {
+  display: flex;
+  justify-content: center;
+}
+
+.schedule {
+  width: 90%;
+}

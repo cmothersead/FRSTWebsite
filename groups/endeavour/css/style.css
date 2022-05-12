@@ -1,6 +1,4 @@
 .accordion {
-  padding: 0;
-  margin: 0 auto;
   width: 100%;
   font-family: "PT Sans", sans-serif;
   cursor: pointer;
@@ -9,18 +7,18 @@
   text-align: left;
 }
 .accordion:hover .accordion-item:hover .accordion-item-content {
+  padding-right: 2em;
   height: 6em;
   overflow-y: auto;
-  -webkit-animation: hide-scroll 0.11s;
-          animation: hide-scroll 0.11s;
+  -webkit-animation: hide-scroll 0.25s;
+          animation: hide-scroll 0.25s;
 }
 .accordion:hover .accordion-item-content {
   height: 0;
   overflow: hidden;
-  transition: height 0.25s ease;
+  transition: height 0.25s;
   -ms-scroll-chaining: none;
       overscroll-behavior: contain;
-  padding-right: 1px;
 }
 @-webkit-keyframes hide-scroll {
   from, to {
@@ -77,6 +75,8 @@ body {
 
 .header-img {
   width: 100%;
+  margin: 0px;
+  margin-bottom: -4px;
 }
 
 .flex-container {
@@ -86,8 +86,7 @@ body {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: 100;
+  font-family: Montserrat, sans-serif;
 }
 
 .section {
@@ -322,6 +321,7 @@ ul {
 }
 .store-button:hover {
   background-color: #004aad;
+  color: white;
 }
 .store-button img {
   width: 70px;
