@@ -116,21 +116,17 @@ h1 {
 }
 
 .group-button {
-  width: 600px;
+  width: 500px;
   cursor: pointer;
   position: relative;
   margin: 5px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 .group-button img {
   display: block;
   width: 100%;
 }
-.group-button a::before {
-  content: "";
+.group-button::before {
+  content: "Test";
   position: absolute;
   top: 0;
   left: 0;
@@ -148,7 +144,7 @@ h1 {
 .group-button:hover {
   transform: scale(1.01);
 }
-.group-button:hover a::before {
+.group-button:hover::before {
   opacity: 0%;
 }
 .group-button:hover h1 {

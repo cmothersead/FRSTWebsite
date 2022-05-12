@@ -1,19 +1,18 @@
 @use "../../default";
 
 .group-button {
-  width: 600px;
+  width: 500px;
   cursor: pointer;
   position: relative;
   margin: 5px;
-  user-select: none;
 
   img {
     display: block;
     width: 100%;
   }
 
-  a::before {
-    content: "";
+  &::before {
+    content: "Test";
     position: absolute;
     top: 0;
     left: 0;
@@ -33,7 +32,7 @@
   &:hover {
     transform: scale(1.01);
 
-    a::before {
+    &::before {
       opacity: 0%;
     }
 
