@@ -1,5 +1,4 @@
-@import "../../color-palette";
-
-$group-color: $exploration;
-
-@import "../css/template-style";
+@use "../../color-palette";
+@use "../group-template-style" with (
+    $group-color: color-palette.$exploration
+);

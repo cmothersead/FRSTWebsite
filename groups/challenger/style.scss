@@ -1,5 +1,4 @@
 @use '../../color-palette';
-
-// $group-color: $challenger;
-
-@use "../template-style";
+@use "../group-template-style" with (
+    $group-color: color-palette.$challenger
+);

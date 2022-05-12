@@ -1,5 +1,4 @@
-@import "../../color-palette";
-
-$group-color: $ignition;
-
-@import "../css/template-style";
+@use "../../color-palette";
+@use "../group-template-style" with (
+    $group-color: color-palette.$ignition
+);

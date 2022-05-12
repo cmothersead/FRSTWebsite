@@ -1,5 +1,4 @@
-@forward "../../color-palette";
-
-@debug color-palette.$spark;
-
-@use "../css/template-style";
+@use "../../color-palette";
+@use "../group-template-style" with (
+    $group-color: color-palette.$spark
+);

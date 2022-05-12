@@ -1,4 +1,7 @@
-@use "/default";
+@use "../default";
+@use "../color-palette" as *;
+
+$group-color: white !default;
 
 .background {
     background-image: linear-gradient(gray, transparent);

@@ -1,4 +1,4 @@
-@forward "color-palette";
+@use "color-palette" as *;
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -25,7 +25,7 @@ h1{
     padding: 10px;
     padding-top: 30px;
     padding-bottom: 80px;
-    background: linear-gradient(-90deg, color-palette.$white, color-palette.$background-light 20% 80%, $white);
+    background: linear-gradient(-90deg, $white, $background-light 20% 80%, $white);
 
     &:nth-child(odd) {
         background: linear-gradient(-90deg, $white, $background-light 20% 80%, $white);
