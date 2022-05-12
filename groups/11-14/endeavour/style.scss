@@ -1,4 +1,4 @@
-@use "../../color-palette";
-@use "../group-template-style" with (
-    $group-color: color-palette.$endeavour
+@use "../../../color-palette";
+@use "../../group-template-style" with (
+  $group-color: color-palette.$endeavour
 );
