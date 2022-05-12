@@ -1,6 +1,7 @@
 @use "../../default";
 
 .group-button {
+  display: block;
   width: 600px;
   cursor: pointer;
   position: relative;
@@ -23,7 +24,9 @@
     background-color: black;
   }
 
-  h1 {
+  span {
+    font-size: 2em;
+    font-weight: bold;
     color: white;
     position: absolute;
     top: 20%;
@@ -37,7 +40,7 @@
       opacity: 0%;
     }
 
-    h1 {
+    span {
       opacity: 0%;
     }
   }

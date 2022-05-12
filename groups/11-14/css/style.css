@@ -91,10 +91,6 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  font-family: Montserrat, sans-serif;
-}
-
 .section {
   margin: 0px;
   padding: 10px;
@@ -116,6 +112,7 @@ h1 {
 }
 
 .group-button {
+  display: block;
   width: 600px;
   cursor: pointer;
   position: relative;
@@ -139,7 +136,9 @@ h1 {
   opacity: 70%;
   background-color: black;
 }
-.group-button h1 {
+.group-button span {
+  font-size: 2em;
+  font-weight: bold;
   color: white;
   position: absolute;
   top: 20%;
@@ -151,6 +150,6 @@ h1 {
 .group-button:hover a::before {
   opacity: 0%;
 }
-.group-button:hover h1 {
+.group-button:hover span {
   opacity: 0%;
 }

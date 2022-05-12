@@ -91,10 +91,6 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  font-family: Montserrat, sans-serif;
-}
-
 .section {
   margin: 0px;
   padding: 10px;
@@ -152,9 +148,9 @@ h1 {
   transition: opacity 0.1s;
   opacity: 50%;
 }
-.picture-button h1 {
-  top: 0;
-  left: 10%;
+.picture-button span {
+  top: 0.75em;
+  left: 1em;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
