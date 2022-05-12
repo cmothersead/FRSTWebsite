@@ -1,0 +1,43 @@
+@use "../../default";
+
+.group-button {
+  width: 500px;
+  cursor: pointer;
+  position: relative;
+  margin: 5px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  &::before {
+    content: "Test";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    background-color: black;
+  }
+
+  h1 {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+
+    &::before {
+      opacity: 0%;
+    }
+
+    h1 {
+      opacity: 0%;
+    }
+  }
+}

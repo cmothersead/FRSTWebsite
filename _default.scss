@@ -9,13 +9,19 @@ body {
 .header-img {
   width: 100%;
   margin: 0px;
-  margin-bottom: -4px;
+  display: block;
 }
 
 .flex-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.flex-container-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h1 {

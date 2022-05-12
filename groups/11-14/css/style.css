@@ -6,7 +6,6 @@
   overflow: hidden;
   text-align: left;
 }
-
 .accordion:hover .accordion-item:hover .accordion-item-content {
   padding-right: 2em;
   height: 6em;
@@ -14,7 +13,6 @@
   -webkit-animation: hide-scroll 0.25s;
           animation: hide-scroll 0.25s;
 }
-
 .accordion:hover .accordion-item-content {
   height: 0;
   overflow: hidden;
@@ -22,13 +20,11 @@
   -ms-scroll-chaining: none;
       overscroll-behavior: contain;
 }
-
 @-webkit-keyframes hide-scroll {
   from, to {
     overflow: hidden;
   }
 }
-
 @keyframes hide-scroll {
   from, to {
     overflow: hidden;
@@ -38,21 +34,17 @@
   margin: 0;
   font-size: 14px;
 }
-
 .accordion .accordion-item {
   padding: 1em;
   color: white;
   font-size: 11px;
 }
-
 .accordion .accordion-item:nth-child(odd) {
   background: #00337f;
 }
-
 .accordion .accordion-item:nth-child(even) {
   background: #8b8b8b;
 }
-
 .accordion .accordion-item-content {
   height: 0;
   overflow: hidden;
@@ -61,18 +53,15 @@
       overscroll-behavior: contain;
   padding-right: 1px;
 }
-
 .accordion .accordion-item-content::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: #8b8b8b;
 }
-
 .accordion .accordion-item-content::-webkit-scrollbar {
   width: 12px;
   background-color: transparent;
 }
-
 .accordion .accordion-item-content::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -126,114 +115,38 @@ h1 {
   background: linear-gradient(to bottom, transparent, #ffffff), linear-gradient(-90deg, #ffffff, #e3e3e3 20% 80%, #ffffff);
 }
 
-body {
-  background: linear-gradient(to right, white, #eeeeee, white);
+.group-button {
+  width: 500px;
+  cursor: pointer;
+  position: relative;
+  margin: 5px;
 }
-
-a {
-  text-decoration: none;
+.group-button img {
+  display: block;
+  width: 100%;
 }
-
-.calendar-button {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px black;
-  background-image: linear-gradient(-90deg, #00337f, #004aad 80%, #00337f);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.group-button::before {
+  content: "Test";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 70%;
+  background-color: black;
+}
+.group-button h1 {
   color: white;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 40px;
+  position: absolute;
+  top: 20%;
+  left: 8%;
 }
-
-.senior {
-  width: 100%;
-  justify-content: center;
-  display: flex;
+.group-button:hover {
+  transform: scale(1.01);
 }
-.senior a {
-  width: 100%;
+.group-button:hover::before {
+  opacity: 0%;
 }
-.senior .calendar-button {
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  background-image: linear-gradient(-90deg, #001c50, #00337f 80%, #001c50);
-}
-.senior .calendar-button:hover {
-  background-image: linear-gradient(-90deg, #00337f, #004aad 80%, #00337f);
-}
-
-.calendar-sub-button {
-  border-radius: 8px;
-  background-color: #8b8b8b;
-  display: inline-block;
-  margin: 2px;
-  width: 60px;
-  height: 60px;
-}
-.calendar-sub-button > img {
-  height: 40px;
-  width: 40px;
-  margin: 10px;
-}
-.calendar-sub-button:hover {
-  background-color: white;
-  transition-duration: 0.2s;
-  cursor: pointer;
-}
-
-.group-logo-name img {
-  vertical-align: middle;
-  margin: 10px;
-}
-
-.columns-container {
-  display: flex;
-  justify-content: center;
-}
-
-.column {
-  width: 50%;
-}
-
-.group-icon {
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
-  box-shadow: 0px 0px 12px white;
-}
-
-@media (max-width: 1000px) {
-  .calendar-button {
-    flex-direction: column;
-  }
-
-  .group-logo-name {
-    align-self: flex-start;
-  }
-
-  .senior .group-logo-name {
-    align-self: center;
-  }
-}
-@media (max-width: 750px) {
-  .group-logo-name {
-    font-size: 32px;
-  }
-}
-@media (max-width: 400px) {
-  .columns-container {
-    flex-direction: column;
-  }
-
-  .column {
-    width: 100%;
-  }
+.group-button:hover h1 {
+  opacity: 0%;
 }
