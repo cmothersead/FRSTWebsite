@@ -1,0 +1,8 @@
+@use "../../color-palette";
+@use "../group-template-style" with (
+  $group-color: color-palette.$discovery
+);
+
+.accordion:hover .accordion-item:hover .accordion-item-content {
+  height: 14em;
+}

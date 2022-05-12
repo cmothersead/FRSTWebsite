@@ -185,6 +185,21 @@ h1 {
   margin: 20px;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #004aad;
+}
+a:hover {
+  color: #00337f;
+}
+a:active {
+  color: #b6b6b6;
+}
+a:visited {
+  color: #484848;
+}
+
 h1 {
   font-family: Montserrat, sans-serif;
   font-size: 25px;
@@ -233,6 +248,7 @@ h4 {
   width: 380px;
   margin-left: 40px;
   margin-top: 10px;
+  margin-right: 40px;
   float: right;
 }
 .quote-section .quote {
@@ -242,7 +258,12 @@ h4 {
   font-style: italic;
   font-weight: bold;
   text-align: right;
-  margin-right: 30px;
+}
+.quote-section ul {
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+  direction: rtl;
 }
 
 .card {
@@ -353,7 +374,7 @@ ul {
     width: 160px;
     height: 240px;
   }
-  .coach-card img {
+  .coach-card .img-gradient-container {
     width: 160px;
     height: 192px;
   }
