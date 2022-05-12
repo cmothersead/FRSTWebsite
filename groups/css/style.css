@@ -141,7 +141,8 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.picture-button .gradient-overlay {
+.picture-button a::before {
+  content: "";
   background-image: linear-gradient(to bottom, black, transparent);
   height: 100%;
   width: 100%;
@@ -151,9 +152,9 @@ h1 {
   transition: opacity 0.1s;
   opacity: 50%;
 }
-.picture-button .text-overlay {
-  top: 12%;
-  left: 12%;
+.picture-button h1 {
+  top: 0;
+  left: 10%;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
