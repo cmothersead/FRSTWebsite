@@ -1,75 +1,73 @@
-@import "../default";
+@use "../../default";
+@use "../../color-palette" as *;
 
 h1 {
-    font-family: 'Franklin Gothic Medium';
-    font-size: xx-large;
-    margin: 0px;
+  font-family: "Franklin Gothic Medium";
+  font-size: xx-large;
+  margin: 0px;
 }
 
 h2 {
-    font-size: larger;
-    margin: 0px;
+  font-size: larger;
+  margin: 0px;
 }
 
 p {
-    font-family: Arial
+  font-family: Arial;
 }
 
 a {
-    color: $black;
-    text-decoration: none;
-    float: right;
+  color: $black;
+  text-decoration: none;
+  float: right;
 }
 
 a:hover {
-    color: $black;
-    text-decoration: none;
+  color: $black;
+  text-decoration: none;
 }
 
 img.icon {
-    height: 16px;
-    vertical-align: text-top;
-    cursor: pointer;
+  height: 16px;
+  vertical-align: text-top;
+  cursor: pointer;
 }
 
 .email {
-    background-color: $light-blue;
-    border: 2px solid $light-blue;
-    border-radius: 6px;
-    color: black;
-    padding: 6px;
-    font-size: 16px;
-    text-align: center;
-    transition-duration: 0.2s;
-    cursor: pointer;
+  background-color: $light-blue;
+  border: 2px solid $light-blue;
+  border-radius: 6px;
+  color: $white;
+  padding: 6px;
+  font-size: 16px;
+  text-align: center;
+  transition-duration: 0.2s;
+  cursor: pointer;
 }
 
 .email:hover {
-    background-color: $white;
-    cursor: pointer;
+  background-color: $white;
+  color: $black;
 }
 
 .coach-header {
-    background-color: $main-gray;
-    color: $white;
-    padding: 10px;
-    box-shadow: 0px 1px 5px $black;
+  background-color: $main-gray;
+  color: $white;
+  padding: 10px;
 }
 
 .coach-photo {
-    width: 200px;
-    border-radius: 8px;
-    border: 10px solid $black;
-    margin: 10px;
-    margin-right: 16px;
-    float: left;
-    box-shadow: 2px 2px 5px $main-gray;
+  width: 200px;
+  margin: 10px;
+  margin-right: 16px;
+  float: left;
+  box-shadow: 2px 2px 10px $main-gray;
 }
 
 .bio {
-    margin: 20px;
+  margin: 20px;
 }
 
 div.coach {
-    clear: both;
+  clear: both;
 }
