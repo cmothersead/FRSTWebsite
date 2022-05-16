@@ -138,6 +138,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.picture-button a {
+  position: relative;
+}
 .picture-button a::before {
   content: "";
   position: absolute;

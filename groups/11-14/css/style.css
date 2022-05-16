@@ -126,6 +126,9 @@ body {
   display: block;
   width: 100%;
 }
+.group-button a {
+  position: relative;
+}
 .group-button a::before {
   content: "";
   position: absolute;

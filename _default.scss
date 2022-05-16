@@ -66,6 +66,8 @@ body {
 }
 
 @mixin overlay($background, $opacity) {
+  position: relative;
+
   &::before {
     content: "";
     position: absolute;
