@@ -4,19 +4,10 @@
   display: block;
   width: 600px;
   cursor: pointer;
-  position: relative;
   margin: 5px;
   user-select: none;
-
-  img {
-    display: block;
-    width: 100%;
-  }
-
-  a {
-    @include default.overlay(black, 70%) {
-      transition: opacity 0.1s;
-    }
+  @include default.overlay(black, 70%) {
+    transition: opacity 0.1s;
   }
 
   span {
@@ -31,7 +22,7 @@
   &:hover {
     transform: scale(1.01);
 
-    a::before {
+    &::before {
       opacity: 0%;
     }
 

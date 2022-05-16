@@ -132,14 +132,6 @@ body {
 .coach-card:active {
   background-color: #272727;
 }
-.coach-card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 -20px;
-     object-position: 0 -20px;
-  width: 100%;
-  height: 100%;
-}
 .coach-card span {
   display: block;
   color: white;
@@ -166,11 +158,22 @@ body {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
   transition: opacity 0.25s;
 }
+.coach-card .img-gradient-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.coach-card .img-gradient-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 -20px;
+     object-position: 0 -20px;
+}
 .coach-card .img-gradient-container span {
   bottom: -12px;
   left: 0;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   padding: 10px;
   position: absolute;
   visibility: hidden;

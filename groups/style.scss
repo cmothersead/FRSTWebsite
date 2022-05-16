@@ -10,12 +10,19 @@
   box-shadow: 4px 4px 8px $black;
   margin: 10px;
   cursor: pointer;
+  display: block;
+  @include default.overlay(
+    linear-gradient(to bottom, $black, transparent),
+    70%
+  ) {
+    transition: opacity 0.1s;
+  }
 
   &:hover {
     box-shadow: 4px 4px 16px $black;
     transform: scale(1.005);
 
-    & a::before {
+    &::before {
       opacity: 25%;
     }
   }
@@ -26,18 +33,7 @@
   }
 
   img {
-    display: block;
-    width: 100%;
     object-fit: cover;
-  }
-
-  a {
-    @include default.overlay(
-      linear-gradient(to bottom, $black, transparent),
-      70%
-    ) {
-      transition: opacity 0.1s;
-    }
   }
 
   span {

@@ -79,4 +79,10 @@ body {
     background: $background;
     @content;
   }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
