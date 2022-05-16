@@ -1,46 +1,94 @@
 @use "/default";
 @use "/color-palette" as *;
 
-@mixin triangle($tier) {
-  $height: 50px;
-  $width: 60px;
+@mixin triangle($tier, $color) {
+  $height: 70px;
+  $unit-width: 70px;
   $margin: 5px;
+  $width: ($unit-width + ($margin * calc($unit-width/$height) * 2)) * $tier;
 
   margin: $margin;
-  width: ($width + ($margin * 2)) * $tier;
-  border-left: $width/2 solid transparent;
-  border-right: $width/2 solid transparent;
-  border-bottom: $height solid $main-blue;
+  width: $width;
+  border-left: calc($unit-width/2) solid transparent;
+  border-right: calc($unit-width/2) solid transparent;
+  border-bottom: $height solid $color;
+
+  cursor: pointer;
+  position: relative;
+
+  div {
+    $margin: 2px;
+
+    position: absolute;
+    height: $height - $margin * 2;
+    top: $margin;
+    left: $width;
+    background: linear-gradient(to left, $main-gray, transparent);
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+    padding-left: 30px;
+
+    transition-duration: 0.15s;
+  }
+
+  img {
+    position: absolute;
+    top: -15px;
+    left: $width + 190px;
+    height: $height;
+    width: $height;
+    background-color: $background-dark;
+    border-radius: $height + 5px / 2;
+    border: 5px solid $background-dark;
+    image-rendering: crisp-edges;
+
+    transition-duration: 0.1s;
+  }
+
+  &:hover {
+    font-size: 1.25em;
+
+    div {
+      width: 230px;
+    }
+    img {
+      transform: scale(1.5) translate(35px, -18px);
+    }
+  }
 }
 
 .triangle {
-  @include triangle(0);
+  @include triangle(0, $dark-blue);
 }
 
 .triangle-2 {
-  @include triangle(1);
+  @include triangle(1, $dark-blue);
 }
 
 .triangle-3 {
-  @include triangle(2);
+  @include triangle(2, $dark-blue);
 }
 
 .triangle-4 {
-  @include triangle(3);
+  @include triangle(3, $main-blue);
 }
 
 .triangle-5 {
-  @include triangle(4);
+  @include triangle(4, $main-blue);
 }
 
 .triangle-6 {
-  @include triangle(5);
+  @include triangle(5, $main-blue);
 }
 
 .triangle-7 {
-  @include triangle(6);
+  @include triangle(6, $light-blue);
 }
 
 .triangle-8 {
-  @include triangle(7);
+  @include triangle(7, $light-blue);
 }

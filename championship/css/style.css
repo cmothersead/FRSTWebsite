@@ -114,63 +114,351 @@ body {
 .triangle {
   margin: 5px;
   width: 0px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 50px solid #00337f;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #001c50;
+  cursor: pointer;
+  position: relative;
+}
+.triangle div {
+  position: absolute;
+  height: 66px;
+  top: 2px;
+  left: 0px;
+  background: linear-gradient(to left, #8b8b8b, transparent);
+  width: 200px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 30px;
+  transition-duration: 0.15s;
+}
+.triangle img {
+  position: absolute;
+  top: -15px;
+  left: 190px;
+  height: 70px;
+  width: 70px;
+  background-color: #e3e3e3;
+  border-radius: 72.5px;
+  border: 5px solid #e3e3e3;
+  image-rendering: crisp-edges;
+  transition-duration: 0.1s;
+}
+.triangle:hover {
+  font-size: 1.25em;
+}
+.triangle:hover div {
+  width: 230px;
+}
+.triangle:hover img {
+  transform: scale(1.5) translate(35px, -18px);
 }
 
 .triangle-2 {
   margin: 5px;
+  width: 80px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #001c50;
+  cursor: pointer;
+  position: relative;
+}
+.triangle-2 div {
+  position: absolute;
+  height: 66px;
+  top: 2px;
+  left: 80px;
+  background: linear-gradient(to left, #8b8b8b, transparent);
+  width: 200px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 30px;
+  transition-duration: 0.15s;
+}
+.triangle-2 img {
+  position: absolute;
+  top: -15px;
+  left: 270px;
+  height: 70px;
   width: 70px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 50px solid #00337f;
+  background-color: #e3e3e3;
+  border-radius: 72.5px;
+  border: 5px solid #e3e3e3;
+  image-rendering: crisp-edges;
+  transition-duration: 0.1s;
+}
+.triangle-2:hover {
+  font-size: 1.25em;
+}
+.triangle-2:hover div {
+  width: 230px;
+}
+.triangle-2:hover img {
+  transform: scale(1.5) translate(35px, -18px);
 }
 
 .triangle-3 {
   margin: 5px;
-  width: 140px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 50px solid #00337f;
+  width: 160px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #001c50;
+  cursor: pointer;
+  position: relative;
+}
+.triangle-3 div {
+  position: absolute;
+  height: 66px;
+  top: 2px;
+  left: 160px;
+  background: linear-gradient(to left, #8b8b8b, transparent);
+  width: 200px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 30px;
+  transition-duration: 0.15s;
+}
+.triangle-3 img {
+  position: absolute;
+  top: -15px;
+  left: 350px;
+  height: 70px;
+  width: 70px;
+  background-color: #e3e3e3;
+  border-radius: 72.5px;
+  border: 5px solid #e3e3e3;
+  image-rendering: crisp-edges;
+  transition-duration: 0.1s;
+}
+.triangle-3:hover {
+  font-size: 1.25em;
+}
+.triangle-3:hover div {
+  width: 230px;
+}
+.triangle-3:hover img {
+  transform: scale(1.5) translate(35px, -18px);
 }
 
 .triangle-4 {
   margin: 5px;
-  width: 210px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 50px solid #00337f;
+  width: 240px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #00337f;
+  cursor: pointer;
+  position: relative;
+}
+.triangle-4 div {
+  position: absolute;
+  height: 66px;
+  top: 2px;
+  left: 240px;
+  background: linear-gradient(to left, #8b8b8b, transparent);
+  width: 200px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 30px;
+  transition-duration: 0.15s;
+}
+.triangle-4 img {
+  position: absolute;
+  top: -15px;
+  left: 430px;
+  height: 70px;
+  width: 70px;
+  background-color: #e3e3e3;
+  border-radius: 72.5px;
+  border: 5px solid #e3e3e3;
+  image-rendering: crisp-edges;
+  transition-duration: 0.1s;
+}
+.triangle-4:hover {
+  font-size: 1.25em;
+}
+.triangle-4:hover div {
+  width: 230px;
+}
+.triangle-4:hover img {
+  transform: scale(1.5) translate(35px, -18px);
 }
 
 .triangle-5 {
   margin: 5px;
-  width: 280px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 50px solid #00337f;
+  width: 320px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #00337f;
+  cursor: pointer;
+  position: relative;
+}
+.triangle-5 div {
+  position: absolute;
+  height: 66px;
+  top: 2px;
+  left: 320px;
+  background: linear-gradient(to left, #8b8b8b, transparent);
+  width: 200px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 30px;
+  transition-duration: 0.15s;
+}
+.triangle-5 img {
+  position: absolute;
+  top: -15px;
+  left: 510px;
+  height: 70px;
+  width: 70px;
+  background-color: #e3e3e3;
+  border-radius: 72.5px;
+  border: 5px solid #e3e3e3;
+  image-rendering: crisp-edges;
+  transition-duration: 0.1s;
+}
+.triangle-5:hover {
+  font-size: 1.25em;
+}
+.triangle-5:hover div {
+  width: 230px;
+}
+.triangle-5:hover img {
+  transform: scale(1.5) translate(35px, -18px);
 }
 
 .triangle-6 {
   margin: 5px;
-  width: 350px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 50px solid #00337f;
+  width: 400px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #00337f;
+  cursor: pointer;
+  position: relative;
+}
+.triangle-6 div {
+  position: absolute;
+  height: 66px;
+  top: 2px;
+  left: 400px;
+  background: linear-gradient(to left, #8b8b8b, transparent);
+  width: 200px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 30px;
+  transition-duration: 0.15s;
+}
+.triangle-6 img {
+  position: absolute;
+  top: -15px;
+  left: 590px;
+  height: 70px;
+  width: 70px;
+  background-color: #e3e3e3;
+  border-radius: 72.5px;
+  border: 5px solid #e3e3e3;
+  image-rendering: crisp-edges;
+  transition-duration: 0.1s;
+}
+.triangle-6:hover {
+  font-size: 1.25em;
+}
+.triangle-6:hover div {
+  width: 230px;
+}
+.triangle-6:hover img {
+  transform: scale(1.5) translate(35px, -18px);
 }
 
 .triangle-7 {
   margin: 5px;
-  width: 420px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 50px solid #00337f;
+  width: 480px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #004aad;
+  cursor: pointer;
+  position: relative;
+}
+.triangle-7 div {
+  position: absolute;
+  height: 66px;
+  top: 2px;
+  left: 480px;
+  background: linear-gradient(to left, #8b8b8b, transparent);
+  width: 200px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 30px;
+  transition-duration: 0.15s;
+}
+.triangle-7 img {
+  position: absolute;
+  top: -15px;
+  left: 670px;
+  height: 70px;
+  width: 70px;
+  background-color: #e3e3e3;
+  border-radius: 72.5px;
+  border: 5px solid #e3e3e3;
+  image-rendering: crisp-edges;
+  transition-duration: 0.1s;
+}
+.triangle-7:hover {
+  font-size: 1.25em;
+}
+.triangle-7:hover div {
+  width: 230px;
+}
+.triangle-7:hover img {
+  transform: scale(1.5) translate(35px, -18px);
 }
 
 .triangle-8 {
   margin: 5px;
-  width: 490px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 50px solid #00337f;
+  width: 560px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #004aad;
+  cursor: pointer;
+  position: relative;
+}
+.triangle-8 div {
+  position: absolute;
+  height: 66px;
+  top: 2px;
+  left: 560px;
+  background: linear-gradient(to left, #8b8b8b, transparent);
+  width: 200px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 30px;
+  transition-duration: 0.15s;
+}
+.triangle-8 img {
+  position: absolute;
+  top: -15px;
+  left: 750px;
+  height: 70px;
+  width: 70px;
+  background-color: #e3e3e3;
+  border-radius: 72.5px;
+  border: 5px solid #e3e3e3;
+  image-rendering: crisp-edges;
+  transition-duration: 0.1s;
+}
+.triangle-8:hover {
+  font-size: 1.25em;
+}
+.triangle-8:hover div {
+  width: 230px;
+}
+.triangle-8:hover img {
+  transform: scale(1.5) translate(35px, -18px);
 }
