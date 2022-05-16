@@ -111,38 +111,66 @@ body {
   background: linear-gradient(to bottom, transparent, #ffffff), linear-gradient(-90deg, #ffffff, #e3e3e3 20% 80%, #ffffff);
 }
 
-.group-button {
-  width: 500px;
-  cursor: pointer;
-  position: relative;
+.triangle {
   margin: 5px;
+  width: 0px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00337f;
 }
-.group-button img {
-  display: block;
-  width: 100%;
+
+.triangle-2 {
+  margin: 5px;
+  width: 70px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00337f;
 }
-.group-button::before {
-  content: "Test";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 70%;
-  background-color: black;
+
+.triangle-3 {
+  margin: 5px;
+  width: 140px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00337f;
 }
-.group-button h1 {
-  color: white;
-  position: absolute;
-  top: 20%;
-  left: 8%;
+
+.triangle-4 {
+  margin: 5px;
+  width: 210px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00337f;
 }
-.group-button:hover {
-  transform: scale(1.01);
+
+.triangle-5 {
+  margin: 5px;
+  width: 280px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00337f;
 }
-.group-button:hover::before {
-  opacity: 0%;
+
+.triangle-6 {
+  margin: 5px;
+  width: 350px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00337f;
 }
-.group-button:hover h1 {
-  opacity: 0%;
+
+.triangle-7 {
+  margin: 5px;
+  width: 420px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00337f;
+}
+
+.triangle-8 {
+  margin: 5px;
+  width: 490px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00337f;
 }

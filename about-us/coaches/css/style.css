@@ -87,7 +87,7 @@ body {
 
 .flex-container-column {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -132,11 +132,6 @@ a {
   float: right;
 }
 
-a:hover {
-  color: #000000;
-  text-decoration: none;
-}
-
 img.icon {
   height: 16px;
   vertical-align: text-top;
@@ -154,7 +149,6 @@ img.icon {
   transition-duration: 0.2s;
   cursor: pointer;
 }
-
 .email:hover {
   background-color: #ffffff;
   color: #000000;

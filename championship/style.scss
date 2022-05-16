@@ -1,0 +1,46 @@
+@use "../default";
+@use "../color-palette" as *;
+
+@mixin triangle($tier) {
+  $height: 50px;
+  $width: 60px;
+  $margin: 5px;
+
+  margin: $margin;
+  width: ($width + ($margin * 2)) * $tier;
+  border-left: $width/2 solid transparent;
+  border-right: $width/2 solid transparent;
+  border-bottom: $height solid $main-blue;
+}
+
+.triangle {
+  @include triangle(0);
+}
+
+.triangle-2 {
+  @include triangle(1);
+}
+
+.triangle-3 {
+  @include triangle(2);
+}
+
+.triangle-4 {
+  @include triangle(3);
+}
+
+.triangle-5 {
+  @include triangle(4);
+}
+
+.triangle-6 {
+  @include triangle(5);
+}
+
+.triangle-7 {
+  @include triangle(6);
+}
+
+.triangle-8 {
+  @include triangle(7);
+}
