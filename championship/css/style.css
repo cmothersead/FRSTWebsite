@@ -130,7 +130,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 40px;
   transition-duration: 0.15s;
 }
 .triangle img {
@@ -152,7 +152,7 @@ body {
   width: 230px;
 }
 .triangle:hover img {
-  transform: scale(1.5) translate(35px, -18px);
+  transform: scale(2) translate(40px, -20px);
 }
 
 .triangle-2 {
@@ -174,7 +174,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 40px;
   transition-duration: 0.15s;
 }
 .triangle-2 img {
@@ -196,7 +196,7 @@ body {
   width: 230px;
 }
 .triangle-2:hover img {
-  transform: scale(1.5) translate(35px, -18px);
+  transform: scale(2) translate(40px, -20px);
 }
 
 .triangle-3 {
@@ -218,7 +218,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 40px;
   transition-duration: 0.15s;
 }
 .triangle-3 img {
@@ -240,7 +240,7 @@ body {
   width: 230px;
 }
 .triangle-3:hover img {
-  transform: scale(1.5) translate(35px, -18px);
+  transform: scale(2) translate(40px, -20px);
 }
 
 .triangle-4 {
@@ -262,7 +262,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 40px;
   transition-duration: 0.15s;
 }
 .triangle-4 img {
@@ -284,7 +284,7 @@ body {
   width: 230px;
 }
 .triangle-4:hover img {
-  transform: scale(1.5) translate(35px, -18px);
+  transform: scale(2) translate(40px, -20px);
 }
 
 .triangle-5 {
@@ -306,7 +306,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 40px;
   transition-duration: 0.15s;
 }
 .triangle-5 img {
@@ -328,7 +328,7 @@ body {
   width: 230px;
 }
 .triangle-5:hover img {
-  transform: scale(1.5) translate(35px, -18px);
+  transform: scale(2) translate(40px, -20px);
 }
 
 .triangle-6 {
@@ -350,7 +350,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 40px;
   transition-duration: 0.15s;
 }
 .triangle-6 img {
@@ -372,7 +372,7 @@ body {
   width: 230px;
 }
 .triangle-6:hover img {
-  transform: scale(1.5) translate(35px, -18px);
+  transform: scale(2) translate(40px, -20px);
 }
 
 .triangle-7 {
@@ -394,7 +394,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 40px;
   transition-duration: 0.15s;
 }
 .triangle-7 img {
@@ -416,7 +416,7 @@ body {
   width: 230px;
 }
 .triangle-7:hover img {
-  transform: scale(1.5) translate(35px, -18px);
+  transform: scale(2) translate(40px, -20px);
 }
 
 .triangle-8 {
@@ -438,7 +438,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 40px;
   transition-duration: 0.15s;
 }
 .triangle-8 img {
@@ -460,5 +460,5 @@ body {
   width: 230px;
 }
 .triangle-8:hover img {
-  transform: scale(1.5) translate(35px, -18px);
+  transform: scale(2) translate(40px, -20px);
 }
