@@ -66,3 +66,13 @@ img.icon {
 div.coach {
   clear: both;
 }
+
+.quote {
+  & p:first-child::before {
+    content: '"';
+  }
+  & p:last-child::after {
+    content: '"';
+  }
+  font-style: italic;
+}

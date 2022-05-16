@@ -175,3 +175,13 @@ img.icon {
 div.coach {
   clear: both;
 }
+
+.quote {
+  font-style: italic;
+}
+.quote p:first-child::before {
+  content: '"';
+}
+.quote p:last-child::after {
+  content: '"';
+}
