@@ -1,5 +1,5 @@
-@use "../../../color-palette";
-@use "../../group-template-style" with (
+@use "/color-palette";
+@use "/groups/group-template-style" with (
   $group-color: color-palette.$discovery
 );
 

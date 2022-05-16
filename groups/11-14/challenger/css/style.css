@@ -114,16 +114,18 @@ body {
 .coach-card {
   background-color: #484848;
   box-shadow: 0px 4px 8px #000000;
-  float: left;
   margin: 10px;
   margin-right: 20px;
-  padding: 0px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 180px;
   height: 270px;
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
 }
 .coach-card:active {
@@ -138,46 +140,44 @@ body {
   width: 100%;
   height: 100%;
 }
-.coach-card h1 {
-  font-size: 20px;
-  margin: 0px;
+.coach-card .title {
+  font-size: 1.25em;
 }
-.coach-card h2 {
-  font-size: 16px;
-  margin: 0px;
+.coach-card .name {
+  font-size: 1em;
 }
 .coach-card .img-gradient-container {
+  width: 100%;
+  height: 80%;
   position: relative;
-  width: 180px;
-  height: 216px;
 }
-.coach-card .img-gradient {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  opacity: 0%;
+.coach-card .img-gradient-container::before {
+  content: "";
   position: absolute;
   top: 0;
-  transition: opacity 0.25s;
+  left: 0;
   width: 100%;
+  height: 100%;
+  opacity: 0%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  transition: opacity 0.25s;
 }
-.coach-card .img-gradient:hover {
+.coach-card .img-gradient-container span {
+  bottom: -12px;
+  left: 0;
+  color: white;
+  font-weight: 500;
+  opacity: 0%;
+  padding: 10px;
+  position: absolute;
+}
+.coach-card .img-gradient-container:hover::before {
   opacity: 100%;
 }
-.coach-card .img-gradient:hover + .img-text {
+.coach-card .img-gradient-container:hover span {
   opacity: 100%;
   transform: translate(0px, -10px);
   transition-duration: 0.2s;
-}
-.coach-card .img-text {
-  bottom: -8px;
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 500;
-  opacity: 0%;
-  padding: 5px;
-  position: absolute;
 }
 
 .background {
@@ -199,15 +199,6 @@ a:active {
 }
 a:visited {
   color: #484848;
-}
-
-h1 {
-  font-family: Montserrat, sans-serif;
-  font-size: 25px;
-  font-weight: 900;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  text-align: right;
 }
 
 h3 {
@@ -234,14 +225,6 @@ h4 {
 .header p {
   margin-right: 10px;
   font-size: 16px;
-}
-
-.group-header-img {
-  width: 100%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .quote-section {
@@ -331,13 +314,6 @@ ul {
   margin-bottom: -16px;
 }
 
-.coach-bio-link-content {
-  align-items: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
 .calendar-icon {
   margin: 10px;
 }
@@ -364,11 +340,11 @@ ul {
   font-size: 14px;
 }
 
-@media screen and (max-width: 1050px) {
-  .group-header-img {
-    width: 100%;
-  }
+.coach-card {
+  float: left;
+}
 
+@media screen and (max-width: 1050px) {
   .coach-card {
     margin: 8px;
     margin-left: 0px;

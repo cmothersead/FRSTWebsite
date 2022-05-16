@@ -1,5 +1,5 @@
-@use "../default";
-@use "../color-palette" as *;
+@use "/default";
+@use "/color-palette" as *;
 
 @mixin triangle($tier) {
   $height: 50px;

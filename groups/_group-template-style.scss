@@ -1,7 +1,7 @@
-@use "../default";
-@use "../color-palette" as *;
-@use "../coach-card";
-@use "../accordion";
+@use "/default";
+@use "/color-palette" as *;
+@use "/coach-card";
+@use "/accordion";
 
 $group-color: white !default;
 
@@ -29,15 +29,6 @@ a {
   }
 }
 
-h1 {
-  font-family: Montserrat, sans-serif;
-  font-size: 25px;
-  font-weight: 900;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  text-align: right;
-}
-
 h3 {
   color: $group-color;
   font-size: 42px;
@@ -63,11 +54,6 @@ h4 {
     margin-right: 10px;
     font-size: 16px;
   }
-}
-
-.group-header-img {
-  width: 100%;
-  user-select: none;
 }
 
 .quote-section {
@@ -159,13 +145,6 @@ ul {
   }
 }
 
-.coach-bio-link-content {
-  align-items: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
 .calendar-icon {
   margin: 10px;
 
@@ -196,10 +175,11 @@ ul {
   }
 }
 
+.coach-card {
+  float: left;
+}
+
 @media screen and (max-width: 1050px) {
-  .group-header-img {
-    width: 100%;
-  }
   .coach-card {
     margin: 8px;
     margin-left: 0px;
