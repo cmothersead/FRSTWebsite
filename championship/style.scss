@@ -16,7 +16,7 @@
   cursor: pointer;
   position: relative;
 
-  div {
+  .label {
     $margin: 2px;
 
     position: absolute;
@@ -32,7 +32,7 @@
     font-weight: bold;
     padding-left: 40px;
 
-    transition-duration: 0.15s;
+    transition-duration: 0.3s;
   }
 
   img {
@@ -41,22 +41,44 @@
     left: $width + 190px;
     height: $height;
     width: $height;
-    background-color: $background-dark;
-    border-radius: $height + 5px / 2;
-    border: 5px solid $background-dark;
+    background-color: $background-light;
+    border-radius: $height + calc(5px / 2);
+    border: 5px solid $background-light;
     image-rendering: crisp-edges;
 
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
+  }
+
+  .info {
+    display: none;
+    position: absolute;
+    top: $tier * -80px - 100px;
+    left: $width + 250px;
+
+    margin: 20px;
+    padding: 10px;
+    padding-left: 310px - calc($width/2);
+    width: 700px;
+    height: 700px;
+
+    h1 {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
   }
 
   &:hover {
     font-size: 1.25em;
 
-    div {
+    .label {
       width: 230px;
     }
+
     img {
       transform: scale(2) translate(40px, -20px);
+    }
+
+    .info {
+      display: initial;
     }
   }
 }
@@ -91,4 +113,16 @@
 
 .triangle-8 {
   @include triangle(7, $light-blue);
+}
+
+.flex-container-column {
+  // background: purple;
+}
+
+.flex-container {
+  background-color: $background-dark;
+  margin: 100px;
+  padding: 20px;
+  padding-top: 100px;
+  border-radius: 20px;
 }

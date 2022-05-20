@@ -120,7 +120,7 @@ body {
   cursor: pointer;
   position: relative;
 }
-.triangle div {
+.triangle .label {
   position: absolute;
   height: 66px;
   top: 2px;
@@ -131,7 +131,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding-left: 40px;
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
 }
 .triangle img {
   position: absolute;
@@ -139,20 +139,37 @@ body {
   left: 190px;
   height: 70px;
   width: 70px;
-  background-color: #e3e3e3;
+  background-color: #eeeeee;
   border-radius: 72.5px;
-  border: 5px solid #e3e3e3;
+  border: 5px solid #eeeeee;
   image-rendering: crisp-edges;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
+}
+.triangle .info {
+  display: none;
+  position: absolute;
+  top: -100px;
+  left: 250px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 310px;
+  width: 700px;
+  height: 700px;
+}
+.triangle .info h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .triangle:hover {
   font-size: 1.25em;
 }
-.triangle:hover div {
+.triangle:hover .label {
   width: 230px;
 }
 .triangle:hover img {
   transform: scale(2) translate(40px, -20px);
+}
+.triangle:hover .info {
+  display: initial;
 }
 
 .triangle-2 {
@@ -164,7 +181,7 @@ body {
   cursor: pointer;
   position: relative;
 }
-.triangle-2 div {
+.triangle-2 .label {
   position: absolute;
   height: 66px;
   top: 2px;
@@ -175,7 +192,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding-left: 40px;
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
 }
 .triangle-2 img {
   position: absolute;
@@ -183,20 +200,37 @@ body {
   left: 270px;
   height: 70px;
   width: 70px;
-  background-color: #e3e3e3;
+  background-color: #eeeeee;
   border-radius: 72.5px;
-  border: 5px solid #e3e3e3;
+  border: 5px solid #eeeeee;
   image-rendering: crisp-edges;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
+}
+.triangle-2 .info {
+  display: none;
+  position: absolute;
+  top: -180px;
+  left: 330px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 270px;
+  width: 700px;
+  height: 700px;
+}
+.triangle-2 .info h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .triangle-2:hover {
   font-size: 1.25em;
 }
-.triangle-2:hover div {
+.triangle-2:hover .label {
   width: 230px;
 }
 .triangle-2:hover img {
   transform: scale(2) translate(40px, -20px);
+}
+.triangle-2:hover .info {
+  display: initial;
 }
 
 .triangle-3 {
@@ -208,7 +242,7 @@ body {
   cursor: pointer;
   position: relative;
 }
-.triangle-3 div {
+.triangle-3 .label {
   position: absolute;
   height: 66px;
   top: 2px;
@@ -219,7 +253,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding-left: 40px;
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
 }
 .triangle-3 img {
   position: absolute;
@@ -227,20 +261,37 @@ body {
   left: 350px;
   height: 70px;
   width: 70px;
-  background-color: #e3e3e3;
+  background-color: #eeeeee;
   border-radius: 72.5px;
-  border: 5px solid #e3e3e3;
+  border: 5px solid #eeeeee;
   image-rendering: crisp-edges;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
+}
+.triangle-3 .info {
+  display: none;
+  position: absolute;
+  top: -260px;
+  left: 410px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 230px;
+  width: 700px;
+  height: 700px;
+}
+.triangle-3 .info h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .triangle-3:hover {
   font-size: 1.25em;
 }
-.triangle-3:hover div {
+.triangle-3:hover .label {
   width: 230px;
 }
 .triangle-3:hover img {
   transform: scale(2) translate(40px, -20px);
+}
+.triangle-3:hover .info {
+  display: initial;
 }
 
 .triangle-4 {
@@ -252,7 +303,7 @@ body {
   cursor: pointer;
   position: relative;
 }
-.triangle-4 div {
+.triangle-4 .label {
   position: absolute;
   height: 66px;
   top: 2px;
@@ -263,7 +314,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding-left: 40px;
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
 }
 .triangle-4 img {
   position: absolute;
@@ -271,20 +322,37 @@ body {
   left: 430px;
   height: 70px;
   width: 70px;
-  background-color: #e3e3e3;
+  background-color: #eeeeee;
   border-radius: 72.5px;
-  border: 5px solid #e3e3e3;
+  border: 5px solid #eeeeee;
   image-rendering: crisp-edges;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
+}
+.triangle-4 .info {
+  display: none;
+  position: absolute;
+  top: -340px;
+  left: 490px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 190px;
+  width: 700px;
+  height: 700px;
+}
+.triangle-4 .info h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .triangle-4:hover {
   font-size: 1.25em;
 }
-.triangle-4:hover div {
+.triangle-4:hover .label {
   width: 230px;
 }
 .triangle-4:hover img {
   transform: scale(2) translate(40px, -20px);
+}
+.triangle-4:hover .info {
+  display: initial;
 }
 
 .triangle-5 {
@@ -296,7 +364,7 @@ body {
   cursor: pointer;
   position: relative;
 }
-.triangle-5 div {
+.triangle-5 .label {
   position: absolute;
   height: 66px;
   top: 2px;
@@ -307,7 +375,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding-left: 40px;
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
 }
 .triangle-5 img {
   position: absolute;
@@ -315,20 +383,37 @@ body {
   left: 510px;
   height: 70px;
   width: 70px;
-  background-color: #e3e3e3;
+  background-color: #eeeeee;
   border-radius: 72.5px;
-  border: 5px solid #e3e3e3;
+  border: 5px solid #eeeeee;
   image-rendering: crisp-edges;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
+}
+.triangle-5 .info {
+  display: none;
+  position: absolute;
+  top: -420px;
+  left: 570px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 150px;
+  width: 700px;
+  height: 700px;
+}
+.triangle-5 .info h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .triangle-5:hover {
   font-size: 1.25em;
 }
-.triangle-5:hover div {
+.triangle-5:hover .label {
   width: 230px;
 }
 .triangle-5:hover img {
   transform: scale(2) translate(40px, -20px);
+}
+.triangle-5:hover .info {
+  display: initial;
 }
 
 .triangle-6 {
@@ -340,7 +425,7 @@ body {
   cursor: pointer;
   position: relative;
 }
-.triangle-6 div {
+.triangle-6 .label {
   position: absolute;
   height: 66px;
   top: 2px;
@@ -351,7 +436,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding-left: 40px;
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
 }
 .triangle-6 img {
   position: absolute;
@@ -359,20 +444,37 @@ body {
   left: 590px;
   height: 70px;
   width: 70px;
-  background-color: #e3e3e3;
+  background-color: #eeeeee;
   border-radius: 72.5px;
-  border: 5px solid #e3e3e3;
+  border: 5px solid #eeeeee;
   image-rendering: crisp-edges;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
+}
+.triangle-6 .info {
+  display: none;
+  position: absolute;
+  top: -500px;
+  left: 650px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 110px;
+  width: 700px;
+  height: 700px;
+}
+.triangle-6 .info h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .triangle-6:hover {
   font-size: 1.25em;
 }
-.triangle-6:hover div {
+.triangle-6:hover .label {
   width: 230px;
 }
 .triangle-6:hover img {
   transform: scale(2) translate(40px, -20px);
+}
+.triangle-6:hover .info {
+  display: initial;
 }
 
 .triangle-7 {
@@ -384,7 +486,7 @@ body {
   cursor: pointer;
   position: relative;
 }
-.triangle-7 div {
+.triangle-7 .label {
   position: absolute;
   height: 66px;
   top: 2px;
@@ -395,7 +497,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding-left: 40px;
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
 }
 .triangle-7 img {
   position: absolute;
@@ -403,20 +505,37 @@ body {
   left: 670px;
   height: 70px;
   width: 70px;
-  background-color: #e3e3e3;
+  background-color: #eeeeee;
   border-radius: 72.5px;
-  border: 5px solid #e3e3e3;
+  border: 5px solid #eeeeee;
   image-rendering: crisp-edges;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
+}
+.triangle-7 .info {
+  display: none;
+  position: absolute;
+  top: -580px;
+  left: 730px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 70px;
+  width: 700px;
+  height: 700px;
+}
+.triangle-7 .info h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .triangle-7:hover {
   font-size: 1.25em;
 }
-.triangle-7:hover div {
+.triangle-7:hover .label {
   width: 230px;
 }
 .triangle-7:hover img {
   transform: scale(2) translate(40px, -20px);
+}
+.triangle-7:hover .info {
+  display: initial;
 }
 
 .triangle-8 {
@@ -428,7 +547,7 @@ body {
   cursor: pointer;
   position: relative;
 }
-.triangle-8 div {
+.triangle-8 .label {
   position: absolute;
   height: 66px;
   top: 2px;
@@ -439,7 +558,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding-left: 40px;
-  transition-duration: 0.15s;
+  transition-duration: 0.3s;
 }
 .triangle-8 img {
   position: absolute;
@@ -447,18 +566,43 @@ body {
   left: 750px;
   height: 70px;
   width: 70px;
-  background-color: #e3e3e3;
+  background-color: #eeeeee;
   border-radius: 72.5px;
-  border: 5px solid #e3e3e3;
+  border: 5px solid #eeeeee;
   image-rendering: crisp-edges;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
+}
+.triangle-8 .info {
+  display: none;
+  position: absolute;
+  top: -660px;
+  left: 810px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 30px;
+  width: 700px;
+  height: 700px;
+}
+.triangle-8 .info h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .triangle-8:hover {
   font-size: 1.25em;
 }
-.triangle-8:hover div {
+.triangle-8:hover .label {
   width: 230px;
 }
 .triangle-8:hover img {
   transform: scale(2) translate(40px, -20px);
+}
+.triangle-8:hover .info {
+  display: initial;
+}
+
+.flex-container {
+  background-color: #e3e3e3;
+  margin: 100px;
+  padding: 20px;
+  padding-top: 100px;
+  border-radius: 20px;
 }
