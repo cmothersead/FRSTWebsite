@@ -1,13 +1,114 @@
 @use "/default";
 @use "/color-palette" as *;
+@use "sass:math";
+
+$padding-top: 100px;
+
+@mixin half-triangle($tier, $color) {
+  $height: 60px;
+  $unit-width: 50px;
+  $tier-margin: calc($height/20);
+  $width: ($unit-width + ($tier-margin * calc($unit-width/$height) * 2)) * $tier;
+  $label-width: 200px;
+  $scale-factor: 2;
+
+  margin: $tier-margin;
+  width: $width;
+  border-right: $unit-width solid transparent;
+  border-bottom: $height solid $color;
+
+  cursor: pointer;
+  position: relative;
+
+  .label {
+    $margin: $tier-margin;
+
+    position: absolute;
+    height: $height - $margin * 2;
+    top: $margin;
+    left: $width;
+    background: linear-gradient(to left, $main-gray, transparent);
+    width: $label-width;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+    padding-left: $label-width * 0.2;
+
+    transition-duration: 0.3s;
+  }
+
+  img {
+    $hypotenuse: math.hypot($height, $unit-width);
+
+    position: absolute;
+    // Margin - Dif between diameter and height - offset
+    top: calc($hypotenuse / 30) - calc(($hypotenuse - $height) / 2) -
+      calc($height / 4);
+    left: $width + $label-width;
+    height: $hypotenuse * 0.8;
+    width: $hypotenuse * 0.8;
+    background-color: $background-light;
+    border-radius: $hypotenuse;
+    border: calc($hypotenuse/15) solid $background-light;
+    image-rendering: crisp-edges;
+
+    transition-duration: 0.2s;
+  }
+
+  .info {
+    display: none;
+    position: absolute;
+    top: $tier * -($height + (2 * $tier-margin)) - 100px;
+    left: $width + $label-width * 1.25;
+
+    margin: 20px;
+    padding: 10px;
+    padding-left: 310px - calc($width/2);
+    width: 700px;
+    height: 700px;
+
+    h1 {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
+  }
+
+  &:hover {
+    font-size: 1.25em;
+
+    .label {
+      width: $label-width * 1.2;
+    }
+
+    img {
+      $a: math.atan(calc($height / $unit-width));
+      $b: 90 - $a;
+      $c: math.hypot($height, $unit-width);
+      $d: $c * calc((1 + $scale-factor) / 2);
+      $e: $d * math.cos(math.asin(calc($c / $d)));
+
+      transform: scale($scale-factor)
+        translate(calc($e * math.cos($b) / 2), calc($e * math.sin($b) / -2));
+    }
+
+    .info {
+      display: initial;
+    }
+  }
+}
 
 @mixin triangle($tier, $color) {
   $height: 70px;
   $unit-width: 70px;
-  $margin: 5px;
-  $width: ($unit-width + ($margin * calc($unit-width/$height) * 2)) * $tier;
+  $tier-margin: calc($height/20);
+  $width: calc(
+    ($unit-width + ($tier-margin * calc($unit-width/$height) * 2)) * $tier / 2
+  );
+  $label-width: 200px;
+  $scale-factor: 2;
 
-  margin: $margin;
+  margin: $tier-margin;
   width: $width;
   border-left: calc($unit-width/2) solid transparent;
   border-right: calc($unit-width/2) solid transparent;
@@ -17,33 +118,37 @@
   position: relative;
 
   .label {
-    $margin: 2px;
+    $margin: calc($tier-margin/2);
 
     position: absolute;
     height: $height - $margin * 2;
     top: $margin;
     left: $width;
     background: linear-gradient(to left, $main-gray, transparent);
-    width: 200px;
+    width: $label-width;
 
     display: flex;
     align-items: center;
 
     font-weight: bold;
-    padding-left: 40px;
+    padding-left: $label-width * 0.2;
 
     transition-duration: 0.3s;
   }
 
   img {
+    $hypotenuse: math.hypot($height, $unit-width/2);
+
     position: absolute;
-    top: -15px;
-    left: $width + 190px;
-    height: $height;
-    width: $height;
+    // Margin - Dif between diameter and height - offset
+    top: calc($hypotenuse/30) - calc(($hypotenuse - $height) / 2) -
+      calc($height/4);
+    left: $width + $label-width;
+    height: $hypotenuse * 0.8;
+    width: $hypotenuse * 0.8;
     background-color: $background-light;
-    border-radius: $height + calc(5px / 2);
-    border: 5px solid $background-light;
+    border-radius: $hypotenuse;
+    border: calc($hypotenuse/15) solid $background-light;
     image-rendering: crisp-edges;
 
     transition-duration: 0.2s;
@@ -52,8 +157,8 @@
   .info {
     display: none;
     position: absolute;
-    top: $tier * -80px - 100px;
-    left: $width + 250px;
+    top: $tier * -($height + (2 * $tier-margin)) - 100px;
+    left: $width + $label-width * 1.25;
 
     margin: 20px;
     padding: 10px;
@@ -74,7 +179,14 @@
     }
 
     img {
-      transform: scale(2) translate(40px, -20px);
+      $a: math.atan(calc($height / $unit-width));
+      $b: 90 - $a;
+      $c: math.hypot($height, $unit-width);
+      $d: $c * calc((1 + $scale-factor) / 2);
+      $e: $d * math.cos(math.asin(calc($c / $d)));
+
+      transform: scale($scale-factor)
+        translate($e * math.cos($b) / 2, -$e * math.sin($b) / 2);
     }
 
     .info {
@@ -84,45 +196,46 @@
 }
 
 .triangle {
-  @include triangle(0, $dark-blue);
+  @include half-triangle(0, $dark-blue);
 }
 
 .triangle-2 {
-  @include triangle(1, $dark-blue);
+  @include half-triangle(1, $dark-blue);
 }
 
 .triangle-3 {
-  @include triangle(2, $dark-blue);
+  @include half-triangle(2, $dark-blue);
 }
 
 .triangle-4 {
-  @include triangle(3, $main-blue);
+  @include half-triangle(3, $main-blue);
 }
 
 .triangle-5 {
-  @include triangle(4, $main-blue);
+  @include half-triangle(4, $main-blue);
 }
 
 .triangle-6 {
-  @include triangle(5, $main-blue);
+  @include half-triangle(5, $main-blue);
 }
 
 .triangle-7 {
-  @include triangle(6, $light-blue);
+  @include half-triangle(6, $light-blue);
 }
 
 .triangle-8 {
-  @include triangle(7, $light-blue);
+  @include half-triangle(7, $light-blue);
 }
 
 .flex-container-column {
-  // background: purple;
+  align-items: flex-start;
 }
 
 .flex-container {
   background-color: $background-dark;
   margin: 100px;
   padding: 20px;
-  padding-top: 100px;
+  padding-top: $padding-top;
   border-radius: 20px;
+  overflow: hidden;
 }
