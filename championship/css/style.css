@@ -112,46 +112,50 @@ body {
 }
 
 .triangle {
-  margin: 3px;
-  width: 0px;
-  border-right: 50px solid transparent;
-  border-bottom: 60px solid #001c50;
+  margin: 0.15vw;
+  width: 0vw;
+  border-right: 1vw solid transparent;
+  border-bottom: 3vw solid #001c50;
   cursor: pointer;
   position: relative;
 }
 .triangle .label {
   position: absolute;
-  height: 54px;
-  top: 3px;
-  left: 0px;
+  height: 2.7vw;
+  top: 0.15vw;
+  left: 0vw;
   background: linear-gradient(to left, #8b8b8b, transparent);
-  width: 200px;
+  width: 10vw;
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 2vw;
   transition-duration: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .triangle img {
   position: absolute;
-  top: -21.4478318209px;
-  left: 200px;
-  height: 62.4819974073px;
-  width: 62.4819974073px;
+  top: -0.7257295747vw;
+  left: 10vw;
+  height: 2.5298221281vw;
+  width: 2.5298221281vw;
   background-color: #eeeeee;
-  border-radius: 78.1024967591px;
-  border: 5.2068331173px solid #eeeeee;
+  border-radius: 3.1622776602vw;
+  border: 0.2108185107vw solid #eeeeee;
   image-rendering: crisp-edges;
   transition-duration: 0.2s;
 }
 .triangle .info {
   display: none;
   position: absolute;
-  top: -100px;
-  left: 250px;
+  top: -5vw;
+  left: 12.5vw;
   margin: 20px;
   padding: 10px;
-  padding-left: 310px;
+  padding-left: 15vw;
   width: 700px;
   height: 700px;
 }
@@ -162,56 +166,60 @@ body {
   font-size: 1.25em;
 }
 .triangle:hover .label {
-  width: 240px;
+  width: 12vw;
 }
 .triangle:hover img {
-  transform: scale(2) translate(33.5410196625px, -27.9508497187px);
+  transform: scale(2) translate(1.6770509831vw, -0.5590169944vw);
 }
 .triangle:hover .info {
   display: initial;
 }
 
 .triangle-2 {
-  margin: 3px;
-  width: 55px;
-  border-right: 50px solid transparent;
-  border-bottom: 60px solid #001c50;
+  margin: 0.15vw;
+  width: 1.1vw;
+  border-right: 1vw solid transparent;
+  border-bottom: 3vw solid #001c50;
   cursor: pointer;
   position: relative;
 }
 .triangle-2 .label {
   position: absolute;
-  height: 54px;
-  top: 3px;
-  left: 55px;
+  height: 2.7vw;
+  top: 0.15vw;
+  left: 1.1vw;
   background: linear-gradient(to left, #8b8b8b, transparent);
-  width: 200px;
+  width: 10vw;
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 2vw;
   transition-duration: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .triangle-2 img {
   position: absolute;
-  top: -21.4478318209px;
-  left: 255px;
-  height: 62.4819974073px;
-  width: 62.4819974073px;
+  top: -0.7257295747vw;
+  left: 11.1vw;
+  height: 2.5298221281vw;
+  width: 2.5298221281vw;
   background-color: #eeeeee;
-  border-radius: 78.1024967591px;
-  border: 5.2068331173px solid #eeeeee;
+  border-radius: 3.1622776602vw;
+  border: 0.2108185107vw solid #eeeeee;
   image-rendering: crisp-edges;
   transition-duration: 0.2s;
 }
 .triangle-2 .info {
   display: none;
   position: absolute;
-  top: -166px;
-  left: 305px;
+  top: -8.3vw;
+  left: 13.6vw;
   margin: 20px;
   padding: 10px;
-  padding-left: 282.5px;
+  padding-left: 14.45vw;
   width: 700px;
   height: 700px;
 }
@@ -222,56 +230,60 @@ body {
   font-size: 1.25em;
 }
 .triangle-2:hover .label {
-  width: 240px;
+  width: 12vw;
 }
 .triangle-2:hover img {
-  transform: scale(2) translate(33.5410196625px, -27.9508497187px);
+  transform: scale(2) translate(1.6770509831vw, -0.5590169944vw);
 }
 .triangle-2:hover .info {
   display: initial;
 }
 
 .triangle-3 {
-  margin: 3px;
-  width: 110px;
-  border-right: 50px solid transparent;
-  border-bottom: 60px solid #001c50;
+  margin: 0.15vw;
+  width: 2.2vw;
+  border-right: 1vw solid transparent;
+  border-bottom: 3vw solid #001c50;
   cursor: pointer;
   position: relative;
 }
 .triangle-3 .label {
   position: absolute;
-  height: 54px;
-  top: 3px;
-  left: 110px;
+  height: 2.7vw;
+  top: 0.15vw;
+  left: 2.2vw;
   background: linear-gradient(to left, #8b8b8b, transparent);
-  width: 200px;
+  width: 10vw;
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 2vw;
   transition-duration: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .triangle-3 img {
   position: absolute;
-  top: -21.4478318209px;
-  left: 310px;
-  height: 62.4819974073px;
-  width: 62.4819974073px;
+  top: -0.7257295747vw;
+  left: 12.2vw;
+  height: 2.5298221281vw;
+  width: 2.5298221281vw;
   background-color: #eeeeee;
-  border-radius: 78.1024967591px;
-  border: 5.2068331173px solid #eeeeee;
+  border-radius: 3.1622776602vw;
+  border: 0.2108185107vw solid #eeeeee;
   image-rendering: crisp-edges;
   transition-duration: 0.2s;
 }
 .triangle-3 .info {
   display: none;
   position: absolute;
-  top: -232px;
-  left: 360px;
+  top: -11.6vw;
+  left: 14.7vw;
   margin: 20px;
   padding: 10px;
-  padding-left: 255px;
+  padding-left: 13.9vw;
   width: 700px;
   height: 700px;
 }
@@ -282,56 +294,60 @@ body {
   font-size: 1.25em;
 }
 .triangle-3:hover .label {
-  width: 240px;
+  width: 12vw;
 }
 .triangle-3:hover img {
-  transform: scale(2) translate(33.5410196625px, -27.9508497187px);
+  transform: scale(2) translate(1.6770509831vw, -0.5590169944vw);
 }
 .triangle-3:hover .info {
   display: initial;
 }
 
 .triangle-4 {
-  margin: 3px;
-  width: 165px;
-  border-right: 50px solid transparent;
-  border-bottom: 60px solid #00337f;
+  margin: 0.15vw;
+  width: 3.3vw;
+  border-right: 1vw solid transparent;
+  border-bottom: 3vw solid #00337f;
   cursor: pointer;
   position: relative;
 }
 .triangle-4 .label {
   position: absolute;
-  height: 54px;
-  top: 3px;
-  left: 165px;
+  height: 2.7vw;
+  top: 0.15vw;
+  left: 3.3vw;
   background: linear-gradient(to left, #8b8b8b, transparent);
-  width: 200px;
+  width: 10vw;
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 2vw;
   transition-duration: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .triangle-4 img {
   position: absolute;
-  top: -21.4478318209px;
-  left: 365px;
-  height: 62.4819974073px;
-  width: 62.4819974073px;
+  top: -0.7257295747vw;
+  left: 13.3vw;
+  height: 2.5298221281vw;
+  width: 2.5298221281vw;
   background-color: #eeeeee;
-  border-radius: 78.1024967591px;
-  border: 5.2068331173px solid #eeeeee;
+  border-radius: 3.1622776602vw;
+  border: 0.2108185107vw solid #eeeeee;
   image-rendering: crisp-edges;
   transition-duration: 0.2s;
 }
 .triangle-4 .info {
   display: none;
   position: absolute;
-  top: -298px;
-  left: 415px;
+  top: -14.9vw;
+  left: 15.8vw;
   margin: 20px;
   padding: 10px;
-  padding-left: 227.5px;
+  padding-left: 13.35vw;
   width: 700px;
   height: 700px;
 }
@@ -342,56 +358,60 @@ body {
   font-size: 1.25em;
 }
 .triangle-4:hover .label {
-  width: 240px;
+  width: 12vw;
 }
 .triangle-4:hover img {
-  transform: scale(2) translate(33.5410196625px, -27.9508497187px);
+  transform: scale(2) translate(1.6770509831vw, -0.5590169944vw);
 }
 .triangle-4:hover .info {
   display: initial;
 }
 
 .triangle-5 {
-  margin: 3px;
-  width: 220px;
-  border-right: 50px solid transparent;
-  border-bottom: 60px solid #00337f;
+  margin: 0.15vw;
+  width: 4.4vw;
+  border-right: 1vw solid transparent;
+  border-bottom: 3vw solid #00337f;
   cursor: pointer;
   position: relative;
 }
 .triangle-5 .label {
   position: absolute;
-  height: 54px;
-  top: 3px;
-  left: 220px;
+  height: 2.7vw;
+  top: 0.15vw;
+  left: 4.4vw;
   background: linear-gradient(to left, #8b8b8b, transparent);
-  width: 200px;
+  width: 10vw;
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 2vw;
   transition-duration: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .triangle-5 img {
   position: absolute;
-  top: -21.4478318209px;
-  left: 420px;
-  height: 62.4819974073px;
-  width: 62.4819974073px;
+  top: -0.7257295747vw;
+  left: 14.4vw;
+  height: 2.5298221281vw;
+  width: 2.5298221281vw;
   background-color: #eeeeee;
-  border-radius: 78.1024967591px;
-  border: 5.2068331173px solid #eeeeee;
+  border-radius: 3.1622776602vw;
+  border: 0.2108185107vw solid #eeeeee;
   image-rendering: crisp-edges;
   transition-duration: 0.2s;
 }
 .triangle-5 .info {
   display: none;
   position: absolute;
-  top: -364px;
-  left: 470px;
+  top: -18.2vw;
+  left: 16.9vw;
   margin: 20px;
   padding: 10px;
-  padding-left: 200px;
+  padding-left: 12.8vw;
   width: 700px;
   height: 700px;
 }
@@ -402,56 +422,60 @@ body {
   font-size: 1.25em;
 }
 .triangle-5:hover .label {
-  width: 240px;
+  width: 12vw;
 }
 .triangle-5:hover img {
-  transform: scale(2) translate(33.5410196625px, -27.9508497187px);
+  transform: scale(2) translate(1.6770509831vw, -0.5590169944vw);
 }
 .triangle-5:hover .info {
   display: initial;
 }
 
 .triangle-6 {
-  margin: 3px;
-  width: 275px;
-  border-right: 50px solid transparent;
-  border-bottom: 60px solid #00337f;
+  margin: 0.15vw;
+  width: 5.5vw;
+  border-right: 1vw solid transparent;
+  border-bottom: 3vw solid #00337f;
   cursor: pointer;
   position: relative;
 }
 .triangle-6 .label {
   position: absolute;
-  height: 54px;
-  top: 3px;
-  left: 275px;
+  height: 2.7vw;
+  top: 0.15vw;
+  left: 5.5vw;
   background: linear-gradient(to left, #8b8b8b, transparent);
-  width: 200px;
+  width: 10vw;
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 2vw;
   transition-duration: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .triangle-6 img {
   position: absolute;
-  top: -21.4478318209px;
-  left: 475px;
-  height: 62.4819974073px;
-  width: 62.4819974073px;
+  top: -0.7257295747vw;
+  left: 15.5vw;
+  height: 2.5298221281vw;
+  width: 2.5298221281vw;
   background-color: #eeeeee;
-  border-radius: 78.1024967591px;
-  border: 5.2068331173px solid #eeeeee;
+  border-radius: 3.1622776602vw;
+  border: 0.2108185107vw solid #eeeeee;
   image-rendering: crisp-edges;
   transition-duration: 0.2s;
 }
 .triangle-6 .info {
   display: none;
   position: absolute;
-  top: -430px;
-  left: 525px;
+  top: -21.5vw;
+  left: 18vw;
   margin: 20px;
   padding: 10px;
-  padding-left: 172.5px;
+  padding-left: 12.25vw;
   width: 700px;
   height: 700px;
 }
@@ -462,56 +486,60 @@ body {
   font-size: 1.25em;
 }
 .triangle-6:hover .label {
-  width: 240px;
+  width: 12vw;
 }
 .triangle-6:hover img {
-  transform: scale(2) translate(33.5410196625px, -27.9508497187px);
+  transform: scale(2) translate(1.6770509831vw, -0.5590169944vw);
 }
 .triangle-6:hover .info {
   display: initial;
 }
 
 .triangle-7 {
-  margin: 3px;
-  width: 330px;
-  border-right: 50px solid transparent;
-  border-bottom: 60px solid #004aad;
+  margin: 0.15vw;
+  width: 6.6vw;
+  border-right: 1vw solid transparent;
+  border-bottom: 3vw solid #004aad;
   cursor: pointer;
   position: relative;
 }
 .triangle-7 .label {
   position: absolute;
-  height: 54px;
-  top: 3px;
-  left: 330px;
+  height: 2.7vw;
+  top: 0.15vw;
+  left: 6.6vw;
   background: linear-gradient(to left, #8b8b8b, transparent);
-  width: 200px;
+  width: 10vw;
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 2vw;
   transition-duration: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .triangle-7 img {
   position: absolute;
-  top: -21.4478318209px;
-  left: 530px;
-  height: 62.4819974073px;
-  width: 62.4819974073px;
+  top: -0.7257295747vw;
+  left: 16.6vw;
+  height: 2.5298221281vw;
+  width: 2.5298221281vw;
   background-color: #eeeeee;
-  border-radius: 78.1024967591px;
-  border: 5.2068331173px solid #eeeeee;
+  border-radius: 3.1622776602vw;
+  border: 0.2108185107vw solid #eeeeee;
   image-rendering: crisp-edges;
   transition-duration: 0.2s;
 }
 .triangle-7 .info {
   display: none;
   position: absolute;
-  top: -496px;
-  left: 580px;
+  top: -24.8vw;
+  left: 19.1vw;
   margin: 20px;
   padding: 10px;
-  padding-left: 145px;
+  padding-left: 11.7vw;
   width: 700px;
   height: 700px;
 }
@@ -522,56 +550,60 @@ body {
   font-size: 1.25em;
 }
 .triangle-7:hover .label {
-  width: 240px;
+  width: 12vw;
 }
 .triangle-7:hover img {
-  transform: scale(2) translate(33.5410196625px, -27.9508497187px);
+  transform: scale(2) translate(1.6770509831vw, -0.5590169944vw);
 }
 .triangle-7:hover .info {
   display: initial;
 }
 
 .triangle-8 {
-  margin: 3px;
-  width: 385px;
-  border-right: 50px solid transparent;
-  border-bottom: 60px solid #004aad;
+  margin: 0.15vw;
+  width: 7.7vw;
+  border-right: 1vw solid transparent;
+  border-bottom: 3vw solid #004aad;
   cursor: pointer;
   position: relative;
 }
 .triangle-8 .label {
   position: absolute;
-  height: 54px;
-  top: 3px;
-  left: 385px;
+  height: 2.7vw;
+  top: 0.15vw;
+  left: 7.7vw;
   background: linear-gradient(to left, #8b8b8b, transparent);
-  width: 200px;
+  width: 10vw;
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 2vw;
   transition-duration: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .triangle-8 img {
   position: absolute;
-  top: -21.4478318209px;
-  left: 585px;
-  height: 62.4819974073px;
-  width: 62.4819974073px;
+  top: -0.7257295747vw;
+  left: 17.7vw;
+  height: 2.5298221281vw;
+  width: 2.5298221281vw;
   background-color: #eeeeee;
-  border-radius: 78.1024967591px;
-  border: 5.2068331173px solid #eeeeee;
+  border-radius: 3.1622776602vw;
+  border: 0.2108185107vw solid #eeeeee;
   image-rendering: crisp-edges;
   transition-duration: 0.2s;
 }
 .triangle-8 .info {
   display: none;
   position: absolute;
-  top: -562px;
-  left: 635px;
+  top: -28.1vw;
+  left: 20.2vw;
   margin: 20px;
   padding: 10px;
-  padding-left: 117.5px;
+  padding-left: 11.15vw;
   width: 700px;
   height: 700px;
 }
@@ -582,10 +614,10 @@ body {
   font-size: 1.25em;
 }
 .triangle-8:hover .label {
-  width: 240px;
+  width: 12vw;
 }
 .triangle-8:hover img {
-  transform: scale(2) translate(33.5410196625px, -27.9508497187px);
+  transform: scale(2) translate(1.6770509831vw, -0.5590169944vw);
 }
 .triangle-8:hover .info {
   display: initial;
@@ -599,7 +631,7 @@ body {
   background-color: #e3e3e3;
   margin: 100px;
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 5vw;
   border-radius: 20px;
   overflow: hidden;
 }
