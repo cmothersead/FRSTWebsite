@@ -1,6 +1,5 @@
 from datetime import date
 from django.db import models
-from django.utils import timezone
 
 
 class Season(models.Model):
@@ -34,7 +33,7 @@ class Swimmer(models.Model):
     last_name = models.CharField(max_length=45)
     sex = models.CharField(max_length=1)
     birthday = models.DateField()
-    group = models.ManyToManyField(Group, through='GroupAssignment')
+    groups = models.ManyToManyField(Group, through='GroupAssignment')
 
     def __str__(self) -> str:
         return self.first_name + ' ' + self.last_name
