@@ -6,7 +6,7 @@
     }
 </script>
 
-<tr on:click={testAlert}>
+<tr on:click={testAlert} style="cursor: pointer">
     <td>{pref_name || first_name}</td>
     <td>{middle_name}</td>
     <td>{last_name}</td>

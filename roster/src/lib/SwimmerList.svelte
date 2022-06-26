@@ -1,5 +1,5 @@
 <script>
-  import Swimmer from './Swimmer.svelte'
+  import Swimmer from './Swimmer.svelte';
 
   export let swimmers;
 </script>

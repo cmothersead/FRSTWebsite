@@ -1,27 +1,22 @@
 <script>
+  import { onMount } from 'svelte';
+  import { derived, writable } from 'svelte/store';
   import SwimmerList from './lib/SwimmerList.svelte'
 
-  let swimmers = [
-    {
-      first_name: 'Faith',
-      middle_name: 'Ann Mackenzie',
-      last_name: 'Boothe',
-      sex: 'F',
-      age: '13',
-      birthday: '1/1/2000',      
-    },
-    {
-      first_name: 'Rosalie',
-      pref_name: 'Rosie',
-      middle_name: 'not sure',
-      last_name: 'Ackermann',
-      sex: 'F',
-      age: '7',
-      birthday: '1/1/2002'
-    }
-  ]
-</script>
+  let swimmers = [];
 
+  onMount(async () => {
+    fetch("http://localhost:8000/swimmers/")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        swimmers =  data;
+    }).catch(error => {
+      console.log(error);
+      return [];
+    });
+  });
+</script>
 
 <SwimmerList swimmers={swimmers}/>
 
