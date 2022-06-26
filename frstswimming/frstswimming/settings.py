@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'swimmers.apps.SwimmersConfig',
+    'api.apps.ApiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'frstswimming.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'django_swims',
+        'NAME': 'django_api',
         'HOST': 'data.frstswimming.com',
         'USER': 'root',
         'PASSWORD': os.environ['DB_PASSWORD']
