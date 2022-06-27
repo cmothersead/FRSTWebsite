@@ -8,35 +8,70 @@
     function updateSwimmer(){
         const index = $swimmers.findIndex(s => s.pk === pk);
         const storedSwimmer = $swimmers[index];
-        const currentSwimmer = {};
+
+        let currentSwimmer = {};
+        let change = false;
 
         if(storedSwimmer.first_name !== first_name){
-            console.log(`first_name updated to ${first_name}`);
+            console.log(`first_name updated to \"${first_name}\"`);
             currentSwimmer.first_name = first_name;
+            change = true;
         }
         if(storedSwimmer.pref_name !== pref_name){
-            console.log(`pref_name updated to ${pref_name}`);
+            console.log(`pref_name updated to \"${pref_name}\"`);
             currentSwimmer.pref_name = pref_name;
+            change = true;
         }
         if(storedSwimmer.middle_name !== middle_name){
-            console.log(`middle_name updated to ${middle_name}`);
+            console.log(`middle_name updated to \"${middle_name}\"`);
             currentSwimmer.middle_name = middle_name;
+            change = true;
         }
         if(storedSwimmer.last_name !== last_name){
-            console.log(`last_name updated to ${last_name}`);
+            console.log(`last_name updated to \"${last_name}\"`);
             currentSwimmer.last_name = last_name;
+            change = true;
         }
         if(storedSwimmer.sex !== sex){
-            console.log(`sex updated to ${sex}`);
+            console.log(`sex updated to \"${sex}\"`);
             currentSwimmer.sex = sex;
+            change = true;
         }
         if(storedSwimmer.birthday !== birthday){
-            console.log(`birthday updated to ${birthday}`);
+            console.log(`birthday updated to \"${birthday}\"`);
             currentSwimmer.birthday = birthday;
+            change = true;
         }
 
-        $swimmers[index] = { ...$swimmers[index], ...currentSwimmer};
-        close();
+        if(change){
+            currentSwimmer = { ...storedSwimmer, ...currentSwimmer};
+
+            doPut(currentSwimmer)
+            .then(() => { $swimmers[index] = currentSwimmer; })
+            .then(close)
+            .catch(error => { console.log(error); });
+        }else{
+            console.log("No change");
+            close();
+        };
+
+    }
+
+    async function doPut(swimmer){
+
+        const request = {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify({
+                ...swimmer
+            })
+        };
+
+        const res = await fetch(`http://localhost:8000/api/swimmers/${pk}/`, request);
+        const json = await res.json()
+        console.log(json);
     }
 
 </script>
