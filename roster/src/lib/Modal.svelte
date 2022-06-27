@@ -269,12 +269,6 @@
          * @event {void} open
          */
         dispatch('open');
-        /**
-         * The opening event is fired right before the modal opens
-         * @event {void} opening
-         * @deprecated Listen to the `open` event instead
-         */
-        dispatch('opening'); // Deprecated. Do not use!
       };
       onClose = (event) => {
         if (callback.onClose) callback.onClose(event);
@@ -283,12 +277,6 @@
          * @event {void} close
          */
         dispatch('close');
-        /**
-         * The closing event is fired right before the modal closes
-         * @event {void} closing
-         * @deprecated Listen to the `close` event instead
-         */
-        dispatch('closing'); // Deprecated. Do not use!
       };
       onOpened = (event) => {
         if (callback.onOpened) callback.onOpened(event);

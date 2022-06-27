@@ -2,20 +2,22 @@
     import { getContext } from 'svelte';
     import SwimmerDetail from './SwimmerDetail.svelte';
 
-    const { open } = getContext('simple-modal');
+    const { open, close } = getContext('simple-modal');
 
     const showDetail = () => {
         open(SwimmerDetail, {
+            pk: pk,
             first_name: first_name,
             pref_name: pref_name,
             middle_name: middle_name,
             last_name: last_name,
             sex: sex,
             birthday: birthday,
+            close: close,
         });
     }
 
-    export let first_name, pref_name = "", middle_name, last_name, sex, age, birthday;
+    export let pk, first_name, pref_name = "", middle_name, last_name, sex, age, birthday;
 </script>
 
 

@@ -1,16 +1,16 @@
 <script>
   import { onMount } from 'svelte';
   import { derived, writable } from 'svelte/store';
+  import { swimmers } from './lib/stores';
   import SwimmerList from './lib/SwimmerList.svelte'
 
-  let swimmers = [];
 
   onMount(async () => {
-    fetch("http://localhost:8000/swimmers/")
+    fetch("http://localhost:8000/api/swimmers/")
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        swimmers =  data;
+        swimmers.set(data);
     }).catch(error => {
       console.log(error);
       return [];
@@ -18,7 +18,7 @@
   });
 </script>
 
-<SwimmerList swimmers={swimmers}/>
+<SwimmerList bind:swimmers={$swimmers}/>
 
 <!-- Latest compiled and minified CSS -->
 <link
