@@ -1,8 +1,8 @@
 <script>
-    import { getContext } from 'svelte';
-    import SwimmerDetail from './SwimmerDetail.svelte';
+    import { getContext } from "svelte";
+    import SwimmerDetail from "./SwimmerDetail.svelte";
 
-    const { open, close } = getContext('simple-modal');
+    const { open, close } = getContext("simple-modal");
 
     const showDetail = () => {
         open(SwimmerDetail, {
@@ -15,11 +15,17 @@
             birthday: birthday,
             close: close,
         });
-    }
+    };
 
-    export let pk, first_name, pref_name = "", middle_name, last_name, sex, age, birthday;
+    export let pk,
+        first_name,
+        pref_name = "",
+        middle_name,
+        last_name,
+        sex,
+        age,
+        birthday;
 </script>
-
 
 <tr on:click={showDetail} style="cursor: pointer">
     <td>{pref_name || first_name}</td>
