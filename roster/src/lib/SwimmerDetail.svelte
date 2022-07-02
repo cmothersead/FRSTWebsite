@@ -85,66 +85,78 @@
     }
 </script>
 
-<h1>Swimmer Data</h1>
+<h1>Swimmer Info</h1>
 <div>
-    <div class="row ">
+    <div class="row mb-3">
         <div class="col">
-            <label for="first_name">First</label>
-            <input
-                type="text"
-                id="first_name"
-                bind:value={first_name}
-                class="form-control"
-                placeholder="First"
-            />
+            <div class="form-floating">
+                <input
+                    type="text"
+                    id="first_name"
+                    bind:value={first_name}
+                    class="form-control"
+                    placeholder="First"
+                />
+                <label for="first_name">First</label>
+            </div>
         </div>
         <div class="col">
-            <label for="pref_name">Preferred Name</label>
-            <input
-                type="text"
-                id="pref_name"
-                bind:value={pref_name}
-                class="form-control"
-                placeholder="Preferred"
-            />
+            <div class="form-floating">
+                <input
+                    type="text"
+                    id="pref_name"
+                    bind:value={pref_name}
+                    class="form-control"
+                    placeholder="Preferred"
+                />
+                <label for="pref_name" class="form-label">Preferred</label>
+            </div>
         </div>
         <div class="col">
-            <label for="middle_name">Middle Name</label>
-            <input
-                type="text"
-                id="middle_name"
-                bind:value={middle_name}
-                class="form-control"
-                placeholder="Middle"
-            />
+            <div class="form-floating">
+                <input
+                    type="text"
+                    id="middle_name"
+                    bind:value={middle_name}
+                    class="form-control"
+                    placeholder="Middle"
+                />
+                <label for="middle_name">Middle Name</label>
+            </div>
         </div>
         <div class="col">
-            <label for="last_name">Last</label>
-            <input
-                type="text"
-                id="last_name"
-                bind:value={last_name}
-                class="form-control"
-                placeholder="Last"
-            />
+            <div class="form-floating">
+                <input
+                    type="text"
+                    id="last_name"
+                    bind:value={last_name}
+                    class="form-control"
+                    placeholder="Last"
+                />
+                <label for="last_name">Last</label>
+            </div>
         </div>
     </div>
-    <div class="row form-row">
+    <div class="row mb-3">
         <div class="col">
-            <label for="birthday">Birthday</label>
-            <input
-                type="date"
-                id="birthday"
-                bind:value={birthday}
-                class="form-control"
-            />
+            <div class="form-floating">
+                <input
+                    type="date"
+                    id="birthday"
+                    bind:value={birthday}
+                    class="form-control"
+                />
+                <label for="birthday">Birthday</label>
+            </div>
         </div>
         <div class="col">
-            <label for="sex">Sex</label>
-            <select id="sex" bind:value={sex} class="form-control">
-                <option value="M">Male</option>
-                <option value="F">Female</option>
-            </select>
+            <div class="form-floating">
+                <select id="sex" bind:value={sex} class="form-control">
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+                <label for="sex">Sex</label>
+            </div>
         </div>
     </div>
     <button type="button" class="btn btn-danger" on:click={close}>Cancel</button
