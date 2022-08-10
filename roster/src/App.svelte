@@ -1,6 +1,5 @@
 <script>
     import { onMount } from "svelte";
-    import { derived, writable } from "svelte/store";
     import { swimmers } from "./lib/stores";
     import SwimmerList from "./lib/SwimmerList.svelte";
 
