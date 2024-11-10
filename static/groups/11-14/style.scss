@@ -1,33 +1,33 @@
 @use "/default";
 
 .group-button {
-  display: block;
-  width: 600px;
-  cursor: pointer;
-  margin: 5px;
-  user-select: none;
-  @include default.overlay(black, 70%) {
-    transition: opacity 0.1s;
-  }
-
-  span {
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
-    position: absolute;
-    top: 20%;
-    left: 8%;
-  }
-
-  &:hover {
-    transform: scale(1.01);
-
-    &::before {
-      opacity: 0%;
+    display: block;
+    width: 80%;
+    cursor: pointer;
+    margin: 5px;
+    user-select: none;
+    @include default.overlay(black, 70%) {
+        transition: opacity 0.1s;
     }
 
     span {
-      opacity: 0%;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 20%;
+        left: 8%;
     }
-  }
+
+    &:hover {
+        transform: scale(1.01);
+
+        &::before {
+            opacity: 0%;
+        }
+
+        span {
+            opacity: 0%;
+        }
+    }
 }
